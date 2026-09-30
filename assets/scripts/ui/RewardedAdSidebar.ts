@@ -185,7 +185,7 @@ export class RewardedAdSidebar extends Component {
         visible.forEach((button, slot) => {
             const widget = button.getComponent(Widget); if (widget) widget.enabled = false;
             button.setScale(1.3, 1.3, 1);
-            button.setPosition(size.width / 2 - 55 - (slot % columns) * 112, top - 410 - Math.floor(slot / columns) * 104);
+            button.setPosition(-size.width / 2 + 55 + (slot % columns) * 112, top - 292 - Math.floor(slot / columns) * 104);
         });
         if (this.modal) this.modal.setPosition(0, 0);
     };

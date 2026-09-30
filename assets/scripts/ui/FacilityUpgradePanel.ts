@@ -178,6 +178,7 @@ export class FacilityUpgradePanel extends Component {
         this.positionTooltip(row);
         tooltip.active = true;
         tooltip.setSiblingIndex(this.node.children.length - 1);
+        this.node.setSiblingIndex(this.node.parent!.children.length - 1);
     }
 
     private positionTooltip(row?: Node): void {
@@ -196,10 +197,16 @@ export class FacilityUpgradePanel extends Component {
         } else {
             targetY = rowPos.y + 75 + tipHeight / 2 + 10;
         }
-        const minY = -240 + tipHeight / 2;
-        const maxY = 240 - tipHeight / 2;
-        targetY = Math.max(minY, Math.min(maxY, targetY));
-        tooltip.setPosition(0, targetY, 0);
+        const canvas=this.node.parent!.parent!.getComponent(UITransform)!;
+        const scale=this.node.scale.x;
+        const width=Math.min(620,(canvas.width-32)/scale);
+        tipTransform!.width=width;
+        const text=tooltip.getChildByName('Description')?.getComponent(RichText);
+        if(text){text.maxWidth=width-40;text.fontSize=26;text.lineHeight=34;}
+        const minY=(-canvas.height/2+16-this.node.position.y)/scale+tipHeight/2;
+        const maxY=(canvas.height/2-240-this.node.position.y)/scale-tipHeight/2;
+        targetY=Math.max(minY,Math.min(maxY,targetY));
+        tooltip.setPosition(-this.node.position.x/scale,targetY,0);
     }
 
     lateUpdate(dt?: number): void {
@@ -242,7 +249,12 @@ export class FacilityUpgradePanel extends Component {
         this.node.parent?.getChildByName('btn_upgrades')?.off(Button.EventType.CLICK, this.open, this);
     }
 
-    private layoutAtBottom(): void { this.setCollapsed(this.collapsed, false); this.layoutDebugButton(); }
+    private layoutAtBottom(): void {
+        const canvas=this.node.parent?.parent?.getComponent(UITransform);if(!canvas)return;
+        const scale=Math.min(1,canvas.width/750);
+        this.skin.resize(Math.max(600,(canvas.height-252*scale)/scale));
+        this.setCollapsed(this.collapsed, false); this.layoutDebugButton();
+    }
 
     private createDebugButton(): void {
         const button = new Node('TestResourcesButton');
@@ -405,11 +417,12 @@ export class FacilityUpgradePanel extends Component {
         });
         n.layer = this.node.layer;
         if (n.parent !== content) content.addChild(n);
-        (n.getComponent(UITransform) || n.addComponent(UITransform)).setContentSize(650, 36);
+        (n.getComponent(UITransform) || n.addComponent(UITransform)).setContentSize(264, 36);
         const label = n.getComponent(Label) || n.addComponent(Label);
         useDefaultSystemFont(label);
         label.fontSize = 22;
         label.color = new Color(65, 35, 25);
+        label.overflow = Label.Overflow.SHRINK;
         label.string = '';
     }
     private renderSporeChoices(): number {
@@ -490,7 +503,7 @@ export class FacilityUpgradePanel extends Component {
             header.addComponent(UITransform);
         }
         if (header.parent !== pageNode) header.setParent(pageNode);
-        header.getComponent(UITransform)!.setContentSize(680, UpgradePanelSkin.viewportHeight);
+        header.getComponent(UITransform)!.setContentSize(280, UpgradePanelSkin.viewportHeight);
         header.setPosition(0, UpgradePanelSkin.viewportHeight / 2);
         header.setSiblingIndex(pageNode.children.length - 1);
         return header;
@@ -528,13 +541,13 @@ export class FacilityUpgradePanel extends Component {
     private layoutCollapseButton(scale:number,panelPosition:Vec3,animate:boolean):void {
         const button=this.collapseButton;
         if(!button||!isValid(button,true))return;
-        const x=panelPosition.x+this.collapseButtonOffset.x*scale;
-        const y=panelPosition.y+this.collapseButtonOffset.y*scale;
+        const x=this.collapsed?this.node.parent!.parent!.getComponent(UITransform)!.width/2-30:panelPosition.x-(UpgradePanelSkin.width/2+26)*scale;
+        const y=panelPosition.y+(UpgradePanelSkin.height/2-42)*scale;
         const position=new Vec3(x,y,panelPosition.z+this.collapseButtonOffset.z*scale);
         const direction=this.collapsed?-1:1;
         button.active=true;
-        button.angle = 0;
-        button.setScale(Math.abs(this.collapseButtonScale.x)*scale,Math.abs(this.collapseButtonScale.y)*scale*direction,this.collapseButtonScale.z);
+        button.angle = this.collapsed ? -90 : 90;
+        button.setScale(Math.abs(this.collapseButtonScale.x)*scale,Math.abs(this.collapseButtonScale.y)*scale,this.collapseButtonScale.z);
         Tween.stopAllByTarget(button);
         if(animate)tween(button).to(UI_RULES.panelSlideSeconds,{position},{easing:'quadOut'}).start();
         else button.setPosition(position);
@@ -546,9 +559,9 @@ export class FacilityUpgradePanel extends Component {
         if(upgradeButton)upgradeButton.active=!this.collapseButton&&collapsed;
         const canvas = this.node.parent?.parent?.getComponent(UITransform);
         if(!canvas)return;
-        const scale = Math.min(1, (canvas.width - 16) / UpgradePanelSkin.width);
+        const scale = Math.min(1, canvas.width / 750);
         this.node.setScale(scale, scale, 1);
-        const position = new Vec3(0, -canvas.height / 2 + (collapsed ? -UpgradePanelSkin.height / 2 + 4 : UpgradePanelSkin.height / 2 + 8) * scale, 0);
+        const position = new Vec3(canvas.width / 2 + (collapsed ? UpgradePanelSkin.width / 2 + 8 : -UpgradePanelSkin.width / 2 - 8) * scale, canvas.height/2 - (240 + UpgradePanelSkin.height/2)*scale, 0);
         this.layoutZoomButtons(scale, position, animate);
         Tween.stopAllByTarget(this.node);
         const pages = this.node.getChildByName('Pages');
@@ -567,33 +580,14 @@ export class FacilityUpgradePanel extends Component {
         }
     }
 
-    private layoutZoomButtons(scale: number, panelPosition: Vec3, animate: boolean): void {
-        const tabs = this.node.getChildByName('TabScroll');
-        const tabSize = tabs?.getComponent(UITransform);
-        const top = Math.max(UpgradePanelSkin.height / 2,
-            tabs && tabSize ? tabs.position.y + tabSize.height * (1 - tabSize.anchorY) * Math.abs(tabs.scale.y) : 0);
-        for (const name of ['add', 'sub']) {
-            const button = this.node.parent?.getChildByName(name);
-            const size = button?.getComponent(UITransform);
-            if (!button || !size) continue;
-            // Only Y follows the panel. Keep authored horizontal alignment and size.
-            const widget = button.getComponent(Widget);
-            if (widget) {
-                widget.isAlignTop = false;
-                widget.isAlignBottom = false;
-                widget.isAlignVerticalCenter = false;
-            }
-            this.zoomButtonTweens.get(button)?.stop();
-            this.zoomButtonTweens.delete(button);
-            const y = panelPosition.y + (top + 12) * scale + size.height * size.anchorY * Math.abs(button.scale.y);
-            const state = { y: button.position.y };
-            const apply = () => { if (isValid(button, true)) button.setPosition(button.position.x, state.y, button.position.z); };
-            if (animate) {
-                const animation = tween(state).to(UI_RULES.panelSlideSeconds, { y }, { easing: 'quadOut', onUpdate: apply })
-                    .call(() => { state.y = y; apply(); this.zoomButtonTweens.delete(button); }).start();
-                this.zoomButtonTweens.set(button, animation);
-            } else { state.y = y; apply(); }
-        }
+    private layoutZoomButtons(_scale: number, _panelPosition: Vec3, _animate: boolean): void {
+        const canvas=this.node.parent!.parent!.getComponent(UITransform)!;
+        ['add','sub'].forEach((name,index)=>{
+            const button=this.node.parent!.getChildByName(name);if(!button)return;
+            const widget=button.getComponent(Widget);if(widget)widget.enabled=false;
+            this.zoomButtonTweens.get(button)?.stop();this.zoomButtonTweens.delete(button);
+            button.setPosition(-canvas.width/2+52+index*88,-canvas.height/2+60);
+        });
     }
 
     /** World building taps reveal their tab; direct tab taps keep the strip in place. */
@@ -759,7 +753,7 @@ export class FacilityUpgradePanel extends Component {
             if (row.getComponent(UITransform)) this.skin.card(row, slot, 0, level, maxed, affordable, hovered, unlocked && !maxed && !affordable);
         });
         const contentTransform = content.getComponent(UITransform);
-        if (contentTransform) contentTransform.height = Math.max(viewportHeight, visibleRows * 136);
+        if (contentTransform) contentTransform.height = Math.max(viewportHeight, visibleRows * 176);
         this.lastScrollY = NaN;
         if (index === this.selected) this.updateVisibleCards();
     }

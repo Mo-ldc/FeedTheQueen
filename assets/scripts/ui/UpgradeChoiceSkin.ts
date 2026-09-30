@@ -77,10 +77,11 @@ export function styleUpgradeChoice(node: Node, selected: boolean, enabled = true
     }
 }
 
-/** At most two touch targets per row; return space needed by the pinned header. */
+/** Full-width choices in the EXE-style side panel; return the pinned header height. */
 export function layoutUpgradeChoiceRow(nodes: Node[], y = -33, totalWidth = 620, height = 64): number {
     if (!nodes.length) return 0;
-    const columns = Math.min(2, nodes.length);
+    totalWidth = Math.min(totalWidth, 272);
+    const columns = 1;
     const width = Math.min(310, totalWidth / columns);
     const rowWidth = width * columns;
     nodes.forEach((node, index) => {

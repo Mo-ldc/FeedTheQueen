@@ -9,10 +9,10 @@ import { upgradeCountCaption } from './UpgradeCardText';
 
 /** Reference-inspired dock. Only presentation is changed; purchase rules stay in UpgradeState. */
 export class UpgradePanelSkin {
-    static readonly width = 720;
-    static readonly height = 360;
-    static readonly viewportHeight = 320;
-    private static readonly iconBoxSize = 88;
+    static readonly width = 300;
+    static height = 880;
+    static viewportHeight = 780;
+    private static readonly iconBoxSize = 64;
     private readonly optionHeaderSpaces = new Map<number, number>();
     private static readonly TIP_ICON_UUID = 'd217d682-0367-41eb-bf29-50f4e40b8801@f9941';
     private readonly ink = new Color(79, 49, 29);
@@ -33,13 +33,37 @@ export class UpgradePanelSkin {
         const delta = space - previous;
         const visibleHeight = UpgradePanelSkin.viewportHeight - space;
         if (delta !== 0 || transform.height !== visibleHeight) {
-            transform.setContentSize(680, visibleHeight);
+            transform.setContentSize(280, visibleHeight);
             viewport.setPosition(0, -space / 2, viewport.position.z);
             const content = viewport.getChildByName('Content');
             if (content && delta !== 0) content.setPosition(content.position.x, content.position.y - delta / 2, content.position.z);
             this.optionHeaderSpaces.set(page, space);
         }
         return visibleHeight;
+    }
+
+    /** Right-side panel uses the available height below the compact HUD. */
+    resize(height:number):void {
+        UpgradePanelSkin.height=height;UpgradePanelSkin.viewportHeight=height-126;
+        this.panel.getComponent(UITransform)!.setContentSize(300,height);
+        const bg=this.panel.getChildByName('bg')!;bg.getComponent(UITransform)!.setContentSize(300,height);
+        bg.getChildByName('SkinSurface')?.getComponent(UITransform)?.setContentSize(300,height);
+        const tabs=this.panel.getChildByName('TabScroll')!;tabs.setPosition(-140,height/2-44);
+        tabs.setSiblingIndex(this.panel.children.length-1);
+        this.label(this.panel,'CategoryHint','左右滑动切换分类',280,24,0,height/2-90,18).node.setSiblingIndex(this.panel.children.length-1);
+        tabs.getComponent(UITransform)!.setContentSize(280,64);
+        const tabView=tabs.getChildByName('Viewport')!;tabView.setPosition(0,0);tabView.getComponent(UITransform)!.setContentSize(280,64);
+        const tabContent=tabView.getChildByName('tab')!;
+        tabContent.getComponent(UITransform)!.height=64;tabContent.setPosition(tabContent.position.x,0);
+        const pages=this.panel.getChildByName('Pages')!;pages.setPosition(0,-50);
+        pages.getComponent(UITransform)!.setContentSize(280,UpgradePanelSkin.viewportHeight);
+        pages.children.forEach((page,index)=>{
+            const space=this.optionHeaderSpaces.get(index)||0,h=UpgradePanelSkin.viewportHeight-space;
+            page.getComponent(UITransform)!.setContentSize(280,UpgradePanelSkin.viewportHeight);
+            const view=page.getChildByName('Viewport')!;view.getComponent(UITransform)!.setContentSize(280,h);view.setPosition(0,-space/2);
+            view.getChildByName('Content')!.setPosition(0,h/2);
+            page.getChildByName('OptionHeader')?.setPosition(0,UpgradePanelSkin.viewportHeight/2);
+        });
     }
 
     private box(node: Node, w: number, h: number, fill: Color, border: Color, radius = 22): Graphics {
@@ -125,14 +149,14 @@ export class UpgradePanelSkin {
         if (baked && close) close.setPosition(330, UpgradePanelSkin.height / 2 + 31, close.position.z);
         const pages = this.panel.getChildByName('Pages')!;
         pages.setPosition(0, -10);
-        pages.getComponent(UITransform)!.setContentSize(680, UpgradePanelSkin.viewportHeight);
+        pages.getComponent(UITransform)!.setContentSize(280, UpgradePanelSkin.viewportHeight);
         pages.children.forEach(page => {
-            page.getComponent(UITransform)!.setContentSize(680, UpgradePanelSkin.viewportHeight);
+            page.getComponent(UITransform)!.setContentSize(280, UpgradePanelSkin.viewportHeight);
             const viewport = page.getChildByName('Viewport')!;
-            viewport.getComponent(UITransform)!.setContentSize(680, UpgradePanelSkin.viewportHeight);
+            viewport.getComponent(UITransform)!.setContentSize(280, UpgradePanelSkin.viewportHeight);
             const content = viewport.getChildByName('Content')!;
             content.setPosition(0, UpgradePanelSkin.viewportHeight / 2);
-            content.getComponent(UITransform)!.width = 680;
+            content.getComponent(UITransform)!.width = 280;
         });
         // The authored scene already contains these nodes and Sprite frames.
         if (baked) {
@@ -251,7 +275,7 @@ export class UpgradePanelSkin {
         if (!badge) {
             badge = new Node('AdBadge'); badge.layer = row.layer; row.addChild(badge);
         }
-        badge.setPosition(306, 44, 0);
+        badge.setPosition(116, -5, 0);
         (badge.getComponent(UITransform) || badge.addComponent(UITransform)).setContentSize(26, 20);
         const sprite = badge.getComponent(Sprite) || badge.addComponent(Sprite);
         sprite.sizeMode = Sprite.SizeMode.CUSTOM;
@@ -283,11 +307,12 @@ export class UpgradePanelSkin {
             return;
         }
         const visible = root.children.filter(tab => tab.active);
+        const hint=this.panel.getChildByName('CategoryHint');if(hint)hint.active=visible.length>2;
         const viewport = this.panel.getChildByPath('TabScroll/Viewport');
-        visible.forEach((tab, slot) => tab.setPosition(viewport ? 86 + 168 * slot : -222 + 222 * slot, viewport ? 0 : 206));
+        visible.forEach((tab, slot) => tab.setPosition(viewport ? 70 + 140 * slot : -222 + 222 * slot, viewport ? 0 : 206));
         const transform=root.getComponent(UITransform);
         if(transform)transform.width = Math.max(
-            viewport?.getComponent(UITransform)?.width || 0, visible.length * 168 + 8);
+            viewport?.getComponent(UITransform)?.width || 0, visible.length * 140);
     }
 
     tab(index: number, selected: boolean, unlocked: boolean): void {
@@ -298,33 +323,37 @@ export class UpgradePanelSkin {
         for (const name of ['SkinSurface', 'Selected', 'Icon']) {
             const child = tab.getChildByName(name); if (child) child.active = false;
         }
-        tab.getComponent(UITransform)!.setContentSize(158, 64);
-        paperSurface(tab, 158, 64, selected ? PORTRAIT.brown : PORTRAIT.paper);
-        const caption = this.label(tab, 'Label', tab.getChildByName('Label')!.getComponent(Label)!.string, 144, 52, 0, 0, 29);
+        tab.getComponent(UITransform)!.setContentSize(132, 64);
+        paperSurface(tab, 132, 64, selected ? PORTRAIT.brown : PORTRAIT.paper);
+        const caption = this.label(tab, 'Label', tab.getChildByName('Label')!.getComponent(Label)!.string, 124, 52, 0, 0, 26);
         caption.color = selected ? new Color(255, 245, 223) : PORTRAIT.ink;
         caption.enableOutline = false;
     }
 
     card(row: Node, slot: number, top: number, level: number, maxed: boolean, affordable: boolean, hovered: boolean, adEligible: boolean): void {
-        row.getComponent(UITransform)!.setContentSize(660, 124);
-        row.setPosition(0, -66 - slot * 136 - top);
-        for (const name of ['SkinSurface', 'TitlePill', 'New', 'ColumnRule1', 'ColumnRule67', 'UnavailableShade']) {
+        row.getComponent(UITransform)!.setContentSize(272, 166);
+        row.setPosition(0, -87 - slot * 176 - top);
+        for (const name of ['TitlePill', 'New', 'ColumnRule1', 'ColumnRule67', 'UnavailableShade']) {
             const child = row.getChildByName(name); if (child) child.active = false;
         }
-        paperSurface(row, 660, 124, maxed ? new Color(220, 204, 179) : hovered ? new Color(255, 243, 218) : PORTRAIT.paper);
-        const art = row.getChildByName('Illustration'); if (art) art.setPosition(-274, 0);
-        this.label(row, 'Level', String(level), 70, 30, -176, -28, 25);
-        this.label(row, 'CountCaption', upgradeCountCaption(row.name, maxed), 172, 30, -61, -28, 23);
+        const surface = row.getChildByName('SkinSurface')!;
+        surface.active = true; surface.getComponent(UITransform)!.setContentSize(272,166);
+        const sprite=surface.getComponent(Sprite)!;sprite.enabled=true;sprite.type=Sprite.Type.SLICED;sprite.sizeMode=Sprite.SizeMode.CUSTOM;
+        sprite.color=maxed?new Color(220,204,179):hovered?new Color(255,243,218):Color.WHITE;
+        const rootSprite=row.getComponent(Sprite);if(rootSprite)rootSprite.enabled=false;
+        const art = row.getChildByName('Illustration'); if (art) art.setPosition(-91, 40);
+        this.label(row, 'Level', String(level), 76, 32, -91, -20, 28);
+        this.label(row, 'CountCaption', upgradeCountCaption(row.name, maxed), 82, 32, -91, -55, 20);
         const action = row.getChildByName('Action');
-        if (action) { action.setPosition(0, 0); action.getComponent(UITransform)!.setContentSize(660, 124); }
+        if (action) { action.setPosition(0, 0); action.getComponent(UITransform)!.setContentSize(272, 166); }
         const status = row.getChildByName('Status');
-        if (status) { status.setPosition(224, 0); status.getComponent(UITransform)!.setContentSize(170, 52); }
-        const price = this.child(row, 'PricePlate', 182, 100, 224, 0);
-        paperSurface(price, 182, 100, affordable ? PORTRAIT.sand : new Color(238, 214, 179));
+        if (status) { status.setPosition(38, -38); status.getComponent(UITransform)!.setContentSize(148, 52); }
+        const price = this.child(row, 'PricePlate', 150, 78, 38, -38);
+        paperSurface(price, 150, 78, affordable ? PORTRAIT.sand : new Color(238, 214, 179));
         price.setSiblingIndex(1);
         layoutUpgradeCosts(row);
         const badge = row.getChildByName('AdBadge');
-        if (badge) { badge.active = adEligible; badge.setPosition(306, 44); badge.setSiblingIndex(row.children.length - 1); }
+        if (badge) { badge.active = adEligible; badge.setPosition(116, -5); badge.setSiblingIndex(row.children.length - 1); }
         const tip = row.getChildByName('TipIcon') || this.ensureTipIcon(row);
         this.layoutRowTitleAndTip(row);
         tip.setSiblingIndex(row.children.length - 1);
@@ -363,13 +392,13 @@ export class UpgradePanelSkin {
         if (!nameNode) return;
         const label = nameNode.getComponent(Label);
         if (!label) return;
-        const pillCenterX = -72;
-        nameNode.setPosition(pillCenterX, 24, 0);
-        nameNode.getComponent(UITransform)!.width = 288;
+        const pillCenterX = 21;
+        nameNode.setPosition(pillCenterX, 43, 0);
+        nameNode.getComponent(UITransform)!.width = 164;
         label.color = new Color(43, 36, 28);
         label.enableOutline = false;
         label.isBold = true;
-        label.fontSize = 28;
+        label.fontSize = 26;
         label.lineHeight = 32;
         label.enableWrapText = true;
         label.overflow = Label.Overflow.SHRINK;
@@ -379,7 +408,7 @@ export class UpgradePanelSkin {
             const trans = tip.getComponent(UITransform) || tip.addComponent(UITransform);
             trans.setContentSize(40, 40);
             const card = row.getComponent(UITransform)!;
-            tip.setPosition(98, 26, 0);
+            tip.setPosition(118, 62, 0);
         }
 
         const pill = row.getChildByName('TitlePill');

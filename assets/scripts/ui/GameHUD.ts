@@ -75,20 +75,20 @@ export class GameHUD extends Component {
         });
     }
     private buildSummary():void {
-        this.caption(this.node,'StatusTitle','蚁群状态',250,60,-125,186,34).isBold=true;
-        const details=this.child(this.node,'StatusDetails',176,64,262,186);
-        paperSurface(details,176,64,PORTRAIT.brown);
-        const detailLabel=this.caption(details,'Label','查看详情',164,54,0,0,28);detailLabel.color=new Color(255,245,223);
+        this.caption(this.node,'StatusTitle','',1,1,0,0,1);
+        const details=this.child(this.node,'StatusDetails',100,60,308,190);
+        paperSurface(details,100,60,PORTRAIT.brown);
+        const detailLabel=this.caption(details,'Label','详情',94,52,0,0,26);detailLabel.color=new Color(255,245,223);
         details.addComponent(Button).transition=Button.Transition.NONE;
         details.on(Button.EventType.CLICK,()=>this.showDetails('蚁群信息',()=>this.statusDescription()));
-        this.summary=this.child(this.node,'PortraitSummary',720,152,0,-32);
-        paperSurface(this.summary,720,152);
-        this.caption(this.summary,'RateTitle','进食速度',214,36,-236,43,26);
-        this.caption(this.summary,'RateValue','0',214,54,-236,-1,38).isBold=true;
-        this.caption(this.summary,'RateUnit','食物 / 分钟',214,32,-236,-47,23);
-        this.caption(this.summary,'QueenValue','',424,38,112,43,25);
-        this.caption(this.summary,'DnaValue','',424,38,112,-25,25);
-        for(const [name,y] of [['QueenTrack',15],['DnaTrack',-53]] as [string,number][]){
+        this.summary=this.child(this.node,'PortraitSummary',720,102,0,105);
+        paperSurface(this.summary,720,102);
+        this.caption(this.summary,'RateTitle','进食 / 分钟',204,28,-244,30,23);
+        this.caption(this.summary,'RateValue','0',204,48,-244,-12,34).isBold=true;
+        this.caption(this.summary,'RateUnit','',1,1,0,0,1);
+        this.caption(this.summary,'QueenValue','',440,32,106,29,24);
+        this.caption(this.summary,'DnaValue','',440,32,106,-19,24);
+        for(const [name,y] of [['QueenTrack',7],['DnaTrack',-41]] as [string,number][]){
             this.child(this.summary,name,416,12,112,y).addComponent(Graphics);
         }
         this.touchDetails(this.summary,'成长与基因',()=>this.milestoneDescription());
@@ -123,20 +123,20 @@ export class GameHUD extends Component {
     }
     private renderCurrencies():void {
         const canvas=this.node.parent!.parent!.getComponent(UITransform)!;
-        const width=(canvas.width-32)/4,root=this.node.getChildByName('Currencies')!;
-        root.setPosition(0,98);
+        const width=(canvas.width-218)/4,root=this.node.getChildByName('Currencies')!;
+        root.setPosition(-12,190);
         const values=[this.wallet.nutrients,this.wallet.larvae,this.wallet.greyMatter,this.status.dna];
         const repaint=this.currencyLayoutKey!==String(width);this.currencyLayoutKey=String(width);
         values.forEach((value,i)=>{
             const cell=root.getChildByName('Resource'+i)!;cell.active=true;
             const label=cell.getChildByName('Value')!.getComponent(Label)!;label.string=formatOriginal(value);
             if(!repaint)return;
-            cell.setPosition((i-1.5)*width,0);cell.getComponent(UITransform)!.setContentSize(width-6,90);
-            paperSurface(cell,width-6,90);
-            this.caption(cell,'ResourceName',['食物','幼虫','脑灰质','基因'][i],width-18,30,0,25,23);
-            const icon=cell.getChildByName('Icon')!;icon.setPosition(-width/2+33,-17);icon.getComponent(UITransform)!.setContentSize(30,30);
-            label.node.setPosition(20,-17);label.node.getComponent(UITransform)!.setContentSize(width-66,40);
-            label.fontSize=30;label.lineHeight=36;label.enableOutline=false;label.color=PORTRAIT.ink;
+            cell.setPosition((i-1.5)*width,0);cell.getComponent(UITransform)!.setContentSize(width-4,60);
+            paperSurface(cell,width-4,60);
+            this.caption(cell,'ResourceName','',1,1,0,0,1);
+            const icon=cell.getChildByName('Icon')!;icon.setPosition(-width/2+23,0);icon.getComponent(UITransform)!.setContentSize(28,28);
+            label.node.setPosition(14,0);label.node.getComponent(UITransform)!.setContentSize(width-44,42);
+            label.fontSize=28;label.lineHeight=36;label.enableOutline=false;label.color=PORTRAIT.ink;
         });
     }
     private renderStatus():void {

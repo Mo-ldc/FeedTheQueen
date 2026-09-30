@@ -10,20 +10,20 @@ export function layoutUpgradeCosts(row: Node): void {
         const icon = row.getChildByName('CostIcon' + amount.name.slice(4));
         if (!icon) return;
         const line = Math.floor(index / columns);
-        const y = ((lines - 1) / 2 - line) * 28;
-        const iconX = 162;
-        const iconSize = 26;
+        const y = -38 + ((lines - 1) / 2 - line) * 24;
+        const iconX = -13;
+        const iconSize = 24;
         icon.setPosition(iconX, y);
         icon.getComponent(UITransform)!.setContentSize(iconSize, iconSize);
         // A left anchor keeps the gap independent of the amount's digit count.
         const transform = amount.getComponent(UITransform)!;
         transform.setAnchorPoint(0, 0.5);
-        transform.setContentSize(124, 30);
+        transform.setContentSize(98, 28);
         amount.setPosition(iconX + iconSize / 2 + 4, y);
         const label = amount.getComponent(Label)!;
         label.horizontalAlign = Label.HorizontalAlign.LEFT;
         label.verticalAlign = Label.VerticalAlign.CENTER;
-        label.fontSize = amounts.length === 1 ? 30 : 24;
+        label.fontSize = amounts.length === 1 ? 28 : 22;
         label.enableOutline = false;
         label.lineHeight = 26;
         label.enableWrapText = false;

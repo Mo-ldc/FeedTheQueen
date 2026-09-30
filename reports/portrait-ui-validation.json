@@ -1,38 +1,16 @@
 {
-  "design": "EXE-inspired portrait UI with touch-first status dashboard",
-  "viewportsChecked": [
-    "390x844",
-    "360x640",
-    "430x932 (upgrade dock)",
-    "320x480 (scrolling details)"
-  ],
+  "design": "EXE-inspired right upgrade rail, left rewards, compact portrait HUD",
+  "viewportsChecked": ["390x844", "360x640"],
   "checks": {
     "typescript": "passed",
-    "webMobileBuild": "passed; reports/portrait-release.stdout.log",
+    "webMobileBuild": "passed; reports/right-sidebar-final.stdout.log",
     "assetReferences": "40 serialized files, 105 upgrade icons, zero unresolved references",
     "prefabOwnerChains": "passed; no cycles",
     "advertisingArt": "21 protected assets unchanged",
-    "optionGeometry": "1 through 4 choices fit in a maximum of two columns without overlaps",
-    "touchInteractions": [
-      "reward grant and resource refresh",
-      "upgrade purchases and new tab unlock",
-      "gene panel open/close",
-      "settings open/close",
-      "resource description tap",
-      "status details tap and close",
-      "details swipe reveals final status rows",
-      "upgrade tooltip tap"
-    ],
+    "touchInteractions": ["category selection", "horizontal category swipe", "upgrade description tap", "right rail collapse and reopen"],
     "browserErrorsAndWarnings": []
   },
-  "hud": [
-    "all four resource names and counts visible",
-    "feeding rate and units",
-    "queen and gene current/target progress",
-    "scrolling details with food sources, bonuses and status",
-    "no hover dependency"
-  ],
-  "limitations": [
-    "Late-game option variants were geometry-checked; not every unlock was played through."
-  ]
+  "hud": ["four resource icons and counts", "feeding rate per minute", "queen and gene progress", "tap for full details"],
+  "layout": ["right rail with EXE frame and vertically stacked upgrade cards", "left rewarded ad buttons", "single-column option controls", "upgrade descriptions render above ad buttons"],
+  "limitations": ["Late-game unlocks were not all played through."]
 }
