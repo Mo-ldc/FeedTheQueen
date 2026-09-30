@@ -410,6 +410,13 @@ export class UpgradePanelSkin {
         const pillCenterX = 56;
         nameNode.setPosition(pillCenterX, nameNode.position.y, 0);
         nameNode.getComponent(UITransform)!.width = 140;
+        label.color = new Color(43, 36, 28);
+        label.enableOutline = false;
+        label.isBold = true;
+        label.fontSize = 28;
+        label.lineHeight = 32;
+        label.enableWrapText = true;
+        label.overflow = Label.Overflow.SHRINK;
 
         const tip = row.getChildByName('TipIcon');
         if (tip) {
@@ -421,6 +428,7 @@ export class UpgradePanelSkin {
 
         const pill = row.getChildByName('TitlePill');
         if (pill) {
+            pill.active = false;
             pill.setPosition(pillCenterX, pill.position.y, 0);
             const pillTrans = pill.getComponent(UITransform);
             if (pillTrans) {

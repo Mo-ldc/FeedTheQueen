@@ -488,9 +488,7 @@
   {
     "__type__": "cc.PrefabInstance",
     "fileId": "queenSceneInstance",
-    "prefabRootNode": {
-      "__id__": 10
-    },
+    "prefabRootNode": null,
     "mountedChildren": [],
     "mountedComponents": [],
     "propertyOverrides": [
@@ -3288,12 +3286,12 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "42d65553-b6c4-4b30-903d-efdd85bf3dcf@f9941",
+      "__uuid__": "2ee8bf0e-8735-48d7-9c83-4b68ed4ca48c@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -16091,7 +16089,7 @@
       "__id__": 417
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 422
@@ -16408,18 +16406,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "产下幼虫",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -16430,7 +16428,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -19160,7 +19158,7 @@
       "__id__": 493
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 498
@@ -19477,18 +19475,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "觅食者地洞",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -19499,7 +19497,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -22229,7 +22227,7 @@
       "__id__": 569
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 574
@@ -22546,18 +22544,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "搬运工巢房",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -22568,7 +22566,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -25298,7 +25296,7 @@
       "__id__": 645
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 650
@@ -25615,18 +25613,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "进化腔",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -25637,7 +25635,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -28367,7 +28365,7 @@
       "__id__": 721
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 726
@@ -28684,18 +28682,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "蜂王浆",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -28706,7 +28704,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -31433,7 +31431,7 @@
       "__id__": 797
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 802
@@ -31750,18 +31748,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "酷热亲和",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -31772,7 +31770,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -34499,7 +34497,7 @@
       "__id__": 873
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 878
@@ -34816,18 +34814,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "严寒亲和",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -34838,7 +34836,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -37565,7 +37563,7 @@
       "__id__": 949
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 954
@@ -37882,18 +37880,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "浴火重生",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -37904,7 +37902,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -40964,7 +40962,7 @@
       "__id__": 1034
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1039
@@ -41281,18 +41279,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化觅食者",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -41303,7 +41301,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -44033,7 +44031,7 @@
       "__id__": 1110
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1115
@@ -44350,18 +44348,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "硕大果丛",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -44372,7 +44370,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -47102,7 +47100,7 @@
       "__id__": 1186
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1191
@@ -47419,18 +47417,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "敏锐感官",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -47441,7 +47439,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -50171,7 +50169,7 @@
       "__id__": 1262
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1267
@@ -50488,18 +50486,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "多线操作",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -50510,7 +50508,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -53240,7 +53238,7 @@
       "__id__": 1338
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1343
@@ -53557,18 +53555,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "意外之喜",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -53579,7 +53577,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -56309,7 +56307,7 @@
       "__id__": 1414
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1419
@@ -56626,18 +56624,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "大丰收",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -56648,7 +56646,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -59375,7 +59373,7 @@
       "__id__": 1490
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1495
@@ -59692,18 +59690,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "层层递进",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -59714,7 +59712,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -62441,7 +62439,7 @@
       "__id__": 1566
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1571
@@ -62758,18 +62756,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "野生苹果",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -62780,7 +62778,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -65507,7 +65505,7 @@
       "__id__": 1642
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1647
@@ -65824,18 +65822,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "酸甜交织",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -65846,7 +65844,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -68573,7 +68571,7 @@
       "__id__": 1718
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1723
@@ -68890,18 +68888,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "彩虹大道",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -68912,7 +68910,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -72940,7 +72938,7 @@
       "__id__": 1826
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1831
@@ -73257,18 +73255,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化搬运工",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -73279,7 +73277,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -76009,7 +76007,7 @@
       "__id__": 1902
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1907
@@ -76326,18 +76324,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "干劲满满",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -76348,7 +76346,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -79078,7 +79076,7 @@
       "__id__": 1978
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1983
@@ -79395,18 +79393,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "强韧力量",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -79417,7 +79415,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -82147,7 +82145,7 @@
       "__id__": 2054
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2059
@@ -82464,18 +82462,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "见机行事",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -82486,7 +82484,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -85216,7 +85214,7 @@
       "__id__": 2130
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2135
@@ -85533,18 +85531,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "大力神",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -85555,7 +85553,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -88282,7 +88280,7 @@
       "__id__": 2206
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2211
@@ -88599,18 +88597,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "闪电突进",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -88621,7 +88619,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -91348,7 +91346,7 @@
       "__id__": 2282
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2287
@@ -91665,18 +91663,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "烫手山芋",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -91687,7 +91685,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -94414,7 +94412,7 @@
       "__id__": 2358
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2363
@@ -94731,18 +94729,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "清理库存",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -94753,7 +94751,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -99089,7 +99087,7 @@
       "__id__": 2473
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2478
@@ -99406,18 +99404,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "果园",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -99428,7 +99426,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -102155,7 +102153,7 @@
       "__id__": 2549
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2554
@@ -102472,18 +102470,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "心算",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -102494,7 +102492,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -105224,7 +105222,7 @@
       "__id__": 2625
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2630
@@ -105541,18 +105539,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "农场",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -105563,7 +105561,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -108290,7 +108288,7 @@
       "__id__": 2701
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2706
@@ -108607,18 +108605,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "蘑菇实验室",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -108629,7 +108627,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -111356,7 +111354,7 @@
       "__id__": 2777
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2782
@@ -111673,18 +111671,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "投掷者洞窟",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -111695,7 +111693,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -114422,7 +114420,7 @@
       "__id__": 2853
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2858
@@ -114739,18 +114737,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "陷阱工坊",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -114761,7 +114759,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -117488,7 +117486,7 @@
       "__id__": 2929
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 2934
@@ -117805,18 +117803,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "双子星",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -117827,7 +117825,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -120554,7 +120552,7 @@
       "__id__": 3005
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3010
@@ -120871,18 +120869,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "厨房",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -120893,7 +120891,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -123620,7 +123618,7 @@
       "__id__": 3081
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3086
@@ -123937,18 +123935,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "矿场",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -123959,7 +123957,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -126686,7 +126684,7 @@
       "__id__": 3157
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3162
@@ -127003,18 +127001,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "渔场",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -127025,7 +127023,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -129752,7 +129750,7 @@
       "__id__": 3233
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3238
@@ -130069,18 +130067,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "隧道网络",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -130091,7 +130089,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -133151,7 +133149,7 @@
       "__id__": 3318
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3323
@@ -133468,18 +133466,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "种植树木",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -133490,7 +133488,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -136217,7 +136215,7 @@
       "__id__": 3394
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3399
@@ -136534,18 +136532,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "森林之女",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -136556,7 +136554,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -139283,7 +139281,7 @@
       "__id__": 3470
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3475
@@ -139600,18 +139598,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "硕果累累",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -139622,7 +139620,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -142349,7 +142347,7 @@
       "__id__": 3546
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3551
@@ -142666,18 +142664,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "丰饶之土",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -142688,7 +142686,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -145415,7 +145413,7 @@
       "__id__": 3622
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3627
@@ -145732,18 +145730,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "美味苹果",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -145754,7 +145752,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -148481,7 +148479,7 @@
       "__id__": 3698
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3703
@@ -148798,18 +148796,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "恩赐",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -148820,7 +148818,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -151547,7 +151545,7 @@
       "__id__": 3774
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3779
@@ -151864,18 +151862,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "火辣热情",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -151886,7 +151884,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -154613,7 +154611,7 @@
       "__id__": 3850
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3855
@@ -154930,18 +154928,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "极寒刺骨",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -154952,7 +154950,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -157679,7 +157677,7 @@
       "__id__": 3926
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3931
@@ -157996,18 +157994,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "多产结实",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -158018,7 +158016,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -160745,7 +160743,7 @@
       "__id__": 4002
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4007
@@ -161062,18 +161060,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "重踏",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -161084,7 +161082,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -165106,7 +165104,7 @@
       "__id__": 4110
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4115
@@ -165423,18 +165421,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "更多蚜虫",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -165445,7 +165443,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -168172,7 +168170,7 @@
       "__id__": 4186
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4191
@@ -168489,18 +168487,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化农夫",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -168511,7 +168509,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -171238,7 +171236,7 @@
       "__id__": 4262
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4267
@@ -171555,18 +171553,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "火焰蚜虫",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -171577,7 +171575,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -174304,7 +174302,7 @@
       "__id__": 4338
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4343
@@ -174621,18 +174619,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "肉食蚜虫",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -174643,7 +174641,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -177370,7 +177368,7 @@
       "__id__": 4414
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4419
@@ -177687,18 +177685,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "双重糖霜",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -177709,7 +177707,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -180436,7 +180434,7 @@
       "__id__": 4490
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4495
@@ -180753,18 +180751,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "闪闪发光",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -180775,7 +180773,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -184800,7 +184798,7 @@
       "__id__": 4598
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4603
@@ -185117,18 +185115,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化真菌学家",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -185139,7 +185137,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -187866,7 +187864,7 @@
       "__id__": 4674
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4679
@@ -188183,18 +188181,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "凝神菇",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -188205,7 +188203,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -190932,7 +190930,7 @@
       "__id__": 4750
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4755
@@ -191249,18 +191247,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "极乐菇",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -191271,7 +191269,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -193998,7 +193996,7 @@
       "__id__": 4826
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4831
@@ -194315,18 +194313,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "繁茂菇",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -194337,7 +194335,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -197064,7 +197062,7 @@
       "__id__": 4902
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4907
@@ -197381,18 +197379,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "澄澈菇",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -197403,7 +197401,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -200130,7 +200128,7 @@
       "__id__": 4978
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 4983
@@ -200447,18 +200445,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "鸡油菌",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -200469,7 +200467,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -203196,7 +203194,7 @@
       "__id__": 5054
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5059
@@ -203513,18 +203511,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化实验员",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -203535,7 +203533,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -207994,7 +207992,7 @@
       "__id__": 5172
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5177
@@ -208311,18 +208309,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化投掷者",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -208333,7 +208331,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -211060,7 +211058,7 @@
       "__id__": 5248
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5253
@@ -211377,18 +211375,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "强效小睡",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -211399,7 +211397,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -214126,7 +214124,7 @@
       "__id__": 5324
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5329
@@ -214443,18 +214441,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "持久耐力",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -214465,7 +214463,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -217192,7 +217190,7 @@
       "__id__": 5400
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5405
@@ -217509,18 +217507,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "疏通管道",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -217531,7 +217529,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -220258,7 +220256,7 @@
       "__id__": 5476
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5481
@@ -220575,18 +220573,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "点石成金",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -220597,7 +220595,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -223324,7 +223322,7 @@
       "__id__": 5552
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5557
@@ -223641,18 +223639,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "弹性脑壳",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -223663,7 +223661,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -227984,7 +227982,7 @@
       "__id__": 5667
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5672
@@ -228301,18 +228299,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化陷阱猎手",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -228323,7 +228321,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -231050,7 +231048,7 @@
       "__id__": 5743
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5748
@@ -231367,18 +231365,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化王牌猎人",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -231389,7 +231387,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -234116,7 +234114,7 @@
       "__id__": 5819
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5824
@@ -234433,18 +234431,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "空气动力学",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -234455,7 +234453,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -237182,7 +237180,7 @@
       "__id__": 5895
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5900
@@ -237499,18 +237497,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "嫩肉锤",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -237521,7 +237519,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -240248,7 +240246,7 @@
       "__id__": 5971
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 5976
@@ -240565,18 +240563,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "盐渍刃口",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -240587,7 +240585,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -243314,7 +243312,7 @@
       "__id__": 6047
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6052
@@ -243631,18 +243629,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "利落切割",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -243653,7 +243651,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -246692,7 +246690,7 @@
       "__id__": 6132
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6137
@@ -247009,18 +247007,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化搬运工",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -247031,7 +247029,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -249758,7 +249756,7 @@
       "__id__": 6208
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6213
@@ -250075,18 +250073,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "干劲满满",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -250097,7 +250095,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -252824,7 +252822,7 @@
       "__id__": 6284
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6289
@@ -253141,18 +253139,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "强韧力量",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -253163,7 +253161,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -255890,7 +255888,7 @@
       "__id__": 6360
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6365
@@ -256207,18 +256205,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "大力神",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -256229,7 +256227,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -259274,7 +259272,7 @@
       "__id__": 6445
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6450
@@ -259591,18 +259589,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "蜜恋糖苹果",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -259613,7 +259611,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -262340,7 +262338,7 @@
       "__id__": 6521
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6526
@@ -262657,18 +262655,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "炙烤肉串",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -262679,7 +262677,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -265406,7 +265404,7 @@
       "__id__": 6597
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6602
@@ -265723,18 +265721,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "烈焰冰淇淋",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -265745,7 +265743,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -268472,7 +268470,7 @@
       "__id__": 6673
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6678
@@ -268789,18 +268787,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "绯红之萃",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -268811,7 +268809,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -271538,7 +271536,7 @@
       "__id__": 6749
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6754
@@ -271855,18 +271853,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化副厨",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -271877,7 +271875,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -274604,7 +274602,7 @@
       "__id__": 6825
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6830
@@ -274921,18 +274919,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "蓝带厨艺",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -274943,7 +274941,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -278003,7 +278001,7 @@
       "__id__": 6910
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6915
@@ -278320,18 +278318,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "黏土",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -278342,7 +278340,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -281069,7 +281067,7 @@
       "__id__": 6986
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 6991
@@ -281386,18 +281384,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "琥珀",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -281408,7 +281406,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -284135,7 +284133,7 @@
       "__id__": 7062
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7067
@@ -284452,18 +284450,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "煤炭",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -284474,7 +284472,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -287201,7 +287199,7 @@
       "__id__": 7138
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7143
@@ -287518,18 +287516,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "黄金",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -287540,7 +287538,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -290267,7 +290265,7 @@
       "__id__": 7214
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7219
@@ -290584,18 +290582,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "冰柱",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -290606,7 +290604,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -293333,7 +293331,7 @@
       "__id__": 7290
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7295
@@ -293650,18 +293648,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "铁矿",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -293672,7 +293670,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -296399,7 +296397,7 @@
       "__id__": 7366
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7371
@@ -296716,18 +296714,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "铅矿",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -296738,7 +296736,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -299465,7 +299463,7 @@
       "__id__": 7442
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7447
@@ -299782,18 +299780,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "洞窟菇",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -299804,7 +299802,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -302531,7 +302529,7 @@
       "__id__": 7518
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7523
@@ -302848,18 +302846,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "珍珠母",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -302870,7 +302868,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -305597,7 +305595,7 @@
       "__id__": 7594
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7599
@@ -305914,18 +305912,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "盐矿",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -305936,7 +305934,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -308663,7 +308661,7 @@
       "__id__": 7670
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7675
@@ -308980,18 +308978,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "烈日加冕",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -309002,7 +309000,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -312062,7 +312060,7 @@
       "__id__": 7755
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7760
@@ -312379,18 +312377,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "建造渔船",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -312401,7 +312399,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -315128,7 +315126,7 @@
       "__id__": 7831
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7836
@@ -315445,18 +315443,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "更多渔船",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -315467,7 +315465,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -318194,7 +318192,7 @@
       "__id__": 7907
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7912
@@ -318511,18 +318509,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "幽灵船",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -318533,7 +318531,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -321260,7 +321258,7 @@
       "__id__": 7983
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 7988
@@ -321577,18 +321575,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "渔网",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -321599,7 +321597,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -324326,7 +324324,7 @@
       "__id__": 8059
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 8064
@@ -324643,18 +324641,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "深潜",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -324665,7 +324663,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -327392,7 +327390,7 @@
       "__id__": 8135
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 8140
@@ -327709,18 +327707,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "珍珠养殖",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -327731,7 +327729,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -330458,7 +330456,7 @@
       "__id__": 8211
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 8216
@@ -330775,18 +330773,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "饥肠辘辘",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -330797,7 +330795,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -333524,7 +333522,7 @@
       "__id__": 8287
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 8292
@@ -333841,18 +333839,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "甜蜜诱惑",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -333863,7 +333861,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -336590,7 +336588,7 @@
       "__id__": 8363
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 8368
@@ -336907,18 +336905,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "珍珠核",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -336929,7 +336927,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -339656,7 +339654,7 @@
       "__id__": 8439
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 8444
@@ -339973,18 +339971,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "逆流而上",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -339995,7 +339993,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -342722,7 +342720,7 @@
       "__id__": 8515
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 8520
@@ -343039,18 +343037,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "羊群效应",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -343061,7 +343059,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,
@@ -346091,7 +346089,7 @@
       "__id__": 8600
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 8605
@@ -346408,18 +346406,18 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 79,
-      "g": 49,
-      "b": 29,
+      "r": 43,
+      "g": 36,
+      "b": 28,
       "a": 255
     },
     "_string": "孵化掘地工",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 29,
-    "_fontSize": 29,
+    "_fontSize": 28,
     "_fontFamily": "Arial",
-    "_lineHeight": 34,
+    "_lineHeight": 32,
     "_overflow": 2,
     "_enableWrapText": false,
     "_font": null,
@@ -346430,7 +346428,7 @@
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
-    "_enableOutline": true,
+    "_enableOutline": false,
     "_outlineColor": {
       "__type__": "cc.Color",
       "r": 79,

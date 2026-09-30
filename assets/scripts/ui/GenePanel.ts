@@ -43,10 +43,16 @@ export class GenePanel extends Component {
   root.getComponent(UITransform)||root.addComponent(UITransform);
   const opacity=root.getComponent(UIOpacity)||root.addComponent(UIOpacity);opacity.opacity=0;tween(opacity).to(.1,{opacity:255}).start();root.addComponent(Graphics);
   this.idleFrame=root.getChildByName('Gene_'+GENES[0].id)!.getComponent(Sprite)!.spriteFrame;
-  for(const tier of TIERS){const label=this.label('Tier'+tier,String(tier),34,70,54);label.outlineColor=new Color(33,21,17);label.outlineWidth=3;}
+  for(const tier of TIERS){const label=this.label('Tier'+tier,String(tier),30,70,54);label.enableOutline=false;}
+  for(const [name,text,x,width] of [['RequiredTitle','所需基因',-263,130],['EvolutionsTitle','进化',-115,150],['SpecialisationsTitle','专精',155,250]] as [string,string,number,number][]){
+   const heading=this.label(name,text,26,width,46);heading.node.active=true;heading.node.setPosition(x,320);heading.enableOutline=false;
+  }
   const explanation=this.label('Explanation','',22,492,80);
   explanation.cacheMode=Label.CacheMode.NONE;explanation.enableWrapText=true;explanation.overflow=Label.Overflow.CLAMP;
   this.createStatusOverlay();
+  this.styleAction('ApplyGenes','应用基因',false);
+  this.styleAction('NewColony','新建种群',true);
+  this.styleAction('Close','关闭',false);
   this.label('Tooltip/Title','',27,540);
   const desc=root.getChildByPath('Tooltip/Description')!;const oldLabel=desc.getComponent(Label);if(oldLabel)desc.removeComponent(oldLabel);
   const rich=desc.addComponent(RichText);useDefaultSystemFont(rich);rich.fontSize=23;rich.lineHeight=30;rich.maxWidth=540;rich.fontColor=new Color(50,29,20);
@@ -55,9 +61,7 @@ export class GenePanel extends Component {
   root.getChildByName('Close')!.on(Button.EventType.CLICK,this.close,this);root.getChildByName('ApplyGenes')!.on(Button.EventType.CLICK,this.apply,this);root.getChildByName('NewColony')!.on(Button.EventType.CLICK,this.newColony,this);
   for(const g of GENES)this.bind(root.getChildByName('Gene_'+g.id)!,g.id,GENE_TEXT[g.id]);
   for(const [id,text] of Object.entries(EVOLUTION_TEXT))this.bind(root.getChildByName('Evolution_'+id)!,id,text,false);
-  // These headings are baked into the 721 x 938 frame. Align beside their text,
-  // without applying the top-right offset used for selectable gene cells.
-  for(const [id,x] of [['DNA',-151],['EVO',-27],['SPEC',209]] as [string,number][]){const header=new Node('HeaderTip_'+id);header.layer=root.layer;root.addChild(header);header.addComponent(UITransform).setContentSize(28,30);header.setPosition(x,295);this.bind(header,'header_'+id,[originalText('PRESTIGE_'+id+'_TEXT',{},false),originalText('PRESTIGE_'+id+'_DESCRIPTION')],false);header.getChildByName('TipIcon')!.setPosition(0,0);}
+  for(const [id,x] of [['DNA',-189],['EVO',-27],['SPEC',289]] as [string,number][]){const header=new Node('HeaderTip_'+id);header.layer=root.layer;root.addChild(header);header.addComponent(UITransform).setContentSize(28,30);header.setPosition(x,320);this.bind(header,'header_'+id,[originalText('PRESTIGE_'+id+'_TEXT',{},false),originalText('PRESTIGE_'+id+'_DESCRIPTION')],false);header.getChildByName('TipIcon')!.setPosition(0,0);}
   resources.load('upgrade-skin/exclamation/spriteFrame',SpriteFrame,(error,frame)=>{if(error||!frame||!isValid(root,true))return;this.tipFrame=frame;for(const node of root.children){const icon=node.getChildByPath('TipIcon/Art')?.getComponent(Sprite);if(icon)icon.spriteFrame=frame;}});
   this.layout();this.render();this.panelNode.emit('tab-selected',GENE_TAB_INDEX);
  }
@@ -66,6 +70,19 @@ export class GenePanel extends Component {
   const l=n.getComponent(Label)||n.addComponent(Label);useDefaultSystemFont(l);l.string=text;l.fontSize=size;l.lineHeight=size+5;l.isBold=true;l.color=new Color(92,48,28);l.horizontalAlign=Label.HorizontalAlign.CENTER;l.verticalAlign=Label.VerticalAlign.CENTER;l.overflow=Label.Overflow.SHRINK;l.enableOutline=true;l.outlineColor=new Color(245,202,137);l.outlineWidth=1;
   // Adding a Label with its default NONE overflow can replace the authored size.
   t.setContentSize(width,height);return l;
+ }
+ private styleAction(name:string,text:string,primary:boolean):void {
+  const n=this.content!.getChildByName(name)!;
+  const sprite=n.getComponent(Sprite);if(sprite)sprite.enabled=false;
+  const width=name==='Close'?100:300,height=name==='Close'?58:68;
+  n.getComponent(UITransform)!.setContentSize(width,height);
+  let surface=n.getChildByName('ActionSurface');if(!surface){surface=new Node('ActionSurface');surface.layer=n.layer;n.addChild(surface);surface.setSiblingIndex(0);surface.addComponent(UITransform);}
+  surface.getComponent(UITransform)!.setContentSize(width,height);
+  const g=surface.getComponent(Graphics)||surface.addComponent(Graphics);g.clear();g.lineWidth=2;
+  g.fillColor=primary?new Color(66,91,57):new Color(250,244,231);g.strokeColor=new Color(100,83,61);
+  g.roundRect(-width/2,-height/2,width,height,9);g.fill();g.stroke();
+  let caption=n.getChildByName('Caption');if(!caption){caption=new Node('Caption');caption.layer=n.layer;n.addChild(caption);}
+  const l=this.label(name+'/Caption',text,28,width-16,height-8);l.node.active=true;l.node.setPosition(0,0);l.enableOutline=false;l.color=primary?Color.WHITE:new Color(43,36,28);
  }
  private createStatusOverlay():void {
   const root=this.content!,explanation=root.getChildByName('Explanation')!;
@@ -113,18 +130,21 @@ export class GenePanel extends Component {
  };
  public render():void {
   if(!this.content)return;const model=this.session.genes,total=this.session.progression.dnaLevel;
-  for(const tier of TIERS){const unlocked=tier<=model.available,tl=this.content.getChildByName('Tier'+tier)!.getComponent(Label)!;tl.color=unlocked?new Color(52,205,74):Color.WHITE;}
+  for(const tier of TIERS){const unlocked=tier<=model.available,tl=this.content.getChildByName('Tier'+tier)!.getComponent(Label)!;tl.color=unlocked?new Color(39,100,42):new Color(99,89,76);}
   for(const [id,tier] of Object.entries(EVOLUTION_TIERS)){const n=this.content.getChildByName('Evolution_'+id)!,unlocked=tier<=model.available;this.paint(n,unlocked,unlocked);n.getChildByName('Checkmark')!.active=unlocked;}
   for(const gene of GENES){const n=this.content.getChildByName('Gene_'+gene.id)!,applied=model.selected.includes(gene.id),pending=this.selected.has(gene.id),available=gene.tier<=model.available;this.paint(n,applied||pending,available&&!applied);n.getChildByName('Checkmark')!.active=applied||pending;n.getComponent(Button)!.interactable=available&&!applied;}
   const left=model.remaining-this.selected.size,explain=this.content.getChildByName('Explanation')!.getComponent(Label)!;
   const editing=this.selected.size>0||model.remaining>0;
-  this.content.getChildByName('ExplanationCover')!.active=editing;explain.node.active=editing;
-  this.content.getChildByName('TotalGenePoints')!.active=!editing;
+  this.content.getChildByName('ExplanationCover')!.active=false;explain.node.active=true;
+  this.content.getChildByName('TotalGenePoints')!.active=false;
   this.content.getChildByName('TotalGenePoints')!.getComponent(Label)!.string=String(total);
-  if(editing)explain.string=originalText('PRESTIGE_TEXT_LEFT',{value:left},false)+'\n'+originalText('PRESTIGE_TEXT_APPLY',{},false);
+  explain.enableOutline=false;explain.color=new Color(43,36,28);
+  explain.string=editing?originalText('PRESTIGE_TEXT_LEFT',{value:left},false)+'\n'+originalText('PRESTIGE_TEXT_APPLY',{},false):`当前基因点：${total}\n选择基因后，点击「应用基因」`;
   const apply=this.content.getChildByName('ApplyGenes')!;apply.getComponent(Button)!.interactable=this.selected.size>0;apply.getComponent(Sprite)!.color=Color.WHITE;
   const confirming=Date.now()<this.confirmUntil,colony=this.content.getChildByName('NewColony')!;
-  colony.getChildByName('ConfirmCover')!.active=confirming;colony.getChildByName('Caption')!.active=confirming;
+  colony.getChildByName('ConfirmCover')!.active=false;
+  const caption=colony.getChildByName('Caption')!;caption.active=true;caption.getComponent(Label)!.string=confirming?'确认新建种群':'新建种群';
+  const applyCaption=apply.getChildByName('Caption')!.getComponent(Label)!;applyCaption.color=this.selected.size?new Color(43,36,28):new Color(121,114,102);
  }
  private paint(n:Node,selected:boolean,available:boolean):void {const sprite=n.getComponent(Sprite)!;sprite.spriteFrame=selected?this.selectedFrame||this.idleFrame:this.idleFrame;sprite.color=Color.WHITE;const icon=n.getChildByName('Icon')!,opacity=icon.getComponent(UIOpacity)||icon.addComponent(UIOpacity);opacity.opacity=selected||available?255:85;}
  private layout=():void=>{if(!this.content)return;const canvas=this.panelNode.parent!.parent!.getComponent(UITransform)!;const scale=Math.min(1,(canvas.width-8)/721,(canvas.height-8)/938);this.content.setScale(scale,scale,1);this.content.getComponent(UITransform)!.setContentSize(canvas.width/scale,canvas.height/scale);const g=this.content.getComponent(Graphics)!;g.clear();g.fillColor=new Color(0,0,0,135);g.rect(-canvas.width/scale/2,-canvas.height/scale/2,canvas.width/scale,canvas.height/scale);g.fill();};

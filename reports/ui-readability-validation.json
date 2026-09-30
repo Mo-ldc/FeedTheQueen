@@ -1,0 +1,20 @@
+{
+  "prefabOwnerCycle": {
+    "file": "assets/gameplay/scenes/Game.scene",
+    "instance": "queenSceneInstance",
+    "fix": "Remove self-referencing enclosing prefab root; retain prefab asset and property overrides",
+    "check": "node tools/check-prefab-instance-roots.cjs passed"
+  },
+  "typescript": "tsc --noEmit passed",
+  "assetReferences": "40 scenes/prefabs checked; no missing UUIDs",
+  "portraitPreview": "390x844",
+  "verified": [
+    "upgrade titles use plain dark text without decorative title pill",
+    "gene panel headings and persistent action captions",
+    "gene close button works",
+    "bottom panel arrow down when open, up when collapsed",
+    "income panel arrow left when open, right when collapsed",
+    "action background uses child renderer; no new duplicate-renderer warnings after rebuild"
+  ],
+  "advertising": "unchanged"
+}

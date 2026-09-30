@@ -301,7 +301,8 @@ export class GameHUD extends Component {
             :Math.min(safeRight-halfWidth-8,Math.max(safeLeft+halfWidth+8,openX));
         const y=this.panelTop+this.toggleOffset.y;
         button.active=true;
-        button.setScale(this.toggleScale.x*(this.statusCollapsed?-1:1),this.toggleScale.y,this.toggleScale.z);
+        button.angle = 0;
+        button.setScale(Math.abs(this.toggleScale.x)*(this.statusCollapsed?-1:1),Math.abs(this.toggleScale.y),this.toggleScale.z);
         const position=new Vec3(x,y,button.position.z);
         Tween.stopAllByTarget(button);
         if(animate)tween(button).to(UI_RULES.panelSlideSeconds,{position},{easing:'quadOut'}).start();

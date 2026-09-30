@@ -7,17 +7,5 @@
   "mediaBefore": 414,
   "mediaAfter": 255,
   "bytesBefore": 24948566,
-  "bytesAfter": 34957192,
-  "typeScript": "tsc --noEmit passed",
-  "runtimePreview": {
-    "build": "web-mobile",
-    "viewport": "390x844",
-    "checked": [
-      "main menu",
-      "game scene",
-      "original queen and upgrade graphics",
-      "advertisement surfaces preserved"
-    ],
-    "browserErrors": 0
-  }
+  "bytesAfter": 34957192
 }

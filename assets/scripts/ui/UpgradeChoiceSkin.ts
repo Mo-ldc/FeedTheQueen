@@ -1,4 +1,4 @@
-import { Button, Color, Graphics, Label, Node, UITransform } from 'cc';
+import { Button, Color, Graphics, Label, Node, Sprite, UITransform } from 'cc';
 import { useDefaultSystemFont } from './DefaultSystemFont';
 const choicePaint = new WeakMap<Node, string>();
 
@@ -14,7 +14,16 @@ export function createUpgradeChoice(parent: Node, name: string, text: string, ac
     node.layer = parent.layer;
     if (node.parent !== parent) parent.addChild(node);
     (node.getComponent(UITransform) || node.addComponent(UITransform)).setContentSize(194, 64);
-    if (!node.getComponent(Graphics)) node.addComponent(Graphics);
+    const oldBackground = node.getComponent(Sprite);
+    if (oldBackground) oldBackground.enabled = false;
+    const oldGraphic = node.getComponent(Graphics);
+    if (oldGraphic) oldGraphic.enabled = false;
+    let surface = node.getChildByName('ChoiceSurface');
+    if (!surface) {
+        surface = new Node('ChoiceSurface'); surface.layer = node.layer;
+        node.addChild(surface); surface.setSiblingIndex(0);
+        surface.addComponent(UITransform); surface.addComponent(Graphics);
+    }
     const button = node.getComponent(Button) || node.addComponent(Button);
     button.transition = Button.Transition.NONE;
     const captions = node.children.filter(child => child.name === 'Label' || child.name === 'Caption');
@@ -38,29 +47,32 @@ export function createUpgradeChoice(parent: Node, name: string, text: string, ac
 
 /** Shared rounded treatment for upgrade-panel option controls. */
 export function styleUpgradeChoice(node: Node, selected: boolean, enabled = true, radius = 12): void {
-    const graphics = node.getComponent(Graphics);
+    const surface = node.getChildByName('ChoiceSurface');
+    const graphics = surface?.getComponent(Graphics);
     const transform = node.getComponent(UITransform);
     if (!graphics || !transform) return;
 
     const width = transform.width;
     const height = transform.height;
+    surface!.getComponent(UITransform)!.setContentSize(width, height);
     const state = `${width}|${height}|${selected}|${enabled}|${radius}`;
     if (choicePaint.get(node) === state) return;
     choicePaint.set(node, state);
     graphics.clear();
-    graphics.fillColor = selected
-        ? new Color(255, 222, 173)
-        : enabled ? new Color(164, 130, 94) : new Color(104, 86, 67);
-    graphics.roundRect(-width / 2, -height / 2, width, height, radius);
+    graphics.fillColor = selected ? new Color(66, 91, 57) : new Color(250, 244, 231);
+    graphics.strokeColor = selected ? new Color(46, 67, 39) : new Color(146, 127, 102);
+    graphics.lineWidth = selected ? 3 : 1;
+    graphics.roundRect(-width / 2 + 3, -height / 2 + 2, width - 6, height - 4, 8);
     graphics.fill();
+    graphics.stroke();
 
     const labelNode = node.getChildByName('Label') || node.getChildByName('Caption');
     const label = labelNode?.getComponent(Label);
     if (label) {
         label.fontSize = 28;
         label.lineHeight = 34;
-        label.isBold = false;
-        label.color = selected ? new Color(79, 49, 29) : new Color(255, 241, 217);
+        label.isBold = selected;
+        label.color = !enabled ? new Color(121, 114, 102) : selected ? Color.WHITE : new Color(43, 36, 28);
         label.enableOutline = false;
     }
 }

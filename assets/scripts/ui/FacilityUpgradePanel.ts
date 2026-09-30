@@ -532,7 +532,8 @@ export class FacilityUpgradePanel extends Component {
         const position=new Vec3(x,y,panelPosition.z+this.collapseButtonOffset.z*scale);
         const direction=this.collapsed?-1:1;
         button.active=true;
-        button.setScale(this.collapseButtonScale.x*scale,this.collapseButtonScale.y*scale*direction,this.collapseButtonScale.z);
+        button.angle = 0;
+        button.setScale(Math.abs(this.collapseButtonScale.x)*scale,Math.abs(this.collapseButtonScale.y)*scale*direction,this.collapseButtonScale.z);
         Tween.stopAllByTarget(button);
         if(animate)tween(button).to(UI_RULES.panelSlideSeconds,{position},{easing:'quadOut'}).start();
         else button.setPosition(position);
