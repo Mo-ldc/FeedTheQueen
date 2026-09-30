@@ -1,0 +1,1172 @@
+{
+  "before": 34479882,
+  "after": 15028772,
+  "filesChanged": 233,
+  "files": [
+    {
+      "path": "assets/gameplay/effects/ocean-noise.png",
+      "before": 264753,
+      "after": 135761
+    },
+    {
+      "path": "assets/gameplay/original/audio/Boat.wav",
+      "before": 940844,
+      "after": 235278
+    },
+    {
+      "path": "assets/gameplay/original/audio/Brain.wav",
+      "before": 470444,
+      "after": 117678
+    },
+    {
+      "path": "assets/gameplay/original/audio/bush_discover.wav",
+      "before": 185452,
+      "after": 46430
+    },
+    {
+      "path": "assets/gameplay/original/audio/button_click.wav",
+      "before": 18268,
+      "after": 4634
+    },
+    {
+      "path": "assets/gameplay/original/audio/Campana3.wav",
+      "before": 756044,
+      "after": 189078
+    },
+    {
+      "path": "assets/gameplay/original/audio/chomp_1.wav",
+      "before": 39268,
+      "after": 9884
+    },
+    {
+      "path": "assets/gameplay/original/audio/egg_hatch_1.wav",
+      "before": 63964,
+      "after": 16058
+    },
+    {
+      "path": "assets/gameplay/original/audio/egg_hatch_2.wav",
+      "before": 123644,
+      "after": 30978
+    },
+    {
+      "path": "assets/gameplay/original/audio/FDQ_SD1.wav",
+      "before": 11636,
+      "after": 2976
+    },
+    {
+      "path": "assets/gameplay/original/audio/FDQ_SD5.wav",
+      "before": 57696,
+      "after": 14492
+    },
+    {
+      "path": "assets/gameplay/original/audio/FDQ_SD7.wav",
+      "before": 22396,
+      "after": 5666
+    },
+    {
+      "path": "assets/gameplay/original/audio/foliage_small.wav",
+      "before": 50928,
+      "after": 25520
+    },
+    {
+      "path": "assets/gameplay/original/audio/InflateArpeggio.wav",
+      "before": 294044,
+      "after": 73578
+    },
+    {
+      "path": "assets/gameplay/original/audio/larve.mp3",
+      "before": 34363,
+      "after": 12269
+    },
+    {
+      "path": "assets/gameplay/original/audio/Pearl2.wav",
+      "before": 127256,
+      "after": 31882
+    },
+    {
+      "path": "assets/gameplay/original/audio/QueenLevelsUp2.wav",
+      "before": 352844,
+      "after": 88278
+    },
+    {
+      "path": "assets/gameplay/original/audio/squish.wav",
+      "before": 66412,
+      "after": 16670
+    },
+    {
+      "path": "assets/gameplay/original/audio/trap_set.wav",
+      "before": 54376,
+      "after": 13662
+    },
+    {
+      "path": "assets/gameplay/original/audio/trap_trigger.wav",
+      "before": 59314,
+      "after": 29714
+    },
+    {
+      "path": "assets/gameplay/original/BoatLine.png",
+      "before": 1183,
+      "after": 1059
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Apartment.png",
+      "before": 69075,
+      "after": 67029
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Boat.png",
+      "before": 37910,
+      "after": 36611
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Bulb.png",
+      "before": 80868,
+      "after": 78556
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Burrow.png",
+      "before": 61555,
+      "after": 59698
+    },
+    {
+      "path": "assets/gameplay/original/buildings/BushBig.png",
+      "before": 14285,
+      "after": 13812
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Carpet.png",
+      "before": 24101,
+      "after": 23125
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Cauldron.png",
+      "before": 36404,
+      "after": 35182
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Chair.png",
+      "before": 19171,
+      "after": 18246
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Den.png",
+      "before": 38796,
+      "after": 37400
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Dock.png",
+      "before": 78475,
+      "after": 76585
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Evolution.png",
+      "before": 38068,
+      "after": 37008
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Factory.png",
+      "before": 62286,
+      "after": 60489
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Farm.png",
+      "before": 69727,
+      "after": 67789
+    },
+    {
+      "path": "assets/gameplay/original/buildings/farm_rocks.png",
+      "before": 2134,
+      "after": 2083
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Lab.png",
+      "before": 46115,
+      "after": 44806
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Maw.png",
+      "before": 42543,
+      "after": 41251
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Mine.png",
+      "before": 57473,
+      "after": 55822
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Stall.png",
+      "before": 36802,
+      "after": 35839
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Tree.png",
+      "before": 34106,
+      "after": 32744
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Tree_Shadow.png",
+      "before": 10899,
+      "after": 9917
+    },
+    {
+      "path": "assets/gameplay/original/circle.png",
+      "before": 4100,
+      "after": 3661
+    },
+    {
+      "path": "assets/gameplay/original/dot2.png",
+      "before": 183,
+      "after": 170
+    },
+    {
+      "path": "assets/gameplay/original/Environment/Waves.png",
+      "before": 557676,
+      "after": 531614
+    },
+    {
+      "path": "assets/gameplay/original/foods/amanita.png",
+      "before": 2038,
+      "after": 1957
+    },
+    {
+      "path": "assets/gameplay/original/foods/blueberry.png",
+      "before": 2068,
+      "after": 2017
+    },
+    {
+      "path": "assets/gameplay/original/foods/bolet.png",
+      "before": 2461,
+      "after": 2356
+    },
+    {
+      "path": "assets/gameplay/original/foods/bug_meat.png",
+      "before": 3553,
+      "after": 3467
+    },
+    {
+      "path": "assets/gameplay/original/foods/candy_apple.png",
+      "before": 3002,
+      "after": 2883
+    },
+    {
+      "path": "assets/gameplay/original/foods/chanterelle.png",
+      "before": 2345,
+      "after": 2246
+    },
+    {
+      "path": "assets/gameplay/original/foods/citrony.png",
+      "before": 3179,
+      "after": 3091
+    },
+    {
+      "path": "assets/gameplay/original/foods/clearshroom.png",
+      "before": 2889,
+      "after": 2783
+    },
+    {
+      "path": "assets/gameplay/original/foods/fish.png",
+      "before": 3100,
+      "after": 3013
+    },
+    {
+      "path": "assets/gameplay/original/foods/frost.png",
+      "before": 8054,
+      "after": 7795
+    },
+    {
+      "path": "assets/gameplay/original/foods/golden_apple.png",
+      "before": 2595,
+      "after": 2479
+    },
+    {
+      "path": "assets/gameplay/original/foods/golden_candy_apple.png",
+      "before": 3156,
+      "after": 3038
+    },
+    {
+      "path": "assets/gameplay/original/foods/green_apple.png",
+      "before": 6126,
+      "after": 5933
+    },
+    {
+      "path": "assets/gameplay/original/foods/honeydew.png",
+      "before": 2028,
+      "after": 1972
+    },
+    {
+      "path": "assets/gameplay/original/foods/ice_cream.png",
+      "before": 2688,
+      "after": 2572
+    },
+    {
+      "path": "assets/gameplay/original/foods/iceberry.png",
+      "before": 2551,
+      "after": 2481
+    },
+    {
+      "path": "assets/gameplay/original/foods/pearl.png",
+      "before": 2203,
+      "after": 2140
+    },
+    {
+      "path": "assets/gameplay/original/foods/pepper.png",
+      "before": 2650,
+      "after": 2553
+    },
+    {
+      "path": "assets/gameplay/original/foods/red_apple.png",
+      "before": 2711,
+      "after": 2597
+    },
+    {
+      "path": "assets/gameplay/original/foods/skewer.png",
+      "before": 3069,
+      "after": 2971
+    },
+    {
+      "path": "assets/gameplay/original/foods/sparkles.png",
+      "before": 4193,
+      "after": 3997
+    },
+    {
+      "path": "assets/gameplay/original/foods/spicy_sauce.png",
+      "before": 1649,
+      "after": 1599
+    },
+    {
+      "path": "assets/gameplay/original/foods/star.png",
+      "before": 5217,
+      "after": 4985
+    },
+    {
+      "path": "assets/gameplay/original/foods/starshroom.png",
+      "before": 3322,
+      "after": 3233
+    },
+    {
+      "path": "assets/gameplay/original/foods/tako.png",
+      "before": 3352,
+      "after": 3259
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/arrow1.png",
+      "before": 5110,
+      "after": 4753
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/BigButton1.png",
+      "before": 11109,
+      "after": 10811
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Box.png",
+      "before": 2450,
+      "after": 2314
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Button1.png",
+      "before": 6089,
+      "after": 5964
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/checkmark.png",
+      "before": 2351,
+      "after": 2217
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/DNAChart.png",
+      "before": 120517,
+      "after": 119141
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/BigFish.png",
+      "before": 8174,
+      "after": 7825
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/HoleUnlock.png",
+      "before": 11890,
+      "after": 11465
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/PickAxe.png",
+      "before": 7454,
+      "after": 7053
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/Queen.png",
+      "before": 9433,
+      "after": 9037
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/Spoon.png",
+      "before": 8574,
+      "after": 8089
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/Worms.png",
+      "before": 9685,
+      "after": 9295
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/X.png",
+      "before": 7551,
+      "after": 7175
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/head_sluggy.png",
+      "before": 5994,
+      "after": 5651
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/head_tall.png",
+      "before": 6263,
+      "after": 5880
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Angry.png",
+      "before": 9007,
+      "after": 8528
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Berries.png",
+      "before": 8414,
+      "after": 8004
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/BlueTrap.png",
+      "before": 11253,
+      "after": 10801
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Box.png",
+      "before": 9778,
+      "after": 9325
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Brain.png",
+      "before": 12360,
+      "after": 12039
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Chantrelle.png",
+      "before": 7570,
+      "after": 7230
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Chef.png",
+      "before": 9064,
+      "after": 8619
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/CrabHaul.png",
+      "before": 8743,
+      "after": 8286
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Dig.png",
+      "before": 9300,
+      "after": 8835
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/drop.png",
+      "before": 7947,
+      "after": 7554
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Energy.png",
+      "before": 8396,
+      "after": 7967
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Fire.png",
+      "before": 7955,
+      "after": 7612
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Fires.png",
+      "before": 11388,
+      "after": 10906
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Frost.png",
+      "before": 8343,
+      "after": 7907
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Gemini.png",
+      "before": 6694,
+      "after": 6286
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Hat.png",
+      "before": 10483,
+      "after": 10054
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/HatChef.png",
+      "before": 9846,
+      "after": 9386
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/High.png",
+      "before": 8579,
+      "after": 8150
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Hook.png",
+      "before": 9081,
+      "after": 8607
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Maid.png",
+      "before": 10679,
+      "after": 10307
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Meat.png",
+      "before": 8290,
+      "after": 7950
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Monocle.png",
+      "before": 9721,
+      "after": 9354
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Queen.png",
+      "before": 6409,
+      "after": 6032
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Scared.png",
+      "before": 9157,
+      "after": 8777
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Shiny.png",
+      "before": 9235,
+      "after": 8830
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Ship.png",
+      "before": 7958,
+      "after": 7555
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Shrooms.png",
+      "before": 11765,
+      "after": 11359
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Sour.png",
+      "before": 10388,
+      "after": 10014
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/SourHalf.png",
+      "before": 11285,
+      "after": 10867
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Spicy.png",
+      "before": 7546,
+      "after": 7178
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Star.png",
+      "before": 5551,
+      "after": 5279
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Thunder.png",
+      "before": 6856,
+      "after": 6457
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Trap.png",
+      "before": 7977,
+      "after": 7556
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Turning.png",
+      "before": 7525,
+      "after": 7160
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Worry.png",
+      "before": 9234,
+      "after": 8813
+    },
+    {
+      "path": "assets/gameplay/original/icons/brain.png",
+      "before": 9760,
+      "after": 9517
+    },
+    {
+      "path": "assets/gameplay/original/icons/dna.png",
+      "before": 6873,
+      "after": 6643
+    },
+    {
+      "path": "assets/gameplay/original/icons/fire.png",
+      "before": 5821,
+      "after": 5650
+    },
+    {
+      "path": "assets/gameplay/original/icons/frostfire.png",
+      "before": 6243,
+      "after": 6097
+    },
+    {
+      "path": "assets/gameplay/original/icons/larva.png",
+      "before": 5053,
+      "after": 4916
+    },
+    {
+      "path": "assets/gameplay/original/icons/sour.png",
+      "before": 6562,
+      "after": 6420
+    },
+    {
+      "path": "assets/gameplay/original/larva_1.png",
+      "before": 3241,
+      "after": 3163
+    },
+    {
+      "path": "assets/gameplay/original/larva_2.png",
+      "before": 3239,
+      "after": 3145
+    },
+    {
+      "path": "assets/gameplay/original/Logo.png",
+      "before": 239424,
+      "after": 221112
+    },
+    {
+      "path": "assets/gameplay/original/queen_lvl_0.png",
+      "before": 10468,
+      "after": 10004
+    },
+    {
+      "path": "assets/gameplay/original/trap_closed.png",
+      "before": 3274,
+      "after": 3103
+    },
+    {
+      "path": "assets/gameplay/original/trap_open.png",
+      "before": 7241,
+      "after": 6905
+    },
+    {
+      "path": "assets/gameplay/original/tunnel_bottom.png",
+      "before": 5874,
+      "after": 5545
+    },
+    {
+      "path": "assets/gameplay/original/tunnel_top.png",
+      "before": 6369,
+      "after": 6000
+    },
+    {
+      "path": "assets/gameplay/original/units/ant.png",
+      "before": 4593,
+      "after": 4430
+    },
+    {
+      "path": "assets/gameplay/original/units/ant2.png",
+      "before": 4921,
+      "after": 4762
+    },
+    {
+      "path": "assets/gameplay/original/units/ant3.png",
+      "before": 4755,
+      "after": 4596
+    },
+    {
+      "path": "assets/gameplay/original/units/ant_carrying.png",
+      "before": 5226,
+      "after": 5013
+    },
+    {
+      "path": "assets/gameplay/original/units/ant_carrying1.png",
+      "before": 5015,
+      "after": 4886
+    },
+    {
+      "path": "assets/gameplay/original/units/ant_carrying2.png",
+      "before": 5062,
+      "after": 4927
+    },
+    {
+      "path": "assets/gameplay/original/units/ant_carrying3.png",
+      "before": 4777,
+      "after": 4636
+    },
+    {
+      "path": "assets/gameplay/original/units/antidle.png",
+      "before": 4727,
+      "after": 4512
+    },
+    {
+      "path": "assets/gameplay/original/units/aphid_honey.png",
+      "before": 4105,
+      "after": 3959
+    },
+    {
+      "path": "assets/gameplay/original/units/aphid_meat.png",
+      "before": 4836,
+      "after": 4669
+    },
+    {
+      "path": "assets/gameplay/original/units/aphid_spicy.png",
+      "before": 4544,
+      "after": 4378
+    },
+    {
+      "path": "assets/gameplay/original/units/bigcrab.png",
+      "before": 6348,
+      "after": 5945
+    },
+    {
+      "path": "assets/gameplay/original/units/bigcrab_eepy.png",
+      "before": 6143,
+      "after": 5787
+    },
+    {
+      "path": "assets/gameplay/original/units/chef_happy.png",
+      "before": 9245,
+      "after": 8877
+    },
+    {
+      "path": "assets/gameplay/original/units/chef_idle.png",
+      "before": 7898,
+      "after": 7557
+    },
+    {
+      "path": "assets/gameplay/original/units/eleph.png",
+      "before": 19817,
+      "after": 19118
+    },
+    {
+      "path": "assets/gameplay/original/units/farmer.png",
+      "before": 12195,
+      "after": 11868
+    },
+    {
+      "path": "assets/gameplay/original/units/fly.png",
+      "before": 3319,
+      "after": 3113
+    },
+    {
+      "path": "assets/gameplay/original/units/fly2.png",
+      "before": 2288,
+      "after": 2163
+    },
+    {
+      "path": "assets/gameplay/original/units/fly3.png",
+      "before": 2531,
+      "after": 2385
+    },
+    {
+      "path": "assets/gameplay/original/units/forager_claws.png",
+      "before": 2549,
+      "after": 2397
+    },
+    {
+      "path": "assets/gameplay/original/units/forager_head.png",
+      "before": 3365,
+      "after": 3143
+    },
+    {
+      "path": "assets/gameplay/original/units/foragertail.png",
+      "before": 2882,
+      "after": 2714
+    },
+    {
+      "path": "assets/gameplay/original/units/LeftArm.png",
+      "before": 3242,
+      "after": 3059
+    },
+    {
+      "path": "assets/gameplay/original/units/milkmaid.png",
+      "before": 9538,
+      "after": 9257
+    },
+    {
+      "path": "assets/gameplay/original/units/rhino.png",
+      "before": 7526,
+      "after": 7320
+    },
+    {
+      "path": "assets/gameplay/original/units/RightArm.png",
+      "before": 3326,
+      "after": 3146
+    },
+    {
+      "path": "assets/gameplay/original/units/sluggy.png",
+      "before": 8371,
+      "after": 8174
+    },
+    {
+      "path": "assets/gameplay/original/units/sluggy_eepy.png",
+      "before": 6691,
+      "after": 6481
+    },
+    {
+      "path": "assets/gameplay/original/units/tall.png",
+      "before": 6753,
+      "after": 6322
+    },
+    {
+      "path": "assets/gameplay/original/units/Tunneller1.png",
+      "before": 11031,
+      "after": 10352
+    },
+    {
+      "path": "assets/gameplay/original/units/Tunneller2.png",
+      "before": 7707,
+      "after": 7254
+    },
+    {
+      "path": "assets/gameplay/original/units/Tunneller3.png",
+      "before": 5608,
+      "after": 5193
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_0.png",
+      "before": 10468,
+      "after": 10004
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_1.png",
+      "before": 14463,
+      "after": 13643
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_2.png",
+      "before": 18266,
+      "after": 17386
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_3.png",
+      "before": 24837,
+      "after": 23401
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_4.png",
+      "before": 34369,
+      "after": 32506
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_4_2.png",
+      "before": 6074,
+      "after": 5510
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_5.png",
+      "before": 55996,
+      "after": 53563
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_5_2.png",
+      "before": 27513,
+      "after": 26374
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_6.png",
+      "before": 52925,
+      "after": 50564
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_6_2.png",
+      "before": 35136,
+      "after": 33797
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_7.png",
+      "before": 81754,
+      "after": 77908
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_7_2.png",
+      "before": 41260,
+      "after": 39845
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/dg.png",
+      "before": 2351,
+      "after": 2217
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/dk.png",
+      "before": 2450,
+      "after": 2314
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/tc.png",
+      "before": 120517,
+      "after": 119141
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/xk1.png",
+      "before": 1377,
+      "after": 1329
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/xk2.png",
+      "before": 2029,
+      "after": 1995
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/xql.png",
+      "before": 5110,
+      "after": 4753
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/yy.png",
+      "before": 4100,
+      "after": 3661
+    },
+    {
+      "path": "assets/gameplay/ui/return-button.png",
+      "before": 7729,
+      "after": 7387
+    },
+    {
+      "path": "assets/gameplay/ui/settings/dk.png",
+      "before": 2450,
+      "after": 2314
+    },
+    {
+      "path": "assets/gameplay/ui/settings/jdt1.png",
+      "before": 3398,
+      "after": 3241
+    },
+    {
+      "path": "assets/gameplay/ui/settings/jdt2.png",
+      "before": 4239,
+      "after": 4067
+    },
+    {
+      "path": "assets/gameplay/ui/settings/kg.png",
+      "before": 2029,
+      "after": 1995
+    },
+    {
+      "path": "assets/gameplay/ui/settings/tc.png",
+      "before": 120517,
+      "after": 119141
+    },
+    {
+      "path": "assets/gameplay/ui/settings-button.png",
+      "before": 9940,
+      "after": 9483
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/exclamation.png",
+      "before": 5696,
+      "after": 5413
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/info-badge.png",
+      "before": 9721,
+      "after": 9354
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/larvae.png",
+      "before": 3241,
+      "after": 3163
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/card.png",
+      "before": 2450,
+      "after": 2314
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/close.png",
+      "before": 7115,
+      "after": 6694
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/jt.png",
+      "before": 7634,
+      "after": 7330
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/panel.png",
+      "before": 120517,
+      "after": 119141
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/pill.png",
+      "before": 12554,
+      "after": 12249
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/shade.png",
+      "before": 2450,
+      "after": 2314
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/tab-idle.png",
+      "before": 5590,
+      "after": 5421
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/tab-selected.png",
+      "before": 7470,
+      "after": 7353
+    },
+    {
+      "path": "assets/music/queen_loop_1.mp3",
+      "before": 1663011,
+      "after": 640775
+    },
+    {
+      "path": "assets/music/queen_loop_10.mp3",
+      "before": 1360200,
+      "after": 512879
+    },
+    {
+      "path": "assets/music/queen_loop_11.mp3",
+      "before": 1356010,
+      "after": 512879
+    },
+    {
+      "path": "assets/music/queen_loop_12.mp3",
+      "before": 1289934,
+      "after": 512879
+    },
+    {
+      "path": "assets/music/queen_loop_13.mp3",
+      "before": 1375538,
+      "after": 512879
+    },
+    {
+      "path": "assets/music/queen_loop_14.mp3",
+      "before": 2011694,
+      "after": 768670
+    },
+    {
+      "path": "assets/music/queen_loop_15.mp3",
+      "before": 2126912,
+      "after": 768670
+    },
+    {
+      "path": "assets/music/queen_loop_16.mp3",
+      "before": 1382392,
+      "after": 512879
+    },
+    {
+      "path": "assets/music/queen_loop_2.mp3",
+      "before": 1689380,
+      "after": 640775
+    },
+    {
+      "path": "assets/music/queen_loop_3.mp3",
+      "before": 1707678,
+      "after": 640775
+    },
+    {
+      "path": "assets/music/queen_loop_4.mp3",
+      "before": 1708924,
+      "after": 640775
+    },
+    {
+      "path": "assets/music/queen_loop_5.mp3",
+      "before": 1664507,
+      "after": 640775
+    },
+    {
+      "path": "assets/music/queen_loop_6.mp3",
+      "before": 1447282,
+      "after": 512879
+    },
+    {
+      "path": "assets/music/queen_loop_7.mp3",
+      "before": 1461159,
+      "after": 512879
+    },
+    {
+      "path": "assets/music/queen_loop_8.mp3",
+      "before": 1327994,
+      "after": 512879
+    },
+    {
+      "path": "assets/music/queen_loop_9.mp3",
+      "before": 1330715,
+      "after": 512879
+    },
+    {
+      "path": "assets/textures/Game/add.png",
+      "before": 8812,
+      "after": 8420
+    },
+    {
+      "path": "assets/textures/Game/game_bg.jpg",
+      "before": 1226686,
+      "after": 689362
+    },
+    {
+      "path": "assets/textures/Game/sub.png",
+      "before": 8431,
+      "after": 8067
+    },
+    {
+      "path": "assets/textures/loading-skin/bjt.jpg",
+      "before": 344557,
+      "after": 178661
+    },
+    {
+      "path": "assets/textures/loading-skin/jdt1.png",
+      "before": 3398,
+      "after": 3241
+    },
+    {
+      "path": "assets/textures/loading-skin/jdt2.png",
+      "before": 4239,
+      "after": 4067
+    },
+    {
+      "path": "assets/textures/loading-skin/Queen.png",
+      "before": 10468,
+      "after": 10004
+    },
+    {
+      "path": "assets/textures/main-menu/bjt.jpg",
+      "before": 344557,
+      "after": 178661
+    },
+    {
+      "path": "assets/textures/main-menu/ksyx.png",
+      "before": 11109,
+      "after": 10811
+    },
+    {
+      "path": "assets/textures/main-menu/original-logo.png",
+      "before": 152650,
+      "after": 146791
+    },
+    {
+      "path": "assets/textures/main-menu/settings-button.png",
+      "before": 9940,
+      "after": 9483
+    },
+    {
+      "path": "assets/textures/Upgrade/Button.png",
+      "before": 6089,
+      "after": 5964
+    },
+    {
+      "path": "assets/textures/Upgrade/Panel.png",
+      "before": 2450,
+      "after": 2314
+    },
+    {
+      "path": "assets/textures/Upgrade/RateSolid.png",
+      "before": 12554,
+      "after": 12249
+    }
+  ]
+}
