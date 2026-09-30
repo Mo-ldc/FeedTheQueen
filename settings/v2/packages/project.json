@@ -1,0 +1,22 @@
+{
+  "general": {
+    "lastSaved": "2026-09-22",
+    "designResolution": {
+      "width": 750,
+      "height": 1800
+    }
+  },
+  "__version__": "1.0.6",
+  "fbx": {
+    "legacyFbxImporter": {
+      "visible": true
+    }
+  },
+  "layer": [
+    {
+      "name": "canvas_19",
+      "value": 524288
+    }
+  ],
+  "custom_joint_texture_layouts": []
+}

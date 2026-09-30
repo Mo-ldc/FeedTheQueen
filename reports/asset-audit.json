@@ -1,0 +1,4578 @@
+{
+  "source": "E:/LDC_Cocos_PJ/Cocos3X_2D/喂蚁后/Exe/FEED THE QUEEN/蚂蚁Exported_Assets",
+  "records": [
+    {
+      "path": "assets/fonts/Stopbuck.ttf",
+      "bytes": 58000,
+      "uuid": "99590517-91c0-4920-918f-93e6940d6c61",
+      "refs": [
+        "assets/gameplay/ui/QueenFeedingText.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\03_字体_Fonts\\Stopbuck.ttf",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/Boat.wav",
+      "bytes": 470478,
+      "uuid": "d9a171b5-4e54-45ce-a25a-72ab131cfcb4",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\Boat.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/Brain.wav",
+      "bytes": 235278,
+      "uuid": "e1523eb1-ed2f-42c2-9d5d-3ef231d9afe3",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\Brain.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/bush_discover.wav",
+      "bytes": 92782,
+      "uuid": "3a5b0587-0b00-4cd6-980b-91142c053ce8",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\bush_discover.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/button_click.wav",
+      "bytes": 9190,
+      "uuid": "72ca04d1-6934-4320-8829-93276ace25e1",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\button_click.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/Campana3.wav",
+      "bytes": 378078,
+      "uuid": "59522c9b-cdbd-4dc8-bdab-865962ebd10e",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\Campana3.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/chomp_1.wav",
+      "bytes": 19690,
+      "uuid": "d6b8f75c-28f8-4b84-8f3a-65d4903d92d8",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\chomp_1.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/egg_hatch_1.wav",
+      "bytes": 32038,
+      "uuid": "b46af6cd-e800-44ae-a445-f97153e3978f",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\egg_hatch_1.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/egg_hatch_2.wav",
+      "bytes": 61878,
+      "uuid": "522a44e8-159b-48e2-a32f-b0f8522742ef",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\egg_hatch_2.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/FDQ_SD1.wav",
+      "bytes": 5874,
+      "uuid": "ea58f091-0c2f-4ec2-b6ff-bf735f120b0f",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\FDQ_SD1.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/FDQ_SD5.wav",
+      "bytes": 28906,
+      "uuid": "dc57d9a7-55fb-4013-b461-d2994ea26cfc",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\FDQ_SD5.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/FDQ_SD7.wav",
+      "bytes": 11254,
+      "uuid": "73e0f7da-03d1-4a5c-8c9c-8d0b8bb6a9bd",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\FDQ_SD7.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/foliage_small.wav",
+      "bytes": 25520,
+      "uuid": "379c498a-e5df-49eb-bdb1-a39182fcc140",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\foliage_small.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/InflateArpeggio.wav",
+      "bytes": 147078,
+      "uuid": "383af5c7-768a-4de5-a074-013b2c0a1903",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\InflateArpeggio.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/larve.mp3",
+      "bytes": 16343,
+      "uuid": "4ea66de9-8bf4-4b3b-8fe6-06a9d95490e0",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\larve.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/Pearl2.wav",
+      "bytes": 63686,
+      "uuid": "a1eaad14-e655-402a-92d6-d2c3caecd3e5",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\Pearl2.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/QueenLevelsUp2.wav",
+      "bytes": 176478,
+      "uuid": "d903b82e-c230-4049-bca5-0092c3cfbfcf",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\QueenLevelsUp2.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/squish.wav",
+      "bytes": 33262,
+      "uuid": "a0c82929-13d0-4e41-8c96-b6746b7a0d42",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\squish.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/trap_set.wav",
+      "bytes": 27246,
+      "uuid": "142fef06-e905-4363-b834-ae0dc1acb80a",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\trap_set.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/audio/sfx/trap_trigger.wav",
+      "bytes": 29714,
+      "uuid": "298bd6f7-2004-4307-9c4b-04349c0c6570",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\trap_trigger.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/effects/ocean-noise.png",
+      "bytes": 264753,
+      "uuid": "dcf8206c-798e-4a65-a099-448082a01be8",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/original/audio/Boat.wav",
+      "bytes": 470478,
+      "uuid": "d88dabee-7f09-4fa9-8dae-523fcccfa5e0",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\Boat.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/Brain.wav",
+      "bytes": 235278,
+      "uuid": "da5babfa-546c-45ef-89b7-174971c50f60",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\Brain.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/bush_discover.wav",
+      "bytes": 92782,
+      "uuid": "49992389-5365-42d7-9226-9d1fd1466b7f",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\bush_discover.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/button_click.wav",
+      "bytes": 9190,
+      "uuid": "80fd71dd-48e1-4135-bb6f-a9adc15bc475",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\button_click.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/Campana3.wav",
+      "bytes": 378078,
+      "uuid": "d4856d98-b16d-4ed5-a890-f57553afd6d8",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\Campana3.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/chomp_1.wav",
+      "bytes": 19690,
+      "uuid": "42eec0b3-09d3-491f-9d25-dd3ac8f03cf8",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\chomp_1.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/egg_hatch_1.wav",
+      "bytes": 32038,
+      "uuid": "694a0dbe-08c6-4821-a256-3bbbdecaf766",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\egg_hatch_1.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/egg_hatch_2.wav",
+      "bytes": 61878,
+      "uuid": "6ffc6221-819a-4a5e-8669-1555ed12bb6e",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\egg_hatch_2.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/FDQ_SD1.wav",
+      "bytes": 5874,
+      "uuid": "8de868a2-3e4a-4d64-ac3a-45dd038d83a1",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\FDQ_SD1.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/FDQ_SD5.wav",
+      "bytes": 28906,
+      "uuid": "fa852753-fb78-4fc5-a567-b12c446aa4c4",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\FDQ_SD5.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/FDQ_SD7.wav",
+      "bytes": 11254,
+      "uuid": "8a1750f8-e9e4-4f04-9fb4-bc439a98d1ed",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\FDQ_SD7.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/foliage_small.wav",
+      "bytes": 25520,
+      "uuid": "46805c19-7234-465a-8ebf-5e17a9ce7e1a",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\foliage_small.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/InflateArpeggio.wav",
+      "bytes": 147078,
+      "uuid": "91447848-7212-4a3b-b412-0ad4836f2519",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\InflateArpeggio.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/larve.mp3",
+      "bytes": 16343,
+      "uuid": "15e9539a-ba1c-40e6-a275-6f29f5214ff6",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\larve.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/Pearl2.wav",
+      "bytes": 63686,
+      "uuid": "befa42c4-5250-4ca1-b5f1-b94e2ef08689",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\Pearl2.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/QueenLevelsUp2.wav",
+      "bytes": 176478,
+      "uuid": "89438667-3664-4365-8408-0aa72005a57b",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\QueenLevelsUp2.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/squish.wav",
+      "bytes": 33262,
+      "uuid": "57682719-6df8-4bf8-8f32-d62a488abc12",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\squish.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/trap_set.wav",
+      "bytes": 27246,
+      "uuid": "855a49ba-4352-42ba-8ddd-ed6f0af882d8",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\trap_set.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/audio/trap_trigger.wav",
+      "bytes": 29714,
+      "uuid": "517eb588-f93c-4ec8-b5f6-d671fcab57b4",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\SFX\\trap_trigger.wav",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/BoatLine.png",
+      "bytes": 1183,
+      "uuid": "78b758b9-a4c0-48d9-9564-7aee55a42f6b",
+      "refs": [
+        "assets/gameplay/prefabs/characters/FishingBoat.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\BoatLine.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Apartment.png",
+      "bytes": 17320,
+      "uuid": "b79faa41-c3cb-4e7d-b293-9d601e84a190",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/EastHaulerApartment.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Apartment.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Boat.png",
+      "bytes": 9633,
+      "uuid": "ab75bd91-def6-4e9d-8c1c-bbcd8b5e52d7",
+      "refs": [
+        "assets/gameplay/prefabs/characters/FishingBoat.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Boat.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Bulb.png",
+      "bytes": 24449,
+      "uuid": "2180389e-fc15-4909-83e7-131b468f8690",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/Orchard.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Bulb.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Burrow.png",
+      "bytes": 20188,
+      "uuid": "4700435d-1200-4ccb-a44e-f6d0aa1ec63a",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Burrow.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Carpet.png",
+      "bytes": 9429,
+      "uuid": "91e8781f-3dc9-4a15-b7c9-d18390a1bc81",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/Kitchen.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Carpet.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Cauldron.png",
+      "bytes": 13768,
+      "uuid": "836d417d-2421-4ed0-8102-91115722a36e",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/Kitchen.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Cauldron.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Chair.png",
+      "bytes": 7610,
+      "uuid": "118aa46c-299f-4353-8b33-a270fd20cb99",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/Kitchen.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Chair.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Den.png",
+      "bytes": 17301,
+      "uuid": "aed88514-c0f8-4fa6-ae99-11658dedc395",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/ThrowerDen.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Den.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Dock.png",
+      "bytes": 39271,
+      "uuid": "4f0cb4d6-3142-479a-b127-5248777d638b",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/FishingDock.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Dock.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Evolution.png",
+      "bytes": 16202,
+      "uuid": "e76ac286-b1dd-4f8d-bde8-37c0c1c4904b",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Evolution.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Factory.png",
+      "bytes": 19371,
+      "uuid": "1c543e10-954b-4840-ac98-3abb5f9b8785",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/HunterCamp.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Factory.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Farm.png",
+      "bytes": 14606,
+      "uuid": "2594d39f-79fe-4502-81b2-9aa0e3c51a9c",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/AphidFarm.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Farm.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/farm_rocks.png",
+      "bytes": 902,
+      "uuid": "a2d5b7b6-cbf4-4b67-80e5-bf80aa1c6f7c",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/AphidFarm.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\farm_rocks.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Lab.png",
+      "bytes": 16751,
+      "uuid": "440bd801-c407-420b-936b-b8079ffac5fe",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/MushroomLab.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Lab.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Maw.png",
+      "bytes": 23169,
+      "uuid": "3ee35d74-c268-4ba0-8e61-f6156467a614",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/TunnellerDen.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Maw.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Mine.png",
+      "bytes": 24309,
+      "uuid": "077f5b43-bbf3-4971-b95d-4a1a7de8f9eb",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/Mine.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Mine.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Stall.png",
+      "bytes": 16479,
+      "uuid": "96892c7b-5152-4e97-87a5-6e75adf1b0f5",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/FishingDock.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Stall.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Tree.png",
+      "bytes": 13116,
+      "uuid": "207cf589-3bec-4ce3-9d16-6789a17aee9f",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/OrchardTree.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Tree.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/buildings/Tree_Shadow.png",
+      "bytes": 6104,
+      "uuid": "7ad61053-82cb-4d7f-8fda-a3558348879d",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/OrchardTree.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Tree_Shadow.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/circle.png",
+      "bytes": 4100,
+      "uuid": "de0732cd-05d1-4bb0-829c-eda0c148a580",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hunter.prefab",
+        "assets/gameplay/prefabs/characters/HunterPrey.prefab",
+        "assets/gameplay/prefabs/characters/Princess.prefab",
+        "assets/gameplay/prefabs/characters/Thrower.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\circle.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/dot2.png",
+      "bytes": 183,
+      "uuid": "ffa85930-d716-46b8-aa8e-ad8237738236",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/HunterTrap.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\dot2.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/Environment/Waves.png",
+      "bytes": 527171,
+      "uuid": "fbe29d13-4832-4bef-bd62-e11875f1c58e",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\Environment\\Waves.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/amanita.png",
+      "bytes": 1980,
+      "uuid": "601364c3-ddbd-4e1a-b3f5-b21697a0c075",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\amanita.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/blueberry.png",
+      "bytes": 1943,
+      "uuid": "ec862b5c-3f4f-4f5c-87b6-735be13f7a9d",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/foods/bolet.png",
+      "bytes": 2181,
+      "uuid": "c0fd9501-878c-45aa-956b-b36564d2142a",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Mycologist.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\bolet.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/bug_meat.png",
+      "bytes": 2269,
+      "uuid": "12e3fb7c-ff26-41a2-9b90-6af41bb6ef82",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/HunterTrap.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\bug_meat.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/candy_apple.png",
+      "bytes": 2293,
+      "uuid": "2e74f089-b386-49df-9cad-808ed7012522",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\candy_apple.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/chanterelle.png",
+      "bytes": 2583,
+      "uuid": "a25ed229-0eb4-441a-b556-13a686f277fc",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\chanterelle.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/citrony.png",
+      "bytes": 2490,
+      "uuid": "0c838d2b-6e7f-421c-bf49-49f8c34b3336",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\citrony.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/clearshroom.png",
+      "bytes": 2175,
+      "uuid": "2a692f23-d2c2-472d-af30-3a97f30e80e0",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\clearshroom.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/fish.png",
+      "bytes": 2328,
+      "uuid": "63f5081e-d0ee-4a2b-bab1-e8b29aa8cfcd",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\fish.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/frost.png",
+      "bytes": 4385,
+      "uuid": "08f99a0b-3cbf-4d24-b893-517e8bbed097",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/foods/golden_apple.png",
+      "bytes": 2369,
+      "uuid": "280cfb14-4f24-4d49-95fc-9300c4e99ff1",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\golden_apple.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/golden_candy_apple.png",
+      "bytes": 2335,
+      "uuid": "6287d87f-c98a-42a5-b77c-4f0a2607009d",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\golden_candy_apple.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/honeydew.png",
+      "bytes": 1528,
+      "uuid": "4fc0abcc-7137-4fdc-b182-2a84b77693a0",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\honeydew.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/iceberry.png",
+      "bytes": 2123,
+      "uuid": "5e12741f-3229-4406-8583-62688f96b14c",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\iceberry.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/ice_cream.png",
+      "bytes": 2135,
+      "uuid": "cc848df1-c031-4c91-ae2f-66f1c730bc83",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\ice_cream.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/pearl.png",
+      "bytes": 1775,
+      "uuid": "e78826b4-254f-4cf1-b962-683ed15eb0e6",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\pearl.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/pepper.png",
+      "bytes": 2142,
+      "uuid": "f474d56f-0629-4eae-9e1a-5cc6dd33e1ad",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\pepper.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/red_apple.png",
+      "bytes": 2456,
+      "uuid": "ac1bfe26-0623-46d5-9d81-5f5ee9cbcddd",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/OrchardTree.prefab",
+        "assets/gameplay/prefabs/characters/Thrower.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\red_apple.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/skewer.png",
+      "bytes": 1995,
+      "uuid": "28564c25-e277-4cab-a8a5-7c1ebbb2f449",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\skewer.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/spicy_sauce.png",
+      "bytes": 1591,
+      "uuid": "c4275dd7-8d10-4ca2-bf3e-222d92e207ae",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\spicy_sauce.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/star.png",
+      "bytes": 5077,
+      "uuid": "55968ba4-1274-4006-a319-e8fe2303ac34",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/foods/starshroom.png",
+      "bytes": 2034,
+      "uuid": "c973b3c3-06eb-4976-8be1-ca99d4010f10",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\starshroom.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/foods/tako.png",
+      "bytes": 2438,
+      "uuid": "c978d4fc-eba5-49be-840c-5c75d1eeb2f1",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\tako.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/arrow1.png",
+      "bytes": 5110,
+      "uuid": "d2ebe827-3b15-4d2e-a0c5-9eba6807f0f0",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\arrow1.png",
+      "identical": true,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/BigButton1.png",
+      "bytes": 11109,
+      "uuid": "5d7e8f48-492c-48ec-b38f-d3759caef260",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\UI\\BigButton1.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Box.png",
+      "bytes": 2450,
+      "uuid": "852253b2-46bd-4e40-91ea-5e18dd589dde",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\UI\\Box.png",
+      "identical": true,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Button1.png",
+      "bytes": 6089,
+      "uuid": "ddfd873a-d9b0-4705-979c-ad5940d01a66",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\UI\\Button1.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/checkmark.png",
+      "bytes": 2351,
+      "uuid": "e28f6dac-5af3-48f8-b826-45d3f4766f9a",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\checkmark.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/DNAChart.png",
+      "bytes": 120517,
+      "uuid": "8d1b4958-a30a-4317-a157-aba732709121",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\UI\\DNAChart.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/BigFish.png",
+      "bytes": 5468,
+      "uuid": "d776f83d-eae6-4461-bfec-d4e35474053a",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Evolution Icons\\BigFish.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/HoleUnlock.png",
+      "bytes": 6155,
+      "uuid": "730ec864-4851-4218-a994-157849bf6174",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Evolution Icons\\HoleUnlock.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/PickAxe.png",
+      "bytes": 3832,
+      "uuid": "253112c2-81b8-4571-a440-894ad6b19e44",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Evolution Icons\\PickAxe.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/Queen.png",
+      "bytes": 4680,
+      "uuid": "d8badd95-e79f-4310-b966-2bb39e909991",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 3
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/Spoon.png",
+      "bytes": 4535,
+      "uuid": "dff37681-a31c-4d54-a7f2-2122d94d6cb6",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Evolution Icons\\Spoon.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/Worms.png",
+      "bytes": 6085,
+      "uuid": "2212a5d1-e6f2-4718-9fca-4fa261a107f9",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Evolution Icons\\Worms.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Evolution Icons/X.png",
+      "bytes": 5169,
+      "uuid": "19ffc033-4907-4ba6-9cfa-92943d99fa91",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Evolution Icons\\X.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/head_sluggy.png",
+      "bytes": 5994,
+      "uuid": "dcde35c7-ceb8-43a9-96bd-6d094c7b84fd",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\head_sluggy.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/head_tall.png",
+      "bytes": 6263,
+      "uuid": "9c688583-a82e-45e0-bb4d-65b641b826fb",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\head_tall.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Angry.png",
+      "bytes": 3429,
+      "uuid": "9faa74b1-4284-49c5-92df-dd26b3780533",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Angry.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Berries.png",
+      "bytes": 4769,
+      "uuid": "1eaca015-73b0-4baa-9bb6-8ef3b4fe71c5",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Berries.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/BlueTrap.png",
+      "bytes": 4917,
+      "uuid": "64982171-75e2-4ab7-b3d1-e88e8d4a9419",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\BlueTrap.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Box.png",
+      "bytes": 2526,
+      "uuid": "ffb1d888-cfa8-442e-8f34-094283b5b917",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Brain.png",
+      "bytes": 3231,
+      "uuid": "95a1edc2-dd39-461f-9348-2a81ba87cb5b",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Chantrelle.png",
+      "bytes": 2889,
+      "uuid": "a3caa91b-b359-4cad-a51a-9b2cf5ee86e8",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Chantrelle.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Chef.png",
+      "bytes": 3247,
+      "uuid": "3d10ae88-a286-4212-958c-d2e83107dce5",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Chef.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/CrabHaul.png",
+      "bytes": 3545,
+      "uuid": "f4bc9aa0-5b4f-4a49-bb84-db5c01c860c8",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\CrabHaul.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Dig.png",
+      "bytes": 3665,
+      "uuid": "d977545a-d056-466f-a236-8aa90d9bea79",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Dig.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/drop.png",
+      "bytes": 3254,
+      "uuid": "b0175d63-6d22-44c2-9063-d0d72540b88f",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\drop.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Energy.png",
+      "bytes": 3547,
+      "uuid": "2d47b11e-b9f9-4b3d-ab3e-01399f4ee157",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Energy.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Fire.png",
+      "bytes": 2403,
+      "uuid": "f8120509-e605-4967-9166-4fd2ac069b71",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Fires.png",
+      "bytes": 2996,
+      "uuid": "7431af2d-61d9-475a-8af7-576d0e71e6d1",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Fires.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Frost.png",
+      "bytes": 3217,
+      "uuid": "5bf8c5d1-c7ba-4462-8a77-2a58e722a4d1",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Gemini.png",
+      "bytes": 3508,
+      "uuid": "6d065dbb-ab89-44ff-977e-4e93d317d6ed",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Gemini.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Hat.png",
+      "bytes": 2681,
+      "uuid": "1fa3c2ca-2350-4d02-973b-82df754d9f03",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Hat.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/HatChef.png",
+      "bytes": 3322,
+      "uuid": "1fd897c3-586c-45f2-8ac8-65e40f69092b",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\HatChef.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/High.png",
+      "bytes": 3837,
+      "uuid": "bd10d9a6-4af9-49c8-a95f-f402c1d3b276",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\High.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Hook.png",
+      "bytes": 2414,
+      "uuid": "4060d065-1d79-417e-a001-0e62d82affb0",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Hook.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Maid.png",
+      "bytes": 3371,
+      "uuid": "a4950c12-266a-46d0-b8e5-b242a77bae3f",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Maid.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Meat.png",
+      "bytes": 2710,
+      "uuid": "bfdfa0d1-ab31-4343-89d4-6169362a4c7f",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Meat.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Monocle.png",
+      "bytes": 3467,
+      "uuid": "b48b29e3-982e-49d8-91cf-a75446f885d3",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Monocle.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Queen.png",
+      "bytes": 3236,
+      "uuid": "b3cba5ab-7ffe-4f31-b0b1-021ce2c7b20c",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 3
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Scared.png",
+      "bytes": 3287,
+      "uuid": "b67b3b64-4b29-44c8-9074-d230c670b9eb",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Scared.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Shiny.png",
+      "bytes": 3119,
+      "uuid": "c60ab34a-8ffd-40aa-8298-cc161b19854a",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Shiny.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Ship.png",
+      "bytes": 2723,
+      "uuid": "f5a253c7-00d8-4d0f-ae51-0ac10c213a4f",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Ship.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Shrooms.png",
+      "bytes": 3126,
+      "uuid": "e4da2456-ec62-4b2d-982b-cf827bfdbe58",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Shrooms.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Sour.png",
+      "bytes": 2743,
+      "uuid": "a35767ab-2bed-4a25-bcd6-701a76fa9a86",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/SourHalf.png",
+      "bytes": 3663,
+      "uuid": "9dfbc198-049a-4bf6-9727-cc549845a814",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\SourHalf.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Spicy.png",
+      "bytes": 2170,
+      "uuid": "9e0ee246-0ba9-4dc1-9f20-3014845003c5",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Spicy.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Star.png",
+      "bytes": 2653,
+      "uuid": "c4954b11-b69a-4df4-8897-f6f2980f9adf",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Thunder.png",
+      "bytes": 2203,
+      "uuid": "7c2fa198-b178-486f-9682-172b0e526609",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Thunder.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Trap.png",
+      "bytes": 3050,
+      "uuid": "80ea2a29-67d4-45fe-89ae-0efbcf848b43",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Trap.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Turning.png",
+      "bytes": 2731,
+      "uuid": "a86c2c51-6054-43f2-933b-d99191420fef",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Turning.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/GenePanel/Prestige Icons/Worry.png",
+      "bytes": 3250,
+      "uuid": "42944562-4121-435b-83cf-137482b65bb6",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\Prestige Icons\\Worry.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/Logo.png",
+      "bytes": 239424,
+      "uuid": "c09751b9-b200-4690-a1fc-d643868f73c8",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\Logo.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/queen_lvl_0.png",
+      "bytes": 5235,
+      "uuid": "1108d298-baf2-408b-93f8-7197a4ef2531",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Princess.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_0.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/trap_closed.png",
+      "bytes": 3274,
+      "uuid": "a11d8041-56ac-4c6b-bc65-f3cbd172fc42",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/HunterTrap.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\trap_closed.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/trap_open.png",
+      "bytes": 7241,
+      "uuid": "4763fdde-2ebb-4b74-b5b8-6757546fde41",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/HunterTrap.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\trap_open.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/tunnel_bottom.png",
+      "bytes": 5874,
+      "uuid": "8753455a-149b-45c4-82f2-e183653eea75",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/TunnelEntrance.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\tunnel_bottom.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/tunnel_top.png",
+      "bytes": 6369,
+      "uuid": "9bdb98af-57a8-47ea-854c-efacbd92d0cc",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/TunnelEntrance.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\tunnel_top.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/antidle.png",
+      "bytes": 4727,
+      "uuid": "d4fa107e-c203-4d93-8588-c4431d276904",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\antidle.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/ant_carrying.png",
+      "bytes": 5226,
+      "uuid": "84f9f237-a12a-458e-893b-153c122568cf",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\ant_carrying.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/aphid_honey.png",
+      "bytes": 6954,
+      "uuid": "20d6e07b-d5bc-42c2-ad27-fce1680684da",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Aphid.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\aphid_honey.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/aphid_meat.png",
+      "bytes": 7635,
+      "uuid": "c243c0b6-71dc-4ed0-9ad7-5988da6a9e3d",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\aphid_meat.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/aphid_spicy.png",
+      "bytes": 7634,
+      "uuid": "3472dc85-c83f-4242-92cd-3f12c71a9551",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\aphid_spicy.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/bigcrab.png",
+      "bytes": 6348,
+      "uuid": "efa2fa3a-7e5d-43b8-9ac6-12ddd89ac6bb",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\bigcrab.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/bigcrab_eepy.png",
+      "bytes": 6143,
+      "uuid": "139a2367-6915-446e-bfa0-8297f88d0c61",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\bigcrab_eepy.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/chef_happy.png",
+      "bytes": 11645,
+      "uuid": "a250bf94-6613-4b6a-a890-fb4436fae809",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\chef_happy.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/chef_idle.png",
+      "bytes": 10969,
+      "uuid": "95147278-1456-43c2-a424-0c66fdd9cf89",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Chef.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\chef_idle.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/eleph.png",
+      "bytes": 26564,
+      "uuid": "064910fe-496b-4967-a222-c00d915121b8",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\eleph.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/farmer.png",
+      "bytes": 12251,
+      "uuid": "3a0ae8ec-9c1b-4cab-8e3a-8cf80a35917e",
+      "refs": [
+        "assets/gameplay/prefabs/characters/FarmWorker.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\farmer.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/fly.png",
+      "bytes": 10513,
+      "uuid": "389eef1b-3294-4fca-9dc7-5161eeb9e891",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hunter.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\fly.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/fly2.png",
+      "bytes": 8915,
+      "uuid": "d7b9cded-625b-45c8-9600-d9763217a372",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hunter.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\fly2.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/fly3.png",
+      "bytes": 9106,
+      "uuid": "67205343-c6f0-4f99-8706-19d15a8a7a23",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hunter.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\fly3.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/foragertail.png",
+      "bytes": 2882,
+      "uuid": "36c69b2a-4d14-4ccd-9890-c23e3c3e6ee6",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Forager.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\foragertail.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/forager_claws.png",
+      "bytes": 2549,
+      "uuid": "1e91c897-5658-4b72-88ab-119b15d4609c",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Forager.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\forager_claws.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/LeftArm.png",
+      "bytes": 3242,
+      "uuid": "8d0be2bb-7f13-4c69-a3e7-b0d92c69e3b1",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\LeftArm.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/milkmaid.png",
+      "bytes": 9538,
+      "uuid": "9a4620ed-f2fc-47ca-a805-3f796f3a18a5",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Milkmaid.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\milkmaid.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/rhino.png",
+      "bytes": 10615,
+      "uuid": "a56851f2-9908-43b3-8560-d9f11e75e88b",
+      "refs": [
+        "assets/gameplay/prefabs/characters/HunterPrey.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\rhino.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/RightArm.png",
+      "bytes": 3326,
+      "uuid": "0dfe36ad-1c0a-4c95-979f-b2ff3d7a755e",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\RightArm.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/sluggy.png",
+      "bytes": 2593,
+      "uuid": "4b91e3e0-5516-4baf-866c-06e4fcd6c8e7",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Mycologist.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\sluggy.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/sluggy_eepy.png",
+      "bytes": 2229,
+      "uuid": "516d6756-a04e-4c69-a05f-44a9656e27a8",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\sluggy_eepy.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/tall.png",
+      "bytes": 17010,
+      "uuid": "8d081add-1499-422b-86ee-37ea735f4b4f",
+      "refs": [
+        "assets/gameplay/prefabs/characters/TreeGatherer.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\tall.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/Tunneller1.png",
+      "bytes": 4878,
+      "uuid": "75f228af-1a42-4dfb-a83b-d3172d6cac53",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Tunneller.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\Tunneller1.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/Tunneller2.png",
+      "bytes": 3181,
+      "uuid": "1d99c179-14aa-447d-8e5d-8b2dcab63fa6",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Tunneller.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\Tunneller2.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/original/units/Tunneller3.png",
+      "bytes": 2439,
+      "uuid": "8aaf2026-494f-4165-85a7-dce097e5faaa",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Tunneller.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\units\\Tunneller3.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_0.png",
+      "bytes": 5235,
+      "uuid": "230ab7a0-09c9-479a-beb3-f1103b023057",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Queen.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_0.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_1.png",
+      "bytes": 7069,
+      "uuid": "b5586c43-16a7-4bf9-8277-9e28d68636db",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_1.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_2.png",
+      "bytes": 9979,
+      "uuid": "303a1745-5745-4844-9ab5-e83ad6f441c7",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_2.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_3.png",
+      "bytes": 17088,
+      "uuid": "e720c400-6425-4b7a-ab50-6a00f30a9f79",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_3.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_4.png",
+      "bytes": 21772,
+      "uuid": "54f1e2c8-c099-4007-95a5-7dc3ba11124e",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_4.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_4_2.png",
+      "bytes": 6074,
+      "uuid": "2073b0f2-0a9d-4994-acbd-4a23c107a1d7",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Queen.prefab"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_4_2.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_5.png",
+      "bytes": 32112,
+      "uuid": "1b45e108-705b-4854-bf26-8ceee29ac1ed",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_5.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_5_2.png",
+      "bytes": 27513,
+      "uuid": "ac90ca62-f05b-49ea-9ecc-bb41d132b2f0",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_5_2.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_6.png",
+      "bytes": 44163,
+      "uuid": "1a80e709-b8d1-4497-b0c7-177e46a30512",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_6.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_6_2.png",
+      "bytes": 35136,
+      "uuid": "0c39be96-d4c0-4e37-a1a3-902425cffc42",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_6_2.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_7.png",
+      "bytes": 53115,
+      "uuid": "1d166d41-07ea-4bf0-b7c8-c922345e1a00",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_7.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/Queen/queen_lvl_7_2.png",
+      "bytes": 41260,
+      "uuid": "afba5605-8029-431c-a675-262523a4f800",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_7_2.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/dg.png",
+      "bytes": 888,
+      "uuid": "bfd1baa7-deab-45e9-91e0-57120a208988",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/dk.png",
+      "bytes": 113891,
+      "uuid": "f010118b-e4f1-445c-93e9-358fd191e65c",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/tc.png",
+      "bytes": 5395,
+      "uuid": "01e4508a-5db8-4f47-be91-deb36b43f717",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/xk1.png",
+      "bytes": 362,
+      "uuid": "c4409f86-8732-471d-8b87-999e48ee6758",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/xk2.png",
+      "bytes": 460,
+      "uuid": "1779ee45-1a2c-4314-8723-775b2f0b32d9",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/xql.png",
+      "bytes": 12476,
+      "uuid": "d834bf2c-42ac-4e1f-84ad-a782f94eabc6",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/gene-panel/yy.png",
+      "bytes": 11196,
+      "uuid": "61ded851-006d-4d13-88e1-83e8d037f85a",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/GenePanelUI.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/return-button.png",
+      "bytes": 4721,
+      "uuid": "6efbd2d8-700e-46c7-a044-0877c10de298",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/settings/dk.png",
+      "bytes": 149647,
+      "uuid": "59e58478-5573-4ac7-975c-863a43f5ab09",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/SettingsPanel.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/settings/jdt1.png",
+      "bytes": 348,
+      "uuid": "40d8968d-5fa3-468e-98f1-b201e0dea917",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/SettingsPanel.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/settings/jdt2.png",
+      "bytes": 344,
+      "uuid": "c7a11967-0b01-40b5-a6a5-be96b28e91ae",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/SettingsPanel.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/settings/kg.png",
+      "bytes": 2570,
+      "uuid": "55e4b836-d0ae-4e39-a1db-3f6ab0e5b2ad",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/SettingsPanel.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/settings/tc.png",
+      "bytes": 5395,
+      "uuid": "5eb88ca9-bd22-4696-b795-09f089a9a3c4",
+      "refs": [
+        "assets/gameplay/ui/lazy-prefabs/SettingsPanel.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/ui/settings-button.png",
+      "bytes": 6646,
+      "uuid": "7201e42f-6c81-475b-8b10-2e37324b2644",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/ad-points/jiyin.png",
+      "bytes": 4458,
+      "uuid": "bfee9287-55bc-4943-90ae-21213f97f4ea",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/ad-points/jx.png",
+      "bytes": 2526,
+      "uuid": "d7b43a91-45c1-4b72-9ea0-8b1e0f6c2401",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/ad-points/naozi.png",
+      "bytes": 5292,
+      "uuid": "da121977-730d-4cbc-b598-f9d06dab8975",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/ad-points/nw.png",
+      "bytes": 5169,
+      "uuid": "35916cd0-b969-4106-9fb1-d6e02ca941a4",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/ad-points/xw.png",
+      "bytes": 5668,
+      "uuid": "6a635199-27ea-43b6-b469-cdecdfd9afc7",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/ad-points/youchong.png",
+      "bytes": 5455,
+      "uuid": "a88e6709-c507-4a4e-afdb-8664d50b0975",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/ad-points/yy.png",
+      "bytes": 4523,
+      "uuid": "01814780-57d1-4a98-873b-d14e4cef45a8",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/ad1.png",
+      "bytes": 3987,
+      "uuid": "79c7990a-0bd4-4c33-b128-ab2132d9185b",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/exclamation.png",
+      "bytes": 2053,
+      "uuid": "d217d682-0367-41eb-bf29-50f4e40b8801",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene",
+        "assets/scripts/ui/UpgradePanelSkin.ts"
+      ],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\exclamation.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/info-badge.png",
+      "bytes": 2621,
+      "uuid": "bd8255e0-49f4-466b-830b-6af274b42977",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/larvae.png",
+      "bytes": 20451,
+      "uuid": "8bc03cfc-8cdc-4dee-b3e8-65381ea09ff2",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/card.png",
+      "bytes": 3464,
+      "uuid": "49829eb6-dcbc-4622-964c-19eba2f02a0e",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/close.png",
+      "bytes": 626,
+      "uuid": "2ee8bf0e-8735-48d7-9c83-4b68ed4ca48c",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/jt.png",
+      "bytes": 3693,
+      "uuid": "42d65553-b6c4-4b30-903d-efdd85bf3dcf",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene",
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/panel.png",
+      "bytes": 1448,
+      "uuid": "a1ac535c-2ccd-4498-82f8-87b3de734c14",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/pill.png",
+      "bytes": 288,
+      "uuid": "6b8ecffe-5243-4204-aad4-aaff46f08832",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/shade.png",
+      "bytes": 1203,
+      "uuid": "209b3dc1-e919-4d84-8d05-6244d656a890",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/tab-idle.png",
+      "bytes": 1177,
+      "uuid": "b999d75d-99d8-4a1b-8457-44db0fb8f398",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/panels/tab-selected.png",
+      "bytes": 1293,
+      "uuid": "be54fb7a-4614-493c-bcb7-81054c4eaaf1",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/cuisine_CordonBleu.png",
+      "bytes": 3258,
+      "uuid": "98930b19-31f7-44ab-8831-01a74db20489",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/cuisine_RecipeFrostfire.png",
+      "bytes": 2006,
+      "uuid": "e03e32b0-a793-4eeb-a19a-2c182d2e827e",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/cuisine_RecipePommes.png",
+      "bytes": 3719,
+      "uuid": "ac83f5df-3a95-4f21-bbc9-978718b0598b",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/cuisine_RecipeScarlet.png",
+      "bytes": 1686,
+      "uuid": "418952f2-464b-4969-bf5e-1e3cc86432ed",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/cuisine_RecipeSkewers.png",
+      "bytes": 2773,
+      "uuid": "f8065764-959a-4fe2-90d5-1932675f0889",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/cuisine_SousChef.png",
+      "bytes": 1688,
+      "uuid": "7617d772-3feb-422a-a787-cae83c6330fd",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingCuisine.png",
+      "bytes": 3615,
+      "uuid": "7b49bc27-bb10-416d-94ac-67acfa1a5568",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingFarm.png",
+      "bytes": 3131,
+      "uuid": "10d74d00-aa71-47e9-832c-836ba5fff38e",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingFishing.png",
+      "bytes": 3498,
+      "uuid": "ca893a49-26f5-4319-b9b2-6eabfdac771b",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingGemini.png",
+      "bytes": 3220,
+      "uuid": "f3c382b9-c195-46c0-be78-61b52a3f6bb3",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingHunters.png",
+      "bytes": 3947,
+      "uuid": "d67577f7-4d10-4e5d-8003-bd8d7c787201",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingMine.png",
+      "bytes": 3777,
+      "uuid": "d02cf114-3800-49e4-97fb-b926b96dcf6f",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingMushrooms.png",
+      "bytes": 2846,
+      "uuid": "dbf49be9-4bb6-4cc2-9bdd-a637654b66b9",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingOrchard.png",
+      "bytes": 3039,
+      "uuid": "86967b7c-37ab-4738-b6e6-9f5b79665990",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingThrowers.png",
+      "bytes": 3211,
+      "uuid": "6238d51e-3496-4c80-a91b-dafadf5bb586",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_BuildingTunnellers.png",
+      "bytes": 4316,
+      "uuid": "bc9bbd60-02f5-4d1b-afbd-5f95e00752c9",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/evolution_Calcul.png",
+      "bytes": 4894,
+      "uuid": "540b4551-c4e7-427f-b5de-a6d1666432df",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/farm_BugProduction.png",
+      "bytes": 3019,
+      "uuid": "87922468-3686-4d90-9af2-aabab37a0129",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/farm_DoubleGlaze.png",
+      "bytes": 3225,
+      "uuid": "0e6ee7e6-9f50-4379-965f-07f157d1db72",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/farm_FireBugs.png",
+      "bytes": 3306,
+      "uuid": "a71b166f-85a7-4fdd-9ff6-2e57d9f0435f",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/farm_MeatBugs.png",
+      "bytes": 3424,
+      "uuid": "25b6e824-72e9-48f6-b143-c0fb46f14143",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/farm_MoreBugs.png",
+      "bytes": 65093,
+      "uuid": "1d702b44-c073-4581-8b32-c85ef2348d1a",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/farm_Shiny.png",
+      "bytes": 3685,
+      "uuid": "4e9aa231-38de-4c95-b742-8e2489b47674",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_bait_fish.png",
+      "bytes": 3239,
+      "uuid": "9d8e3e4d-32e0-4546-8a78-4e8b1ea0a619",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_bait_pearls.png",
+      "bytes": 3535,
+      "uuid": "5443824e-f7fc-45a4-8c93-02316c80696a",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_bait_tako.png",
+      "bytes": 2872,
+      "uuid": "d333644e-b682-45f4-bd58-2ef6490b46f3",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_bait_upgrade_fish.png",
+      "bytes": 3665,
+      "uuid": "331a47b3-6ea1-452a-8d33-0cc8075e5a08",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_bait_upgrade_tako.png",
+      "bytes": 4247,
+      "uuid": "90292513-ede5-46a8-b742-6b4eae926c90",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_extra_boat.png",
+      "bytes": 2453,
+      "uuid": "2c195761-5f0b-4a38-9ec5-b4ecc29b0664",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_firstboat.png",
+      "bytes": 3343,
+      "uuid": "ce8617f3-70f5-410c-891f-1154972b27f0",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_ghostship.png",
+      "bytes": 3491,
+      "uuid": "29d2bcc7-2ba5-457e-9470-caacd09534e8",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_mode_divers.png",
+      "bytes": 2608,
+      "uuid": "8ac4b9ca-5c2a-4442-a1cb-9b4576c4034c",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_mode_net.png",
+      "bytes": 4057,
+      "uuid": "1a1f2847-c840-44fc-9639-6003de0ad985",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/fishing_mode_pearls.png",
+      "bytes": 3533,
+      "uuid": "a2fef15b-e0fd-47eb-92f6-0cb697068831",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_ApplesForaging.png",
+      "bytes": 3665,
+      "uuid": "86998a46-a3b7-41ae-8cd1-b160d5cb7950",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_BiggerPiles.png",
+      "bytes": 3924,
+      "uuid": "15ee365f-8ff8-4f82-8aeb-a926f830a4ce",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_CitrusForaging.png",
+      "bytes": 5719,
+      "uuid": "5f9092df-527f-4b00-ad5c-cab86c57e143",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_ComboPiles.png",
+      "bytes": 2909,
+      "uuid": "e14436d3-a6a9-44f6-aaa0-b988fc20afe6",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_ComboUnlock.png",
+      "bytes": 3650,
+      "uuid": "d4d18228-c4c4-4dbe-9caf-067f28f1459e",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_ExtraBush.png",
+      "bytes": 3134,
+      "uuid": "fe0bb743-a37c-4a2d-b157-227eab221e12",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_FasterDiscovery.png",
+      "bytes": 2310,
+      "uuid": "742c2e08-8b10-4f7d-a685-cd77bf942ba8",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_Multitasking.png",
+      "bytes": 3221,
+      "uuid": "a7ae550d-ae85-44a3-9af6-3ac730c03fb1",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_RainbowPiles.png",
+      "bytes": 3222,
+      "uuid": "01cc52ea-7b09-4711-83dd-fbecee9b267e",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/foragers_SpawnForager.png",
+      "bytes": 3179,
+      "uuid": "7c0cfc51-391c-4d04-a86a-a09654841d61",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/gemini_GeminiCapacity.png",
+      "bytes": 5492,
+      "uuid": "d0977f17-2d0e-4267-88f0-8c096e2cda2c",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/gemini_GeminiCapacityHerculean.png",
+      "bytes": 5090,
+      "uuid": "36027770-8f43-4c61-8092-de4c7bf8af6c",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/gemini_GeminiSpeed.png",
+      "bytes": 5860,
+      "uuid": "efd553a1-b5ef-4009-8011-33cde2c3a33c",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/gemini_SpawnGemini.png",
+      "bytes": 4914,
+      "uuid": "a83eb52c-d61a-4f19-9d28-ef501145c8d2",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/haulers_CarrierClosest.png",
+      "bytes": 3273,
+      "uuid": "50ca83eb-3588-4969-a788-203038b8101f",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/haulers_CarrierSmallest.png",
+      "bytes": 3920,
+      "uuid": "8334375a-f7b9-47bb-8787-00db689f3c31",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/haulers_HaulerCapacity.png",
+      "bytes": 2525,
+      "uuid": "18162bdf-7db9-49dd-8c42-494f00e06feb",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/haulers_HaulerCapacityHerculean.png",
+      "bytes": 5090,
+      "uuid": "1e8fddba-9e6d-45dd-8b59-18af9523b97c",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/haulers_HaulerSpeed.png",
+      "bytes": 2420,
+      "uuid": "07c27db2-6d95-4a06-94b3-8805f2e8ff76",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/haulers_HotPotato.png",
+      "bytes": 2601,
+      "uuid": "3d9076cd-898f-4e79-be5d-9010c87cb00b",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/haulers_SpawnHauler.png",
+      "bytes": 3255,
+      "uuid": "237d994d-d55d-4d62-93cd-2c20a638200a",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/haulers_Sprint.png",
+      "bytes": 3259,
+      "uuid": "20e65d8a-32b7-451f-8331-37d7ee980503",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/hunters_CleanCut.png",
+      "bytes": 3047,
+      "uuid": "6d591891-16e8-4ecd-90b9-63694996b00a",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/hunters_HunterCooldown.png",
+      "bytes": 3084,
+      "uuid": "33f05f00-b21d-4ac1-84ee-8c4384e6123c",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/hunters_SaltedEdge.png",
+      "bytes": 2909,
+      "uuid": "c882d859-89b9-4ab4-8028-a2ca6a98ffa4",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/hunters_SpawnBGH.png",
+      "bytes": 3604,
+      "uuid": "f49e40fe-f5bb-4e44-b3d8-9d64c1985032",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/hunters_SpawnHunter.png",
+      "bytes": 3124,
+      "uuid": "17d8fd94-53a2-4476-9bfa-1b1c62d58802",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/hunters_Tenderiser.png",
+      "bytes": 2929,
+      "uuid": "4039f742-cdfa-4ffc-abac-f2e49dba8ca1",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_amber.png",
+      "bytes": 3263,
+      "uuid": "7f07e85f-ae91-4c73-960b-1e32ad654fa8",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_clay.png",
+      "bytes": 3729,
+      "uuid": "26baedec-d93c-48fa-b426-93eb8d313bea",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_coal.png",
+      "bytes": 3324,
+      "uuid": "ccf8631d-1985-4de4-8ade-af373764ee4e",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_gold.png",
+      "bytes": 3624,
+      "uuid": "8f4d233d-8b10-4a6d-b831-f7bc517a0ce6",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_icicles.png",
+      "bytes": 2959,
+      "uuid": "e77d6c24-19c4-4982-823d-453e6fb35652",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_iron.png",
+      "bytes": 3552,
+      "uuid": "8029281b-ad94-4faa-9d59-a0ba03a17414",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_lead.png",
+      "bytes": 3080,
+      "uuid": "d1b20925-4b77-45e6-b8b0-5ef0adf681ef",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_mushrooms.png",
+      "bytes": 2932,
+      "uuid": "de2b9c4b-2067-4d74-8ca8-23e3ad35dd39",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_nacre.png",
+      "bytes": 3753,
+      "uuid": "6b82b6f9-b99b-4836-962d-f97a8b92a3e7",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_salt.png",
+      "bytes": 3303,
+      "uuid": "41be3cf3-9f3b-40ea-85ea-641e80a522c1",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mine_uncap.png",
+      "bytes": 3629,
+      "uuid": "6f552c34-cdc0-47db-91a2-ece9e1cc6cde",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mushrooms_Chanterelles.png",
+      "bytes": 6143,
+      "uuid": "b4c867b0-5a7e-471b-9d33-e9e31d66bc01",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mushrooms_SpawnHandler.png",
+      "bytes": 2654,
+      "uuid": "36da61c9-9d5c-4e8e-9732-64f396f90272",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mushrooms_SpawnMycologist.png",
+      "bytes": 2754,
+      "uuid": "8a01736b-c7f2-4335-911c-30430a4b2a80",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mushrooms_SporesEuphoria.png",
+      "bytes": 2197,
+      "uuid": "5d27b500-9811-4860-9319-244c0728e041",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mushrooms_SporesFocus.png",
+      "bytes": 2259,
+      "uuid": "b1d46d7e-6883-45e1-b3fe-ff74970fc2b3",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mushrooms_SporesPurification.png",
+      "bytes": 3245,
+      "uuid": "9713aad8-4817-4dc4-83c3-b6a39361a792",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/mushrooms_SporesVitamins.png",
+      "bytes": 2231,
+      "uuid": "001d73fa-444d-43ce-aacb-0101e780b7bd",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_ApplesValue.png",
+      "bytes": 2665,
+      "uuid": "15b71691-cd50-4dd9-9aef-31ba0b91b0be",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_GoldenApples.png",
+      "bytes": 2630,
+      "uuid": "def4ed94-65a4-4c40-91aa-5610613d2574",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_GrowthSpeed.png",
+      "bytes": 3189,
+      "uuid": "319a703f-c16b-43b3-ad1d-df98baeece2c",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_IceBerries.png",
+      "bytes": 3318,
+      "uuid": "ac2777a5-da90-4111-a5aa-d79686591d73",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_MoreTrees.png",
+      "bytes": 2847,
+      "uuid": "718d0920-7874-43b1-99df-7c4adc5ea400",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_MoreTreesExtra.png",
+      "bytes": 6756,
+      "uuid": "f3d645ce-97eb-4848-8e3c-6158ecb972cc",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_Plenty.png",
+      "bytes": 3218,
+      "uuid": "153d0d91-513d-41e6-9ddc-db8206db3666",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_Prolificity.png",
+      "bytes": 3358,
+      "uuid": "1f446042-cf33-4514-87d9-0d73c33432ad",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_ScorchFruits.png",
+      "bytes": 3107,
+      "uuid": "694ebdae-0ac5-486a-b3ff-f1d008121af8",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/orchard_STOMP.png",
+      "bytes": 3287,
+      "uuid": "b759ffcc-661c-4d2c-a04e-660409e520e8",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/queen_AffinityCold.png",
+      "bytes": 3033,
+      "uuid": "f622ad61-6ffa-40c4-b72f-2bbd293c69ce",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/queen_AffinityHeat.png",
+      "bytes": 3107,
+      "uuid": "ea7182b0-e750-4f8a-bbba-80604505bc4b",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/queen_BuildingEvolutionChamber.png",
+      "bytes": 4479,
+      "uuid": "0833dd56-9f0a-4d52-bf6b-74359d5a78b2",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/queen_BuildingForagers.png",
+      "bytes": 4073,
+      "uuid": "dc6a8d49-5309-44d0-b508-9851d38d4ff2",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/queen_BuildingHaulers.png",
+      "bytes": 3639,
+      "uuid": "c865e0d9-d85f-47b2-8df2-193278c7635c",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/queen_Nursery.png",
+      "bytes": 4121,
+      "uuid": "ce95631a-c448-42fe-90da-051d57c44845",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/queen_Rebirth.png",
+      "bytes": 5387,
+      "uuid": "b01e03df-d595-4f62-b845-d2161525e44c",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/queen_SpawnLarvae.png",
+      "bytes": 4248,
+      "uuid": "50f9b081-dfde-4252-9672-328893117cbf",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/throwers_CarrierBiggest.png",
+      "bytes": 3484,
+      "uuid": "24f62f19-3aa1-47dd-b3cd-34e8528d6e7d",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/throwers_MidasTouch.png",
+      "bytes": 3136,
+      "uuid": "e49e715a-2cd5-4643-8555-0c99fe861aad",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/throwers_SpawnThrower.png",
+      "bytes": 2999,
+      "uuid": "f90874ca-bcc4-4a0c-ad88-54e5126d62e8",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/throwers_Springboard.png",
+      "bytes": 2923,
+      "uuid": "f75e9c1a-fda7-4a75-8b5b-5e31fb43997f",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/throwers_ThrowerCapacity.png",
+      "bytes": 2860,
+      "uuid": "2f45ce10-d1db-4c79-a27b-aed392b6202b",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/throwers_ThrowerSpeed.png",
+      "bytes": 3172,
+      "uuid": "456d63f2-6252-45bf-8355-8306af12c92a",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/replacement-icons/tunnellers_tunneller.png",
+      "bytes": 3730,
+      "uuid": "4ad81005-e0e3-48f5-b78d-803ac19ca027",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/gameplay/upgrade-skin/watch_ad_badge.png",
+      "bytes": 815,
+      "uuid": "9d4c264b-a372-480f-a8a1-c21b66a0534d",
+      "refs": [],
+      "dynamic": true,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/music/queen_loop_1.mp3",
+      "bytes": 854351,
+      "uuid": "1eaeb0b4-9a64-4337-a68c-bac73fd7032f",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_1.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_10.mp3",
+      "bytes": 683824,
+      "uuid": "86f4c3fa-c552-4a31-b5a2-d8380edddb33",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_10.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_11.mp3",
+      "bytes": 683824,
+      "uuid": "3665efed-050f-44fd-b442-cc5159f2cc7d",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_11.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_12.mp3",
+      "bytes": 683824,
+      "uuid": "d6b814ec-2fb2-4f61-ad00-88b4657782c3",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_12.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_13.mp3",
+      "bytes": 683824,
+      "uuid": "377b5d53-21f3-4dac-a6dd-ea2aefc48593",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_13.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_14.mp3",
+      "bytes": 1024878,
+      "uuid": "1f8caf87-0d57-4706-8a17-0a4949d5af84",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_14.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_15.mp3",
+      "bytes": 1024878,
+      "uuid": "46bf3087-05aa-4f99-a5e6-63cfd4c7559e",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_15.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_16.mp3",
+      "bytes": 683824,
+      "uuid": "5a2f49ce-82cc-4f5b-9ca3-fdf6ff5386c7",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_16.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_2.mp3",
+      "bytes": 854351,
+      "uuid": "6bea157d-5f93-43a1-8c6b-347b5a093dca",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_2.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_3.mp3",
+      "bytes": 854351,
+      "uuid": "6086f340-7f5b-49f9-b620-641de538e887",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_3.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_4.mp3",
+      "bytes": 854351,
+      "uuid": "249d85f6-f43f-4ea9-b280-403cff875bcf",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_4.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_5.mp3",
+      "bytes": 854351,
+      "uuid": "ccd89dac-c0bf-4a14-831e-e9d3861a9378",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_5.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_6.mp3",
+      "bytes": 683824,
+      "uuid": "f2a46b74-4126-4579-8fb2-c553c2f27ae5",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_6.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_7.mp3",
+      "bytes": 683824,
+      "uuid": "f347947e-2bd4-4082-a0f9-98709eaf5a97",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_7.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_8.mp3",
+      "bytes": 683824,
+      "uuid": "c6785d14-4979-4b60-ad64-77befe5f7d87",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_8.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/music/queen_loop_9.mp3",
+      "bytes": 683824,
+      "uuid": "b069d0a9-087d-4af1-8bf8-97a85e975e06",
+      "refs": [],
+      "dynamic": true,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\02_音频_Audio\\Music_MP3\\queen_loop_9.mp3",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/buildings/Apartment.png",
+      "bytes": 17320,
+      "uuid": "6c27505a-f28a-455c-8724-a48a5b8021c6",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/HaulerApartment.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Apartment.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/buildings/Burrow.png",
+      "bytes": 20188,
+      "uuid": "8467d558-579f-4e65-ac9b-0604fab6ad69",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/ForagerBurrow.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Burrow.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/buildings/BushBig.png",
+      "bytes": 4189,
+      "uuid": "57068900-6dcd-485a-a869-64676ce570c4",
+      "refs": [
+        "assets/gameplay/prefabs/plants/BlueberryBush.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\BushBig.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/buildings/Evolution.png",
+      "bytes": 16202,
+      "uuid": "8d63b1fb-133b-4acb-ae24-09164195c731",
+      "refs": [
+        "assets/gameplay/prefabs/buildings/EvolutionChamber.prefab",
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\buildings\\Evolution.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/circle.png",
+      "bytes": 4100,
+      "uuid": "9ad295b7-d88c-4d8c-b021-953e956e7ca2",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Forager.prefab",
+        "assets/gameplay/prefabs/characters/Hauler.prefab",
+        "assets/gameplay/prefabs/characters/Larva.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\circle.png",
+      "identical": true,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/blueberry.png",
+      "bytes": 1943,
+      "uuid": "ea8feba2-6532-4136-a5da-058f1569c6cf",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab",
+        "assets/gameplay/prefabs/plants/BlueberryBush.prefab",
+        "assets/gameplay/scenes/Game.scene",
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/textures/art/foods/bug_meat.png",
+      "bytes": 2269,
+      "uuid": "4f3fcfa5-f31c-4a28-8879-04bb088be489",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\bug_meat.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/candy_apple.png",
+      "bytes": 2293,
+      "uuid": "78a8fe44-c7fe-4124-b114-836d697916b1",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\candy_apple.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/chanterelle.png",
+      "bytes": 2583,
+      "uuid": "f3a94200-6c66-4522-a864-618a24d8de89",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene",
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\chanterelle.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/citrony.png",
+      "bytes": 2490,
+      "uuid": "a7a0ef7b-1ac2-484c-b1e1-b3df7c34e5ba",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\citrony.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/fish.png",
+      "bytes": 2328,
+      "uuid": "9ec250ce-04a9-4753-b160-d7d7293c62bc",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\fish.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/frost.png",
+      "bytes": 4385,
+      "uuid": "e5c98700-03dd-44c0-bc9d-6d45359770b1",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/textures/art/foods/golden_apple.png",
+      "bytes": 2369,
+      "uuid": "810347ce-88b1-495d-b666-0ac7df1ba2e8",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\golden_apple.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/golden_candy_apple.png",
+      "bytes": 2335,
+      "uuid": "8e6f0b92-77b9-4194-9b4e-dcb1e619e608",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\golden_candy_apple.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/green_apple.png",
+      "bytes": 3352,
+      "uuid": "cdc817db-2814-423b-a4b1-75b1734eb2f3",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene",
+        "assets/gameplay/ui/RateStatusPanel.prefab",
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\green_apple.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/honeydew.png",
+      "bytes": 1528,
+      "uuid": "9c2ae4cd-7f7d-45ce-bcef-0117b214e2cb",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\honeydew.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/iceberry.png",
+      "bytes": 2123,
+      "uuid": "0573d9cd-891b-499a-afbe-f85ff847b55c",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\iceberry.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/ice_cream.png",
+      "bytes": 2135,
+      "uuid": "39c19b31-b9c6-47eb-8d85-7d86d39813d5",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\ice_cream.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/pearl.png",
+      "bytes": 1775,
+      "uuid": "f7acdd2a-153b-4918-a60a-fc5d787bb8e4",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\pearl.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/pepper.png",
+      "bytes": 2142,
+      "uuid": "97d5412d-0102-4dd3-bf42-d2616aeb4eef",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\pepper.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/red_apple.png",
+      "bytes": 2456,
+      "uuid": "82381273-1e2a-44c7-bfa3-57775dcefe08",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\red_apple.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/skewer.png",
+      "bytes": 1995,
+      "uuid": "b2b09b1c-21ee-4836-896e-0f15db436e04",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\skewer.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/sparkles.png",
+      "bytes": 1983,
+      "uuid": "1f804259-3a10-45fc-a276-7c32a776b1ff",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\sparkles.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/spicy_sauce.png",
+      "bytes": 1591,
+      "uuid": "752984b7-6c40-4739-9103-f131abe56e6d",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\spicy_sauce.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/foods/star.png",
+      "bytes": 5077,
+      "uuid": "a6a31aa8-649f-41a0-a8fb-f905b7cd0cb3",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/textures/art/foods/tako.png",
+      "bytes": 2438,
+      "uuid": "93971ad1-508b-47f3-a797-eaa9fe0846f4",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\foods\\tako.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/forager/run/run_0.png",
+      "bytes": 16691,
+      "uuid": "8688dd99-4f9c-40e5-a850-670309272b95",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Forager.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/forager/run/run_1.png",
+      "bytes": 18369,
+      "uuid": "ac7c8fec-646a-4948-9357-a3104ea199dd",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Forager.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/forager/run/run_2.png",
+      "bytes": 16976,
+      "uuid": "53c2424d-ac26-42ea-96d7-42472b9c4b78",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Forager.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/forager/run/run_3.png",
+      "bytes": 18369,
+      "uuid": "7605c2c3-5dc2-49a9-b7eb-da880fc905c3",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Forager.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/forager/run/run_4.png",
+      "bytes": 16691,
+      "uuid": "a161e4d5-7f75-4c4e-8960-1dfc4fd1bc07",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Forager.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/idle_0.png",
+      "bytes": 14619,
+      "uuid": "679f801c-b2f9-455b-bc97-0c9d980191a3",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/idle_1.png",
+      "bytes": 14938,
+      "uuid": "83502943-98c3-4bd5-bf67-2e22c6cf18c1",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/idle_2.png",
+      "bytes": 14763,
+      "uuid": "89758ef3-8e92-4f15-9eb7-71103450110a",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/idle_3.png",
+      "bytes": 15016,
+      "uuid": "ced45d97-de78-40e9-8e18-7d30e9faeb98",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/idle_4.png",
+      "bytes": 14619,
+      "uuid": "7407bcd0-9c96-4458-8056-e639778cff10",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/run_0.png",
+      "bytes": 14254,
+      "uuid": "190d011c-057b-4e67-8bd9-57ebdf70aa16",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/run_1.png",
+      "bytes": 15315,
+      "uuid": "0085a9f1-b845-41ce-a16c-a114ab35e68a",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/run_2.png",
+      "bytes": 14572,
+      "uuid": "5f06efa2-b7ba-4689-961c-fbb64ae09b9f",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/run_3.png",
+      "bytes": 15315,
+      "uuid": "d0b3c319-0951-4c30-a119-bbb6a3fdf462",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/hauler/five/run_4.png",
+      "bytes": 14254,
+      "uuid": "19e43eea-2465-4f3d-8590-0b27bfa3ad1c",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Hauler.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/icons/brain.png",
+      "bytes": 3303,
+      "uuid": "4236a93b-9e0c-49c8-93de-3dd491b830d3",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene",
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/textures/art/icons/dna.png",
+      "bytes": 2142,
+      "uuid": "049a3583-ab48-42c8-b96b-bab682c08759",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene",
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\dna.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/icons/fire.png",
+      "bytes": 2308,
+      "uuid": "f1d657bb-9f36-44c1-be9f-a33f981638d6",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/textures/art/icons/frostfire.png",
+      "bytes": 2222,
+      "uuid": "1682ba2e-3ec8-46e7-b342-de0670b97dba",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\frostfire.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/icons/larva.png",
+      "bytes": 2013,
+      "uuid": "67d316f3-5de2-490e-bbb5-316be5ea7dad",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene",
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\icons\\larva.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/icons/sour.png",
+      "bytes": 2490,
+      "uuid": "ece704f6-768f-4bd3-8091-5cb060aa732c",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 2
+    },
+    {
+      "path": "assets/textures/art/larva_1.png",
+      "bytes": 1230,
+      "uuid": "ae768701-4c65-4531-8cf1-64bc79323b36",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Larva.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\larva_1.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/larva_2.png",
+      "bytes": 1214,
+      "uuid": "dcac593d-ebdf-495a-b5e2-d86b35522d4c",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Larva.prefab"
+      ],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\larva_2.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/queen_lvl_0.png",
+      "bytes": 5235,
+      "uuid": "16dad9c9-ec6b-4267-b314-c5f3ef65ba4e",
+      "refs": [],
+      "dynamic": false,
+      "source": "E:\\LDC_Cocos_PJ\\Cocos3X_2D\\喂蚁后\\Exe\\FEED THE QUEEN\\蚂蚁Exported_Assets\\01_美术图像_Visuals\\queen_lvl_0.png",
+      "identical": false,
+      "candidates": 1
+    },
+    {
+      "path": "assets/textures/art/thrower/body.png",
+      "bytes": 4848,
+      "uuid": "d82ba218-54e4-49f2-a112-7e5b3617da61",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Thrower.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/thrower/hand_left.png",
+      "bytes": 816,
+      "uuid": "b7a732bd-2dcb-44c5-aad7-3d0d9ee5187f",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Thrower.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/art/thrower/hand_right.png",
+      "bytes": 852,
+      "uuid": "d996f358-b321-44d6-a74a-9ce401c463d4",
+      "refs": [
+        "assets/gameplay/prefabs/characters/Thrower.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/Game/add.png",
+      "bytes": 4256,
+      "uuid": "898fb4b4-941b-4be0-881a-d35d86e6f34c",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/Game/game_bg.jpg",
+      "bytes": 438391,
+      "uuid": "338824bd-0ddb-47e5-9baa-ecd14014c020",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/Game/sub.png",
+      "bytes": 4178,
+      "uuid": "6b14853b-0eea-4cd4-9e7c-83de06ea5e4f",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/loading-skin/bjt.jpg",
+      "bytes": 147279,
+      "uuid": "2ea4bd8d-e3d0-4e1d-b6e1-8b55e6ba01fa",
+      "refs": [
+        "assets/scenes/Loading.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/loading-skin/jdt1.png",
+      "bytes": 8322,
+      "uuid": "bde068ed-6d60-4a83-a81f-7a4b7cd1d81b",
+      "refs": [
+        "assets/scenes/Loading.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/loading-skin/jdt2.png",
+      "bytes": 6400,
+      "uuid": "afab9bb3-d19b-40b8-9f13-d1ffc752c98c",
+      "refs": [
+        "assets/scenes/Loading.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/loading-skin/Queen.png",
+      "bytes": 2946,
+      "uuid": "5d1aaca6-5541-4790-867c-c060b23e8a78",
+      "refs": [
+        "assets/scenes/Loading.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 3
+    },
+    {
+      "path": "assets/textures/Main/main_bg.png",
+      "bytes": 4076965,
+      "uuid": "70326e2c-ad85-4d6f-a76c-dc227810ffab",
+      "refs": [],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/bjt.jpg",
+      "bytes": 137886,
+      "uuid": "de050575-660b-4161-aa1d-f94f430f7231",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/entry/anniu.png",
+      "bytes": 26552,
+      "uuid": "4d86a6e9-6e12-4a91-91a2-a26f43c7588d",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/entry/db.png",
+      "bytes": 191774,
+      "uuid": "ce6062b4-b0d7-44af-a49b-fee4733b7b8e",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/entry/gb.png",
+      "bytes": 5395,
+      "uuid": "d1b4092c-c19b-40bd-b61e-a677579defdf",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/fx.png",
+      "bytes": 11323,
+      "uuid": "09128fb5-002a-492b-9af8-fc7e444d652e",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/ksyx.png",
+      "bytes": 31317,
+      "uuid": "cf9c47d9-6923-479c-9262-3de812ca1370",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/promotion/anniu1.png",
+      "bytes": 21978,
+      "uuid": "10654c23-ebaa-4ded-9add-d5e5b5ab9f96",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/promotion/anniu2.png",
+      "bytes": 21198,
+      "uuid": "98817871-1996-4017-996e-fb796e870bbc",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/promotion/db1.png",
+      "bytes": 65436,
+      "uuid": "0b1f973c-1bde-4890-bc7c-ddf40ba4601e",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/promotion/k.png",
+      "bytes": 13086,
+      "uuid": "75bbc604-a903-4e80-870f-c8a2557d5ca3",
+      "refs": [],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/promotion/zi1.png",
+      "bytes": 1813,
+      "uuid": "aa9eb190-0b3d-4ac3-a6dc-8b348231b883",
+      "refs": [],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/promotion/zi2.png",
+      "bytes": 1749,
+      "uuid": "0b92e245-0dc7-4143-8948-33680af4ad56",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/rkyj.png",
+      "bytes": 10623,
+      "uuid": "40eb3a17-0328-4f93-b028-71d6c41c42df",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/settings-button.png",
+      "bytes": 6646,
+      "uuid": "4f0fbb4f-377e-4b26-bca9-7075e01012f9",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/main-menu/tjzm.png",
+      "bytes": 10490,
+      "uuid": "807640da-24c4-412a-9301-d9f11e060503",
+      "refs": [
+        "assets/scenes/Main.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/Upgrade/Button.png",
+      "bytes": 11109,
+      "uuid": "8646e847-6d68-4016-b20a-598c481d997c",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/Upgrade/Panel.png",
+      "bytes": 2450,
+      "uuid": "b4301019-4054-434f-a5bd-97bc61c532d3",
+      "refs": [
+        "assets/gameplay/scenes/Game.scene",
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    },
+    {
+      "path": "assets/textures/Upgrade/RateSolid.png",
+      "bytes": 70,
+      "uuid": "e1a4de05-c0e6-4386-8f58-41ec51a08872",
+      "refs": [
+        "assets/gameplay/ui/RateStatusPanel.prefab"
+      ],
+      "dynamic": false,
+      "source": null,
+      "identical": false,
+      "candidates": 0
+    }
+  ]
+}

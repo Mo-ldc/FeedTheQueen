@@ -1,0 +1,15 @@
+{
+  "name": "feed-the-queen-cocos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check:mini-game": "node tools/check-minigame-size.cjs",
+    "package:mini-game": "node tools/package-minigame.cjs",
+    "test:bundles": "node tools/test-game-bundles.cjs"
+  },
+  "description": "Feed The Queen / 蚁后物语 — Cocos Creator 3.8.8 portrait recreation",
+  "creator": {
+    "version": "3.8.8"
+  },
+  "uuid": "1f8742f5-00d1-40a7-ae16-e2491a66fd62"
+}

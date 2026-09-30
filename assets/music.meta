@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "d61fdf0a-1721-4e83-bc57-df9130b6e869",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleName": "music",
+    "bundleConfigID": "remote-music",
+    "priority": 1
+  }
+}

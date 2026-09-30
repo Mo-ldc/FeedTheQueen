@@ -1,0 +1,19 @@
+{
+  "general": {
+    "designResolution": {
+      "width": 750,
+      "height": 1800,
+      "fitWidth": true,
+      "fitHeight": false
+    },
+    "orientation": "portrait",
+    "launchScene": "db://assets/scenes/Main.scene",
+    "maxAudioChannel": 24
+  },
+  "layer": [],
+  "physics": {
+    "allowSleep": true,
+    "autoSimulation": true,
+    "gravity": { "x": 0, "y": -320, "z": 0 }
+  }
+}

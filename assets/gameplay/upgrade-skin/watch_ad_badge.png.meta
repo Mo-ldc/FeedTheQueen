@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.27",
+  "importer": "image",
+  "imported": true,
+  "uuid": "9d4c264b-a372-480f-a8a1-c21b66a0534d",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "uuid": "9d4c264b-a372-480f-a8a1-c21b66a0534d@6c48a",
+      "name": "texture",
+      "files": [
+        ".json"
+      ],
+      "userData": {
+        "visible": false,
+        "imageUuidOrDatabaseUri": "9d4c264b-a372-480f-a8a1-c21b66a0534d",
+        "wrapModeT": "clamp-to-edge",
+        "magfilter": "linear",
+        "isUuid": true,
+        "wrapModeS": "clamp-to-edge",
+        "minfilter": "linear",
+        "anisotropy": 0,
+        "mipfilter": "none"
+      },
+      "displayName": "watch_ad_badge",
+      "ver": "1.0.22",
+      "id": "6c48a",
+      "importer": "texture",
+      "subMetas": {},
+      "imported": true
+    },
+    "f9941": {
+      "uuid": "9d4c264b-a372-480f-a8a1-c21b66a0534d@f9941",
+      "name": "spriteFrame",
+      "files": [
+        ".json"
+      ],
+      "userData": {
+        "isUuid": true,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "vertices": {
+          "maxPos": [
+            22,
+            17,
+            0
+          ],
+          "minPos": [
+            -22,
+            -17,
+            0
+          ],
+          "rawPosition": [
+            -22,
+            -17,
+            0,
+            22,
+            -17,
+            0,
+            -22,
+            17,
+            0,
+            22,
+            17,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            0,
+            34,
+            44,
+            34,
+            0,
+            0,
+            44,
+            0
+          ],
+          "nuv": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        "pixelsToUnit": 100,
+        "atlasUuid": "",
+        "pivotY": 0.5,
+        "imageUuidOrDatabaseUri": "9d4c264b-a372-480f-a8a1-c21b66a0534d@6c48a",
+        "offsetY": 0,
+        "rotated": false,
+        "rawHeight": 34,
+        "pivotX": 0.5,
+        "height": 34,
+        "trimY": 0,
+        "borderTop": 0,
+        "trimType": "auto",
+        "offsetX": 0,
+        "meshType": 0,
+        "rawWidth": 44,
+        "borderBottom": 0,
+        "trimThreshold": 1,
+        "width": 44,
+        "packable": true,
+        "trimX": 0
+      },
+      "displayName": "watch_ad_badge",
+      "ver": "1.0.12",
+      "id": "f9941",
+      "importer": "sprite-frame",
+      "subMetas": {},
+      "imported": true
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "redirect": "9d4c264b-a372-480f-a8a1-c21b66a0534d@6c48a",
+    "fixAlphaTransparencyArtifacts": false,
+    "hasAlpha": true
+  }
+}

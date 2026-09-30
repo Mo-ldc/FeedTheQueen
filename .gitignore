@@ -1,0 +1,12 @@
+/library/
+/temp/
+/local/
+/profiles/
+/build/
+/native/engine/
+/node_modules/
+/backups/
+/reports/*-contact.png
+*.log
+.DS_Store
+Thumbs.db

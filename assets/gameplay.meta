@@ -1,0 +1,14 @@
+{
+  "ver": "1.2.0",
+  "importer": "directory",
+  "imported": true,
+  "uuid": "1e6fbe41-f8dd-4d8a-b7e3-9d827c3c11ee",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "isBundle": true,
+    "bundleConfigID": "local-gameplay",
+    "bundleName": "gameplay",
+    "priority": 1
+  }
+}
