@@ -220,7 +220,7 @@
       "a": 25
     },
     "_spriteFrame": {
-      "__uuid__": "9ad295b7-d88c-4d8c-b021-953e956e7ca2@f9941",
+      "__uuid__": "de0732cd-05d1-4bb0-829c-eda0c148a580@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -264,7 +264,7 @@
       "__id__": 2
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 10
@@ -356,7 +356,7 @@
       "a": 25
     },
     "_spriteFrame": {
-      "__uuid__": "9ad295b7-d88c-4d8c-b021-953e956e7ca2@f9941",
+      "__uuid__": "de0732cd-05d1-4bb0-829c-eda0c148a580@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -400,7 +400,7 @@
       "__id__": 2
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 16
@@ -554,8 +554,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 33,
+      "x": -1,
+      "y": 15,
       "z": 0
     },
     "_lrot": {
@@ -590,7 +590,7 @@
       "__id__": 21
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 23
@@ -768,12 +768,12 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "8688dd99-4f9c-40e5-a850-670309272b95@f9941",
+      "__uuid__": "4930aa4d-ba6e-468e-bcd0-1b7dee27a585@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 0,
+    "_sizeMode": 2,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -857,28 +857,7 @@
       "__id__": 37
     },
     "_id": "",
-    "runFrames": [
-      {
-        "__uuid__": "8688dd99-4f9c-40e5-a850-670309272b95@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "ac7c8fec-646a-4948-9357-a3104ea199dd@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "53c2424d-ac26-42ea-96d7-42472b9c4b78@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "7605c2c3-5dc2-49a9-b7eb-da880fc905c3@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      },
-      {
-        "__uuid__": "a161e4d5-7f75-4c4e-8960-1dfc4fd1bc07@f9941",
-        "__expectedType__": "cc.SpriteFrame"
-      }
-    ]
+    "runFrames": []
   },
   {
     "__type__": "cc.CompPrefabInfo",

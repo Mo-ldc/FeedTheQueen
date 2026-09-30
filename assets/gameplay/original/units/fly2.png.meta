@@ -58,6 +58,10 @@
         "pivotX": 0.5,
         "pivotY": 0.5,
         "meshType": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d7b9cded-625b-45c8-9600-d9763217a372@6c48a",
+        "atlasUuid": "",
+        "trimType": "none",
         "vertices": {
           "rawPosition": [
             -47,
@@ -111,11 +115,7 @@
             30,
             0
           ]
-        },
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "d7b9cded-625b-45c8-9600-d9763217a372@6c48a",
-        "atlasUuid": "",
-        "trimType": "none"
+        }
       },
       "ver": "1.0.12",
       "imported": true,

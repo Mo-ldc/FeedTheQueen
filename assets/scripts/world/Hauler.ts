@@ -252,7 +252,7 @@ export class Hauler extends Component {
         const phase = cycle - Math.floor(cycle);
         let frame: SpriteFrame | null = this.idleFrame;
         const height = 75;
-        let scaleX = 1, scaleY = 1, posY = 0, angle = this.facingAngle;
+        let scaleX = 1, scaleY = 1, posY = 0, angle = 0; // Original front-facing art stays upright in portrait view.
         if (this.task === 'idle') {
             frame = [this.idleFrame, this.idleFrame2, this.idleFrame3, this.idleFrame4, this.idleFrame5][Math.floor(this.animationTime * 18) % 5] || this.idleFrame;
             const p = this.animationTime % 1;
@@ -275,6 +275,9 @@ export class Hauler extends Component {
         } else {
             const step = Math.floor(phase * 5);
             frame = [this.walkFrame, this.walkFrame2, this.walkFrame3, this.walkFrame4, this.walkFrame5][step];
+        }
+        if (this.cargo > 0 && this.task !== 'throw') {
+            frame = [this.carryFrame1, this.carryFrame2, this.carryFrame3][Math.floor(phase * 3)] || frame;
         }
         if (frame) this.body.spriteFrame = frame;
         this.body.sizeMode = Sprite.SizeMode.CUSTOM;

@@ -32,7 +32,7 @@ export class ThrowerDen extends Component {
     }
     private loadFrames():void {
         if(this.loadingFrames||this.frames.length)return;this.loadingFrames=true;
-        resources.load('audio/sfx/InflateArpeggio',AudioClip,(e,c)=>{if(!e&&isValid(this))this.clip=c;});
+        resources.load('original/audio/InflateArpeggio',AudioClip,(e,c)=>{if(!e&&isValid(this))this.clip=c;});
         Promise.all(['buildings/Den','units/bigcrab','units/bigcrab_eepy','units/LeftArm','units/RightArm','circle'].map(p=>originalFrame('original/'+p)))
             .then(frames=>{if(!isValid(this))return;this.frames=frames;this.synchronize();}).catch(error=>{this.loadingFrames=false;console.error(error);});
     }

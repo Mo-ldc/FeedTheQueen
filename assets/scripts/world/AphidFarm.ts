@@ -73,7 +73,7 @@ export class AphidFarm extends Component {
     }
     private loadFrames():void {
         if(this.loadingFrames||this.frames.length)return;this.loadingFrames=true;
-        for(const name of ['squish','Pearl2','InflateArpeggio'])resources.load('audio/sfx/'+name,AudioClip,(error,clip)=>{if(!error&&isValid(this))this.sounds[name]=clip;});
+        for(const name of ['squish','Pearl2','InflateArpeggio'])resources.load('original/audio/'+name,AudioClip,(error,clip)=>{if(!error&&isValid(this))this.sounds[name]=clip;});
         Promise.all(['buildings/Farm','buildings/farm_rocks','units/milkmaid','units/farmer','units/aphid_honey','units/aphid_spicy','units/aphid_meat','dot2'].map(p=>originalFrame('original/'+p)))
             .then(frames=>{if(!isValid(this))return;this.frames=frames;this.synchronize();}).catch(error=>{this.loadingFrames=false;console.error(error);});
     }

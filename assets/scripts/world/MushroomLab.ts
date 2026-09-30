@@ -51,7 +51,7 @@ export class MushroomLab extends Component {
     }
     private loadFrames():void {
         if(this.loadingFrames||this.frames.length)return;this.loadingFrames=true;
-        resources.load('audio/sfx/InflateArpeggio',AudioClip,(e,c)=>{if(!e&&isValid(this))this.introClip=c;});
+        resources.load('original/audio/InflateArpeggio',AudioClip,(e,c)=>{if(!e&&isValid(this))this.introClip=c;});
         Promise.all(['buildings/Lab','units/sluggy','units/sluggy_eepy','foods/bolet','foods/amanita','foods/starshroom','foods/clearshroom','foods/chanterelle','circle'].map(p=>originalFrame('original/'+p)))
             .then(frames=>{if(!isValid(this))return;this.frames=frames;this.synchronize();}).catch(error=>{this.loadingFrames=false;console.error(error);});
     }

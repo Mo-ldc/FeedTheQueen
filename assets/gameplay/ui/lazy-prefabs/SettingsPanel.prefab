@@ -182,9 +182,9 @@
       "__uuid__": "59e58478-5573-4ac7-975c-863a43f5ab09@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 0,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -378,9 +378,9 @@
       "__uuid__": "c7a11967-0b01-40b5-a6a5-be96b28e91ae@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 0,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -514,9 +514,9 @@
       "__uuid__": "40d8968d-5fa3-468e-98f1-b201e0dea917@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 3,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -996,9 +996,9 @@
       "__uuid__": "c7a11967-0b01-40b5-a6a5-be96b28e91ae@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 0,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1132,9 +1132,9 @@
       "__uuid__": "40d8968d-5fa3-468e-98f1-b201e0dea917@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 3,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1614,9 +1614,9 @@
       "__uuid__": "c7a11967-0b01-40b5-a6a5-be96b28e91ae@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 0,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1750,9 +1750,9 @@
       "__uuid__": "40d8968d-5fa3-468e-98f1-b201e0dea917@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 3,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -2232,9 +2232,9 @@
       "__uuid__": "c7a11967-0b01-40b5-a6a5-be96b28e91ae@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 0,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -2368,9 +2368,9 @@
       "__uuid__": "40d8968d-5fa3-468e-98f1-b201e0dea917@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 3,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -2793,9 +2793,9 @@
       "__uuid__": "5eb88ca9-bd22-4696-b795-09f089a9a3c4@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_type": 0,
+    "_type": 1,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,

@@ -1,7 +1,7 @@
 """One-time, backed-up migration to the exported original artwork. Run from project root."""
 from pathlib import Path
 from PIL import Image, ImageOps
-import json, re, shutil, uuid, copy, hashlib, subprocess
+import json, re, shutil, uuid, copy, hashlib, subprocess, sys
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = Path(r'E:\LDC_Cocos_PJ\Cocos3X_2D\喂蚁后\Exe\FEED THE QUEEN\蚂蚁Exported_Assets')
@@ -20,7 +20,7 @@ if REPORT.exists(): raise SystemExit('Migration already applied. Restore the bac
 git=Path(r'C:\Users\A\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\git\cmd\git.exe')
 backup=subprocess.check_output([str(git),'rev-parse','HEAD'],cwd=ROOT,text=True).strip()
 dirty=subprocess.check_output([str(git),'status','--porcelain','--','assets','settings'],cwd=ROOT,text=True)
-if dirty.strip(): raise SystemExit('Commit assets and settings to Git before running the migration.')
+if dirty.strip() and '--resume' not in sys.argv: raise SystemExit('Commit assets and settings to Git before running the migration.')
 
 audit=read(ROOT/'reports/asset-audit.json')['records']
 template=read(ROOT/'assets/gameplay/original/circle.png.meta')
@@ -52,7 +52,10 @@ for item,icon in pairs:
     mapping[target]=ART/(icon+'.png')
     upgrade_paths[item]='original/'+icon
     old=ROOT/('assets/gameplay/upgrade-skin/replacement-icons/'+item+'.png')
-    if old.exists(): redirects[old]=target
+    if any(a['path']==relative(old) for a in audit): redirects[old]=target
+
+for name in ['ant_carrying','ant_carrying1','ant_carrying2','ant_carrying3']:
+    mapping[ROOT/('assets/gameplay/original/units/'+name+'.png')]=ART/('units/'+name+'.png')
 
 ui={
  'assets/textures/main-menu/ksyx.png':('UI/BigButton1.png',True),
@@ -158,7 +161,8 @@ map_art('assets/textures/main-menu/original-logo.png','Logo_CN.png')
 p=ROOT/'assets/textures/main-menu/original-logo.png';shutil.copy2(ART/'Logo_CN.png',p);refresh_meta(p)
 changed.append({'path':relative(p),'source':str(ART/'Logo_CN.png')})
 
-uuidmap={read(Path(str(old)+'.meta'))['uuid']:read(Path(str(new)+'.meta'))['uuid'] for old,new in redirects.items()}
+baseline_uuid={a['path']:a['uuid'] for a in audit}
+uuidmap={baseline_uuid[relative(old)]:read(Path(str(new)+'.meta'))['uuid'] for old,new in redirects.items()}
 for p in (ROOT/'assets').rglob('*'):
     if p.suffix not in ['.scene','.prefab','.ts']:continue
     text=p.read_text(encoding='utf-8');new=text
@@ -169,7 +173,7 @@ write(ROOT/'reports/upgrade-original-paths.json',upgrade_paths)
 (ROOT/'assets/scripts/config/UpgradeArtConfig.ts').write_text('// Original EXE artwork, shared with world assets.\nexport const UPGRADE_ART: Record<string,string> = '+json.dumps(upgrade_paths,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
 
 for old,new in redirects.items():
-    safe(old).unlink();safe(Path(str(old)+'.meta')).unlink()
+    safe(old).unlink(missing_ok=True);safe(Path(str(old)+'.meta')).unlink(missing_ok=True)
     removed.append({'path':relative(old),'reason':'merged','target':relative(new)})
 
 def frame(src):return {'__uuid__':read(ROOT/('assets/gameplay/original/'+src+'.png.meta'))['uuid']+'@f9941','__expectedType__':'cc.SpriteFrame'}
@@ -181,7 +185,7 @@ for p in (ROOT/'assets/gameplay/prefabs/characters').glob('*.prefab'):
             if o.get('__type__')=='cc.Node' and o.get('_name') in ['Head','Tail','Claws','Shadow2']:
                 o['_active']=True
                 if o['_name']=='Head':o['_lpos'].update(x=-1,y=15)
-                if o['_name']=='Tail':o['_lpos'].update(x=-29,y=16)
+                if o['_name']=='Tail':o['_lpos'].update(x=-1,y=16)
                 for c in o.get('_components',[]):
                     comp=a[c['__id__']]
                     if comp['__type__']=='cc.Sprite':comp['_sizeMode']=2
