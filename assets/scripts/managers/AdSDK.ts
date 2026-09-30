@@ -1,5 +1,3 @@
-import { sys } from 'cc';
-
 /**
  * Platform-facing ad and analytics boundary.
  *
@@ -21,7 +19,7 @@ export interface RewardedAdRequest {
 }
 
 export interface RewardedAdCallbacks {
-    /** Called only after the platform confirms the full rewarded video completed. */
+    /** Called after video completion, or immediately in a test build without an adapter. */
     onRewarded: () => void;
     /** Called when the video cannot be shown or was not completed. */
     onFailed: (reason: string) => void;
@@ -119,13 +117,9 @@ export default class AdSDK {
     public static showRewardedVideo(request: RewardedAdRequest, callbacks: RewardedAdCallbacks): void {
         const adapter = this.adapter;
         if (!adapter) {
-            // Browser preview has no publisher bridge; complete the reward locally so
-            // designers can exercise the whole flow without an SDK integration.
-            if (sys.isBrowser) {
-                callbacks.onRewarded();
-                return;
-            }
-            callbacks.onFailed('not_configured');
+            // Builds without a publisher bridge are test builds on every platform.
+            // Use the normal grant callback so reward amounts, refresh and saving agree.
+            callbacks.onRewarded();
             return;
         }
 
