@@ -46,13 +46,13 @@ export class Kitchen extends Component {
                 n.active=true;
                 visible.push(n);
             });
-            layoutUpgradeChoiceRow(visible);
+            const height=layoutUpgradeChoiceRow(visible);
             visible.forEach(n=>{
                 const recipeIndex=Number(n.name.slice(-1));
                 markChoice(n,this.recipes[recipeIndex]);
             });
             RECIPES.forEach((r,i)=>{if(!this.state.level('cuisine_'+r.id))content.getChildByName('Recipe'+i)!.active=false;});
-            return unlocked.length?72:0;
+            return height;
         };
         originalFrame('original/units/chef_idle').then(f=>this.sousChefFrame=f).catch(console.error);originalFrame('original/units/chef_happy').then(f=>this.headChefFrame=f).catch(console.error);
         this.changed();

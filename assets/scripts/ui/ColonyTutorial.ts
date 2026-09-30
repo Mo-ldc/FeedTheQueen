@@ -5,6 +5,7 @@ import { GENE_TAB_INDEX } from '../config/UpgradeConfig';
 import { playerMeta, savePlayerMeta } from '../core/PlayerMeta';
 import { TUTORIALS } from '../config/TutorialConfig';
 import { caption, choice } from '../world/FacilitySupport';
+import { PORTRAIT } from './PortraitUI';
 const { ccclass } = _decorator;
 
 @ccclass('ColonyTutorial')
@@ -60,7 +61,7 @@ export class ColonyTutorial extends Component {
         for (const label of [title, body]) {
             // Long static paragraphs need TTF's CJK punctuation-aware wrapping.
             label.cacheMode = Label.CacheMode.NONE;
-            label.color = Color.WHITE; label.enableOutline = true;
+            label.color = PORTRAIT.ink; label.enableOutline = false;
             label.outlineColor = Color.BLACK; label.outlineWidth = 2;
             label.enableWrapText = true; label.overflow = Label.Overflow.RESIZE_HEIGHT;
             label.verticalAlign = Label.VerticalAlign.TOP;
@@ -70,7 +71,7 @@ export class ColonyTutorial extends Component {
         body.horizontalAlign = Label.HorizontalAlign.LEFT;
         const button = choice(n, 'Close', '知道了', 0, 0, 240, () => this.close());
         const label = button.getChildByName('Caption')!.getComponent(Label)!;
-        label.color = Color.WHITE; label.outlineColor = Color.BLACK; label.outlineWidth = 2;
+        label.color = PORTRAIT.ink; label.enableOutline = false;
         this.layout();
         if (!playerMeta.tutorials?.includes(id)) { (playerMeta.tutorials ??= []).push(id); savePlayerMeta(); }
     }
@@ -92,7 +93,7 @@ export class ColonyTutorial extends Component {
         body.node.setPosition(0, height / 2 - 28 - titleHeight - 24);
         n.getChildByName('Close')!.setPosition(0, -height / 2 + 24 + 25);
         const g = n.getComponent(Graphics)!;
-        g.clear(); g.fillColor = new Color(244, 218, 169); g.strokeColor = new Color(64, 38, 27); g.lineWidth = 6;
+        g.clear(); g.fillColor = PORTRAIT.paper; g.strokeColor = PORTRAIT.ink; g.lineWidth = 3;
         g.roundRect(-width / 2, -height / 2, width, height, 18); g.fill(); g.stroke();
         const scale = Math.min(1, (canvas.width - 40) / width, (canvas.height - 60) / height);
         n.setScale(scale, scale, 1);

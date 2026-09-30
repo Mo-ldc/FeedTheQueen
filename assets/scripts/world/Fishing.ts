@@ -40,7 +40,7 @@ export class Fishing extends Component {
         this.feeding.upgrades!.node.on('upgrade-purchased',this.changed,this);
         const content=this.feeding.upgrades!.optionHeader(12);
         ['沙丁鱼','章鱼','珍珠'].forEach((s,i)=>{const option=choice(content,'FishingMode'+(i+1),s,(i-1)*218,-30,205,()=>this.selectMode(i+1));this.feeding.upgrades!.bindOptionTip(option,()=>originalText('OPTION_FISHING_'+['SARDINES','TAKO','PEARLS'][i]));});
-        this.feeding.upgrades!.customHeaders[12]=()=>{const visible:Node[]=[];for(let i=1;i<=3;i++){const n=content.getChildByName('FishingMode'+i)!;n.active=this.modeUnlocked(i);if(n.active)visible.push(n);}layoutUpgradeChoiceRow(visible);for(const n of visible)markChoice(n,Number(n.name.slice(-1))===this.mode);return visible.length?72:0;};
+        this.feeding.upgrades!.customHeaders[12]=()=>{const visible:Node[]=[];for(let i=1;i<=3;i++){const n=content.getChildByName('FishingMode'+i)!;n.active=this.modeUnlocked(i);if(n.active)visible.push(n);}const height=layoutUpgradeChoiceRow(visible);for(const n of visible)markChoice(n,Number(n.name.slice(-1))===this.mode);return height;};
         this.changed();
     }
     public modeUnlocked(i:number):boolean {return !!this.state.level('fishing_'+(['','mode_net','mode_divers','mode_pearls'][i]))||(i===1&&!!this.state.level('fishing_firstboat'));}

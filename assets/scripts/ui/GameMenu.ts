@@ -10,6 +10,7 @@ import { ColonySession } from '../core/ColonySession';
 import { BlueberryFeeding } from '../world/BlueberryFeeding';
 import { caption, choice } from '../world/FacilitySupport';
 import { playOriginalSound } from '../core/OriginalSound';
+import { paperSurface, PORTRAIT } from './PortraitUI';
 const {ccclass}=_decorator;
 const GUIDE=[...TUTORIALS.map(t=>[t.title,t.text]),['食物',originalText('DESCRIPTION_FOOD',{},false)],['查看说明','点击升级选项或基因图标旁的感叹号，即可查看说明。点击提示窗即可收起。']];
 @ccclass('GameMenu')
@@ -105,7 +106,15 @@ export class GameMenu extends Component {
     }
 
     private bindSettingsPanel(panel:Node):void {
+        paperSurface(panel.getChildByName('Background')!, 716, 803);
+        const title=caption(panel,'SettingsTitle','声音设置',-95,306,390,40);
+        title.color=PORTRAIT.ink; title.enableOutline=false;
         const close=panel.getChildByName('Close');
+        if(close){
+            close.setPosition(260,306);close.getComponent(UITransform)!.setContentSize(120,64);
+            paperSurface(close,120,64,PORTRAIT.brown);
+            const text=caption(close,'Caption','关闭',0,0,108,28);text.enableOutline=false;
+        }
         close?.on(Button.EventType.CLICK,()=>{
             playOriginalSound('button_click');
             this.close();
@@ -122,8 +131,17 @@ export class GameMenu extends Component {
                 return;
             }
 
+            const names={master:'总音量',music:'背景音乐',sfx:'游戏音效',uiSfx:'按钮音效'};
+            const name=caption(panel,`Name_${key}`,names[key],-204,group.position.y,210,30);
+            name.color=PORTRAIT.ink;name.enableOutline=false;
+            const percent=caption(group,'Percent','',0,-44,150,22);
+            percent.color=PORTRAIT.muted;percent.enableOutline=false;
+            knob.getComponent(UITransform)!.setContentSize(38,44);
+            paperSurface(knob,38,44,PORTRAIT.sand);
+
             const draw=()=>{
                 const value=preferences[key];
+                percent.string=`${Math.round(value*100)}%`;
                 fill.fillRange=value;
                 knob.setPosition(-148+296*value,0);
             };

@@ -81,7 +81,7 @@ export class GreyMatterDelivery extends Component {
         }
         const canvas = this.canvas?.getComponent(UITransform);
         const hud = this.canvas?.getChildByPath('UI/GameHUD');
-        const source = hud?.getChildByPath('RateStatusPanel/Progress/QueenProgress');
+        const source = hud?.getChildByPath('PortraitSummary/QueenTrack');
         const target = hud?.getChildByPath('Currencies/Resource2/Icon');
         if (!canvas || !target || !hud?.activeInHierarchy) { node.active = false; return; }
         node.active = true;

@@ -59,8 +59,8 @@ export function styleUpgradeChoice(node: Node, selected: boolean, enabled = true
     if (choicePaint.get(node) === state) return;
     choicePaint.set(node, state);
     graphics.clear();
-    graphics.fillColor = selected ? new Color(66, 91, 57) : new Color(250, 244, 231);
-    graphics.strokeColor = selected ? new Color(46, 67, 39) : new Color(146, 127, 102);
+    graphics.fillColor = selected ? new Color(133, 70, 45) : new Color(249, 231, 202);
+    graphics.strokeColor = selected ? new Color(65, 35, 25) : new Color(139, 90, 58);
     graphics.lineWidth = selected ? 3 : 1;
     graphics.roundRect(-width / 2 + 3, -height / 2 + 2, width - 6, height - 4, 8);
     graphics.fill();
@@ -77,15 +77,15 @@ export function styleUpgradeChoice(node: Node, selected: boolean, enabled = true
     }
 }
 
-/** Matches the equal-width horizontal option row used by the western hauler nest. */
-export function layoutUpgradeChoiceRow(nodes: Node[], y = -33, totalWidth = 620, height = 64): void {
-    if (!nodes.length) return;
-    // Keep every visible choice in one evenly spaced row, including four-way controls.
-    const width = Math.min(194, totalWidth / nodes.length);
-    const rowWidth = width * nodes.length;
+/** At most two touch targets per row; return space needed by the pinned header. */
+export function layoutUpgradeChoiceRow(nodes: Node[], y = -33, totalWidth = 620, height = 64): number {
+    if (!nodes.length) return 0;
+    const columns = Math.min(2, nodes.length);
+    const width = Math.min(310, totalWidth / columns);
+    const rowWidth = width * columns;
     nodes.forEach((node, index) => {
         node.getComponent(UITransform)?.setContentSize(width, height);
-        node.setPosition(-rowWidth / 2 + width * (index + 0.5), y);
+        node.setPosition(-rowWidth / 2 + width * (index % columns + 0.5), y - Math.floor(index / columns) * (height + 8));
         const labelNode = node.getChildByName('Label') || node.getChildByName('Caption');
         const labelTransform = labelNode?.getComponent(UITransform);
         const label = labelNode?.getComponent(Label);
@@ -101,4 +101,5 @@ export function layoutUpgradeChoiceRow(nodes: Node[], y = -33, totalWidth = 620,
         const tip=node.getChildByName('OptionTip');
         if(tip){tip.setPosition(width/2-17,0);if(labelTransform)labelTransform.width=width-42;labelNode?.setPosition(-14,0);}
     });
+    return Math.ceil(nodes.length / columns) * (height + 8);
 }

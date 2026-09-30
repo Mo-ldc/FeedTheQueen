@@ -1,4 +1,4 @@
-import { _decorator, Button, Color, Component, Graphics, Label, Node, UITransform, Vec3, tween, isValid, Sprite, SpriteFrame, EventTouch } from 'cc';
+import { _decorator, Button, Color, Component, Graphics, Label, Node, UITransform, Vec3, tween, isValid, Sprite, SpriteFrame, EventTouch, Widget, sys } from 'cc';
 import { gameResources as resources } from '../managers/GameBundles';
 import AdSDK, { RewardedAdRequest } from '../managers/AdSDK';
 import { ColonySession } from '../core/ColonySession';
@@ -170,11 +170,23 @@ export class RewardedAdSidebar extends Component {
         chest.setPosition(start.x, start.y, 0);
         chest.setScale(0.88, 0.88, 1);
         chest.active = true;
-        chest.setSiblingIndex(this.ui.children.length - 1);
+        const details = this.ui.getChildByName('HudDetails');
+        chest.setSiblingIndex(details?.active ? Math.max(0, details.getSiblingIndex() - 1) : this.ui.children.length - 1);
     }
 
     private layout = (): void => {
         if (!this.ui?.isValid || !this.canvas?.isValid) return;
+        const size = this.canvas.getComponent(UITransform)!;
+        const safe = sys.getSafeAreaRect(false);
+        const top = Math.min(size.height / 2, safe.y + safe.height - size.height / 2);
+        const visible = (['larvae', 'feast', 'nourishment', 'dna', 'brain', 'umami'] as RewardKey[])
+            .map(key => this.buttons.get(key)).filter((button): button is Node => !!button?.active);
+        const columns = size.height < 1500 && visible.length > 5 ? 2 : 1;
+        visible.forEach((button, slot) => {
+            const widget = button.getComponent(Widget); if (widget) widget.enabled = false;
+            button.setScale(1.3, 1.3, 1);
+            button.setPosition(size.width / 2 - 55 - (slot % columns) * 112, top - 410 - Math.floor(slot / columns) * 104);
+        });
         if (this.modal) this.modal.setPosition(0, 0);
     };
 
@@ -242,6 +254,7 @@ export class RewardedAdSidebar extends Component {
             const rewardLabel = this.rewardLabels.get(key);
             if (rewardLabel && rewardLabel.string !== text) rewardLabel.string = text;
         });
+        this.layout();
     }
 
     private umamiCapacity(): number { return 200 + (this.panel.upgradeState.level('mushrooms_SpawnHandler') + this.panel.upgradeState.level('mushrooms_SpawnMycologist')) * 20; }

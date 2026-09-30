@@ -53,6 +53,10 @@ export class GenePanel extends Component {
   this.styleAction('ApplyGenes','应用基因',false);
   this.styleAction('NewColony','新建种群',true);
   this.styleAction('Close','关闭',false);
+  const title=new Node('PanelTitle');title.layer=root.layer;root.addChild(title);
+  this.label('PanelTitle','基因进化',38,400,64).node.setPosition(-85,395);
+  root.getChildByName('ApplyGenes')!.setPosition(-162,-355);
+  root.getChildByName('NewColony')!.setPosition(162,-355);
   this.label('Tooltip/Title','',27,540);
   const desc=root.getChildByPath('Tooltip/Description')!;const oldLabel=desc.getComponent(Label);if(oldLabel)desc.removeComponent(oldLabel);
   const rich=desc.addComponent(RichText);useDefaultSystemFont(rich);rich.fontSize=23;rich.lineHeight=30;rich.maxWidth=540;rich.fontColor=new Color(50,29,20);
@@ -79,7 +83,7 @@ export class GenePanel extends Component {
   let surface=n.getChildByName('ActionSurface');if(!surface){surface=new Node('ActionSurface');surface.layer=n.layer;n.addChild(surface);surface.setSiblingIndex(0);surface.addComponent(UITransform);}
   surface.getComponent(UITransform)!.setContentSize(width,height);
   const g=surface.getComponent(Graphics)||surface.addComponent(Graphics);g.clear();g.lineWidth=2;
-  g.fillColor=primary?new Color(66,91,57):new Color(250,244,231);g.strokeColor=new Color(100,83,61);
+  g.fillColor=primary?new Color(133,70,45):new Color(249,231,202);g.strokeColor=new Color(100,83,61);
   g.roundRect(-width/2,-height/2,width,height,9);g.fill();g.stroke();
   let caption=n.getChildByName('Caption');if(!caption){caption=new Node('Caption');caption.layer=n.layer;n.addChild(caption);}
   const l=this.label(name+'/Caption',text,28,width-16,height-8);l.node.active=true;l.node.setPosition(0,0);l.enableOutline=false;l.color=primary?Color.WHITE:new Color(43,36,28);

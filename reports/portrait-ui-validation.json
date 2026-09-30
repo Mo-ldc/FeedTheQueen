@@ -1,0 +1,38 @@
+{
+  "design": "EXE-inspired portrait UI with touch-first status dashboard",
+  "viewportsChecked": [
+    "390x844",
+    "360x640",
+    "430x932 (upgrade dock)",
+    "320x480 (scrolling details)"
+  ],
+  "checks": {
+    "typescript": "passed",
+    "webMobileBuild": "passed; reports/portrait-release.stdout.log",
+    "assetReferences": "40 serialized files, 105 upgrade icons, zero unresolved references",
+    "prefabOwnerChains": "passed; no cycles",
+    "advertisingArt": "21 protected assets unchanged",
+    "optionGeometry": "1 through 4 choices fit in a maximum of two columns without overlaps",
+    "touchInteractions": [
+      "reward grant and resource refresh",
+      "upgrade purchases and new tab unlock",
+      "gene panel open/close",
+      "settings open/close",
+      "resource description tap",
+      "status details tap and close",
+      "details swipe reveals final status rows",
+      "upgrade tooltip tap"
+    ],
+    "browserErrorsAndWarnings": []
+  },
+  "hud": [
+    "all four resource names and counts visible",
+    "feeding rate and units",
+    "queen and gene current/target progress",
+    "scrolling details with food sources, bonuses and status",
+    "no hover dependency"
+  ],
+  "limitations": [
+    "Late-game option variants were geometry-checked; not every unlock was played through."
+  ]
+}

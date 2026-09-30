@@ -357,7 +357,7 @@ export class FacilityUpgradePanel extends Component {
         return choices;
     }
 
-    private renderHaulerPriorities(): void {
+    private renderHaulerPriorities(): number {
         const content = this.optionHeader(2);
         const choices = this.availableHaulerPriorities();
         const visible: Node[] = [];
@@ -377,8 +377,9 @@ export class FacilityUpgradePanel extends Component {
             visible.push(option);
         }
         // Reserve a clear gap for the panel's top-right collapse control.
-        layoutUpgradeChoiceRow(visible, -33, 540);
+        const height = layoutUpgradeChoiceRow(visible, -33, 620);
         visible.forEach(option => styleUpgradeChoice(option, [0, 1, 3, 2][Number(option.name.slice(-1))] === this.haulerPriority));
+        return height;
     }
     private createFoodChoices(): void {
         for (const [page, foods] of [[1, [Food.Blueberry, Food.Apple, Food.Citrus]], [4, [Food.Apple, Food.Pepper, Food.Iceberry]], [5, [Food.Honeydew, Food.Sauce, Food.Meat]]] as [number, Food[]][]) {
@@ -408,7 +409,7 @@ export class FacilityUpgradePanel extends Component {
         const label = n.getComponent(Label) || n.addComponent(Label);
         useDefaultSystemFont(label);
         label.fontSize = 22;
-        label.color = new Color(255, 239, 207);
+        label.color = new Color(65, 35, 25);
         label.string = '';
     }
     private renderSporeChoices(): number {
@@ -423,15 +424,15 @@ export class FacilityUpgradePanel extends Component {
             const i = Number(n.name.slice(-1));
             n.getChildByName('Label')!.getComponent(Label)!.string = ['凝神菇', '极乐菇', '繁茂菇', '澄澈菇'][i] + (effects.active[i] ? '：开启' : '：关闭');
         });
-        layoutUpgradeChoiceRow(visible);
+        const height = layoutUpgradeChoiceRow(visible);
         visible.forEach(n => styleUpgradeChoice(n, effects.active[Number(n.name.slice(-1))]));
         const label = content.getChildByName('SporeEfficiency');
         if (label) {
             label.active = visible.length > 0;
-            label.setPosition(0, -88);
+            label.setPosition(0, -height - 16);
             label.getComponent(Label)!.string = originalText('EXPLANATION_CURRENT_SPORES',{},false).replace('[value]',String(Math.round(effects.efficiency*10000)/100));
         }
-        return visible.length ? 120 : 0;
+        return visible.length ? height + 48 : 0;
     }
     private createThrowerPriorities(): void {
         const content = this.optionHeader(7);
@@ -447,9 +448,9 @@ export class FacilityUpgradePanel extends Component {
         for (let i = 0; i < 4; i++) {
             const n = content.getChildByName('ThrowerPriority' + i)!, slot = choices.indexOf(i); n.active = slot >= 0 && choices.length > 1; if (n.active) visible.push(n);
         }
-        layoutUpgradeChoiceRow(visible);
+        const height = layoutUpgradeChoiceRow(visible);
         visible.forEach(n => styleUpgradeChoice(n, s.throwerPriority === Number(n.name.slice(-1))));
-        return visible.length ? 72 : 0;
+        return height;
     }
     private renderFoodChoices(page: number): number {
         if (page === 7) return this.renderThrowerPriorities();
@@ -466,9 +467,9 @@ export class FacilityUpgradePanel extends Component {
             if (!n.active) continue;
             visible.push(n);
         }
-        layoutUpgradeChoiceRow(visible);
+        const height = layoutUpgradeChoiceRow(visible);
         visible.forEach(n => styleUpgradeChoice(n, selected === Number(n.name.replace('FoodChoice', ''))));
-        return visible.length ? 72 : 0;
+        return height;
     }
 
     /** Option controls stay pinned above the clipped scrolling list. */
@@ -710,12 +711,11 @@ export class FacilityUpgradePanel extends Component {
     }
 
     public refreshPage(index: number): void {
-        if (index === 2) this.renderHaulerPriorities();
         const group = UPGRADE_GROUPS[index];
         if (!group) return;
         const content = this.node.getChildByPath(`Pages/Page${index}/Viewport/Content`);
         if (!content) return;
-        const optionHeight = this.customHeaders[index]?.() ?? (index === 2 && this.availableHaulerPriorities().length > 0 ? 72 : this.renderFoodChoices(index));
+        const optionHeight = this.customHeaders[index]?.() ?? (index === 2 ? this.renderHaulerPriorities() : this.renderFoodChoices(index));
         const viewportHeight = this.skin.setOptionHeaderSpace(index, optionHeight);
         let visibleRows = 0;
         group.items.forEach(item => {
@@ -759,7 +759,7 @@ export class FacilityUpgradePanel extends Component {
             if (row.getComponent(UITransform)) this.skin.card(row, slot, 0, level, maxed, affordable, hovered, unlocked && !maxed && !affordable);
         });
         const contentTransform = content.getComponent(UITransform);
-        if (contentTransform) contentTransform.height = Math.max(viewportHeight, Math.ceil(visibleRows / 2) * 162);
+        if (contentTransform) contentTransform.height = Math.max(viewportHeight, visibleRows * 136);
         this.lastScrollY = NaN;
         if (index === this.selected) this.updateVisibleCards();
     }

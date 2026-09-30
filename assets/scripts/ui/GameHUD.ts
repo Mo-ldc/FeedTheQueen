@@ -1,16 +1,16 @@
+import { _decorator, Component, Label, Node, UITransform, Sprite, SpriteAtlas, Graphics, Color, EventTouch, RichText, instantiate, Vec3, Button, Prefab, ScrollView, Mask, BlockInputEvents } from 'cc';
 import { UI_RULES, QUEEN_MILESTONES, DNA_MILESTONES } from '../config/UIConfig';
 import { FOOD_ITEMS } from '../config/ItemConfig';
 import { ECONOMY } from '../config/EconomyConfig';
 import { RATE_BUFFS, FOOD_NAMES } from '../config/FeedingRateConfig';
-import { feedingRateDescription, queenMilestoneDescription, dnaMilestoneDescription, tooltipIcon, buffDescription } from '../config/HudTooltipConfig';
+import { feedingRateDescription, queenMilestoneDescription, dnaMilestoneDescription, tooltipIcon } from '../config/HudTooltipConfig';
 import { originalText } from '../config/OriginalText';
 import { FeedingModel } from '../core/FeedingModel';
 import { foodDetails } from '../config/FoodTooltip';
-import { _decorator, Component, Label, Node, ProgressBar, UITransform, Sprite, SpriteAtlas, Graphics, Color, EventTouch, EventMouse, RichText, instantiate, Vec3, screen, Button, Tween, tween, sys, Prefab } from 'cc';
-import { RateStatusLayout } from './RateStatusLayout';
 import { UpgradeResources } from './UpgradeState';
-import { formatOriginal, milestoneProgress, OriginalVisibility } from './OriginalUIRules';
+import { formatOriginal, milestoneProgress } from './OriginalUIRules';
 import { useDefaultSystemFont } from './DefaultSystemFont';
+import { paperSurface, PORTRAIT } from './PortraitUI';
 const { ccclass, property } = _decorator;
 export interface GameStatus {
     feedingRate: number; queenLevel: number; nextQueenRate: number; previousQueenRate: number;
@@ -19,334 +19,156 @@ export interface GameStatus {
     frostburn: number; frostburnThreshold: number; umami: number; ecstasy: number; shine: number;
     sourAddend: number; ecstasyStacks: number; shineStacks: number;
 }
-/** Presentation only: feeding simulation supplies the authoritative rolling 60-second data. */
+
+/** Touch-first portrait summary. The prefab supplies original artwork, not a scaled desktop ledger. */
 @ccclass('GameHUD')
 export class GameHUD extends Component {
     @property(Prefab) ratePanelPrefab: Prefab|null = null;
     private statusRoot!: Node;
-    private rateLayout!: RateStatusLayout;
-    private growthLayout = new Map<string,{position:Vec3,width:number,height:number}>();
-    private authoredGrowthHeight = 0;
-    private toggleOffset = new Vec3();
-    private toggleScale = new Vec3(1,1,1);
+    private summary!: Node;
     private wallet: UpgradeResources = { ...ECONOMY.initialResources };
-    private visibility = new OriginalVisibility();
-    private buffSeen = new Set<number>();
     private foodRates: Record<number,number> = {};
     private foodAmounts: Record<number,number> = {};
     private tasteModel:FeedingModel|null=null;
     private goldenApples=false;
-    public setTasteModel(model:FeedingModel,goldenApples=false):void {this.tasteModel=model;this.goldenApples=goldenApples;}
-    private tooltip: Node|null = null;
-    private pinnedTooltip = false;
-    private tooltipDescribe: (()=>string)|null = null;
-    private tooltipPath = '';
-    private tooltipAtlas: SpriteAtlas|null = null;
-    private panelScale = 1;
-    private tooltipScale = 1;
-    private get panelTop():number { return this.rateLayout.panelTop; }
-    private statusCollapsed = false;
-    private statusBaseX = 0;
-    private statusToggle: Node|null = null;
-    private status: GameStatus = { feedingRate:0,queenLevel:0,nextQueenRate:QUEEN_MILESTONES[0],previousQueenRate:0,
+    private tooltip:Node|null=null;
+    private tooltipAtlas:SpriteAtlas|null=null;
+    private tooltipDescribe:(()=>string)|null=null;
+    private tooltipTitle='';
+    private tooltipText='';
+    private currencyLayoutKey='';
+    private status:GameStatus={feedingRate:0,queenLevel:0,nextQueenRate:QUEEN_MILESTONES[0],previousQueenRate:0,
         dna:0,nextDnaRate:DNA_MILESTONES[0],previousDnaRate:0,addend:0,multiplier:1,heat:0,cold:0,sour:0,
         frostburn:0,frostburnThreshold:UI_RULES.frostburnThreshold,umami:0,ecstasy:0,shine:0,
-        sourAddend:0,ecstasyStacks:0,shineStacks:0 };
-    onLoad(): void {
+        sourAddend:0,ecstasyStacks:0,shineStacks:0};
+
+    onLoad():void {
         if(!this.ratePanelPrefab)throw new Error('GameHUD: RateStatusPanel prefab is not assigned');
-        this.statusRoot=instantiate(this.ratePanelPrefab);
-        this.node.addChild(this.statusRoot);
-        this.rateLayout=this.statusRoot.getComponent(RateStatusLayout)!;
-        this.alignMilestoneProgressWithFoodRows();
-        const growth=this.statusRoot.getChildByName('Growth')!;
-        this.authoredGrowthHeight=growth.getComponent(UITransform)!.height;
-        for(const child of growth.children){
-            const size=child.getComponent(UITransform);
-            this.growthLayout.set(child.name,{position:child.position.clone(),width:size?.width||0,height:size?.height||0});
-        }
-        this.statusToggle=this.statusRoot.getChildByName('RateStatusToggle');
-        if(this.statusToggle){
-            this.toggleOffset.set(this.statusToggle.position.x-growth.position.x-growth.getComponent(UITransform)!.width/2,this.statusToggle.position.y-this.panelTop,0);
-            this.toggleScale.set(this.statusToggle.scale);
-            const button=this.statusToggle.getComponent(Button);
-            if(button)button.transition=Button.Transition.NONE;
-            this.statusToggle.on(Button.EventType.CLICK,this.toggleStatusPanel,this);
-        }
+        this.statusRoot=instantiate(this.ratePanelPrefab);this.node.addChild(this.statusRoot);
+        this.statusRoot.active=false;
+        this.buildSummary();
         this.node.parent!.parent!.on(Node.EventType.SIZE_CHANGED,this.layoutAtTop,this);
-        this.statusRoot.getChildByName('Growth')!.active=true;
-        this.statusRoot.getChildByName('Progress')!.active=true;
-        this.initTooltips();
-        this.layoutAtTop(); this.renderStatus();
+        this.layoutAtTop();this.renderStatus();
     }
-    onDestroy(): void { this.node.parent?.parent?.off(Node.EventType.SIZE_CHANGED,this.layoutAtTop,this); }
-    private layoutAtTop(): void {
-        const canvas=this.node.parent!.parent!.getComponent(UITransform)!;
-        // SafeTopAnchor preserves the scene-authored HUD position and notch inset.
-        // Reserve the first screen row for currencies, then keep the left HUD compact.
-        const windowWidth = screen.windowSize.width;
-        this.panelScale=Math.max(this.rateLayout.minScale,Math.min(this.rateLayout.maxScale,this.rateLayout.referenceWidth/windowWidth));
-        this.tooltipScale=Math.max(1,Math.min(1.7,700/windowWidth));
-        this.statusBaseX=-canvas.width/2+this.rateLayout.leftMargin+this.statusRoot.getChildByName('Growth')!.getComponent(UITransform)!.width*this.panelScale/2;
-        const statusX=this.statusBaseX+(this.statusCollapsed?this.statusHiddenOffset(canvas):0);
-        for (const name of ['Growth','Progress']) {
-            const n=this.statusRoot.getChildByName(name)!;
-            Tween.stopAllByTarget(n);
-            n.setScale(this.panelScale,this.panelScale,1);
-            n.setPosition(statusX,n.position.y);
-        }
-        this.layoutStatusToggle(canvas,false);
-        this.renderCurrencies();
-        if(this.statusRoot.getChildByName('Growth')?.getChildByName('RateApple'))this.renderFoods();
+    onDestroy():void {
+        this.node.parent?.parent?.off(Node.EventType.SIZE_CHANGED,this.layoutAtTop,this);
+        this.tooltip?.destroy();
+        this.tooltipAtlas?.destroy();
     }
-    public setResources(resources: UpgradeResources): void {
-        this.wallet={...resources}; this.visibility.update(resources.greyMatter,false); this.renderCurrencies();
+    private child(parent:Node,name:string,w:number,h:number,x=0,y=0):Node {
+        let n=parent.getChildByName(name);
+        if(!n){n=new Node(name);n.layer=parent.layer;parent.addChild(n);n.addComponent(UITransform);}
+        n.getComponent(UITransform)!.setContentSize(w,h);n.setPosition(x,y);return n;
     }
-    /** Call on building creation/load. Original returning runs show growth from the start. */
-    public setProgression(evolutionBuilt: boolean,runId=1,hasHadBrain=false): void {
-        this.visibility.hasHadBrain ||= hasHadBrain;
-        this.visibility.update(this.wallet.greyMatter,evolutionBuilt,runId);
-        this.renderCurrencies();
+    private caption(parent:Node,name:string,text:string,w:number,h:number,x:number,y:number,fontSize:number):Label {
+        const n=this.child(parent,name,w,h,x,y),l=n.getComponent(Label)||n.addComponent(Label);
+        useDefaultSystemFont(l);l.string=text;l.fontSize=fontSize;l.lineHeight=fontSize+6;l.color=PORTRAIT.ink;
+        l.enableOutline=false;l.isBold=false;l.horizontalAlign=Label.HorizontalAlign.CENTER;
+        l.verticalAlign=Label.VerticalAlign.CENTER;l.overflow=Label.Overflow.SHRINK;return l;
     }
-    private renderCurrencies(): void {
-        const values=[this.wallet.nutrients,this.wallet.larvae,this.wallet.greyMatter,this.status.dna];
-        const shown=this.visibility.currencies(this.status.dna);
-        values.forEach((value,i)=>{
-            const cell=this.hudNode(`Currencies/Resource${i}`)!; cell.active=shown[i];
-            if(cell.active)this.label(`Currencies/Resource${i}/Value`).string=formatOriginal(value);
+    private touchDetails(target:Node,title:string,description:()=>string):void {
+        let start=new Vec3();
+        target.on(Node.EventType.TOUCH_START,(e:EventTouch)=>{const p=e.getUILocation();start.set(p.x,p.y,0);e.propagationStopped=true;});
+        target.on(Node.EventType.TOUCH_END,(e:EventTouch)=>{
+            e.propagationStopped=true;const p=e.getUILocation();
+            if(Math.hypot(p.x-start.x,p.y-start.y)<=UI_RULES.dragTolerance)this.showDetails(title,description);
         });
     }
-    public setStatus(next: Partial<GameStatus>): void {
+    private buildSummary():void {
+        this.caption(this.node,'StatusTitle','蚁群状态',250,60,-125,186,34).isBold=true;
+        const details=this.child(this.node,'StatusDetails',176,64,262,186);
+        paperSurface(details,176,64,PORTRAIT.brown);
+        const detailLabel=this.caption(details,'Label','查看详情',164,54,0,0,28);detailLabel.color=new Color(255,245,223);
+        details.addComponent(Button).transition=Button.Transition.NONE;
+        details.on(Button.EventType.CLICK,()=>this.showDetails('蚁群信息',()=>this.statusDescription()));
+        this.summary=this.child(this.node,'PortraitSummary',720,152,0,-32);
+        paperSurface(this.summary,720,152);
+        this.caption(this.summary,'RateTitle','进食速度',214,36,-236,43,26);
+        this.caption(this.summary,'RateValue','0',214,54,-236,-1,38).isBold=true;
+        this.caption(this.summary,'RateUnit','食物 / 分钟',214,32,-236,-47,23);
+        this.caption(this.summary,'QueenValue','',424,38,112,43,25);
+        this.caption(this.summary,'DnaValue','',424,38,112,-25,25);
+        for(const [name,y] of [['QueenTrack',15],['DnaTrack',-53]] as [string,number][]){
+            this.child(this.summary,name,416,12,112,y).addComponent(Graphics);
+        }
+        this.touchDetails(this.summary,'成长与基因',()=>this.milestoneDescription());
+        ['FOOD','LARVAE','BRAIN_MATTER','DNA'].forEach((key,i)=>{
+            const cell=this.node.getChildByPath(`Currencies/Resource${i}`)!;
+            this.touchDetails(cell,['食物','幼虫','脑灰质','基因'][i],()=>originalText('DESCRIPTION_'+key));
+        });
+    }
+    private layoutAtTop():void {
+        const canvas=this.node.parent!.parent!.getComponent(UITransform)!;
+        const scale=Math.min(1,(canvas.width-24)/720);
+        this.summary.setScale(scale,scale,1);
+        this.renderCurrencies();
+        if(this.tooltip?.active)this.renderDetails(true);
+    }
+    public setTasteModel(model:FeedingModel,goldenApples=false):void {this.tasteModel=model;this.goldenApples=goldenApples;}
+    public setResources(resources:UpgradeResources):void {this.wallet={...resources};this.renderCurrencies();}
+    public setProgression(_evolutionBuilt:boolean,_runId=1,_hasHadBrain=false):void {this.renderCurrencies();}
+    public setStatus(next:Partial<GameStatus>):void {
         const merged={...this.status,...next};
-        for(const key of Object.keys(merged) as (keyof GameStatus)[]) if(!Number.isFinite(merged[key])||merged[key]<0)throw new Error(`Invalid status: ${key}`);
-        this.status=merged; this.renderStatus();
+        for(const key of Object.keys(merged) as (keyof GameStatus)[])if(!Number.isFinite(merged[key])||merged[key]<0)throw new Error(`Invalid status: ${key}`);
+        this.status=merged;this.renderStatus();
     }
-    /** Food IDs 1..19 match food_data.gd. Values are contributions in the last 60 seconds. */
-    public setFoodContributions(rates: Record<number,number>): void {
+    public setFoodContributions(rates:Record<number,number>):void {
         for(const key of Object.keys(rates))if(!Number.isFinite(rates[+key])||rates[+key]<0)throw new Error('Invalid food contribution');
-        this.foodRates={...rates}; this.renderFoods();
+        this.foodRates={...rates};this.renderStatus();
     }
-    /** Atomic 60-second snapshot from the feeding simulation. */
-    public setFeedingSnapshot(rate:number, contributions:Record<number,number>, amounts:Record<number,number>):void {
+    public setFeedingSnapshot(rate:number,contributions:Record<number,number>,amounts:Record<number,number>):void {
         for(const key of Object.keys(amounts))if(!Number.isFinite(amounts[+key])||amounts[+key]<0)throw new Error('Invalid food amount');
         for(const key of Object.keys(contributions))if(!Number.isFinite(contributions[+key])||contributions[+key]<0)throw new Error('Invalid food contribution');
-        this.foodAmounts={...amounts};
-        this.foodRates={...contributions};
-        this.setStatus({feedingRate:rate});
+        this.foodAmounts={...amounts};this.foodRates={...contributions};this.setStatus({feedingRate:rate});
     }
-    private renderFoods():void {
-        const root=this.hudNode('Growth/Foods');if(!root)return;
-        const layout=this.rateLayout;
-        // Buff contributions share this ledger but are not food rows.
-        const maximum=Math.max(0,...FOOD_ITEMS.map(food=>this.foodRates[food.id]||0));
-        let slot=0;
-        for(const row of root.children){
-            const foodId=Number(/^Food(\d+)$/.exec(row.name)?.[1]);
-            if(!FOOD_ITEMS.some(food=>food.id===foodId))continue;
-            const value=this.foodRates[foodId]||0;row.active=value>0;
-            if(row.active){
-                if(layout.autoLayout)row.setPosition(row.position.x,-slot*layout.rowHeight,row.position.z);
-                slot++;this.progress('Growth/Foods/'+row.name+'/Bar',maximum>0?value/maximum:0);
-            }
-        }
-        if(!layout.autoLayout)return;
-        const growth=this.statusRoot.getChildByName('Growth')!;
-        const hasBonus=this.status.addend!==0||this.status.multiplier!==1;
-        const hasBuffs=this.buffSeen.size>0;
-        const foodTop=layout.headingHeight+(hasBonus?layout.bonusHeight:0)+(hasBuffs?layout.buffsHeight:0);
-        const height=Math.max(layout.minHeight,foodTop+slot*layout.rowHeight+layout.bottomPadding);
-        growth.getComponent(UITransform)!.height=height;
-        growth.setPosition(growth.position.x,this.panelTop-height*this.panelScale/2);
-        const delta=(height-this.authoredGrowthHeight)/2;
-        for(const name of ['Header','FeedingRate','RateApple','RateUnit','Bonus','BonusBackground','Multiplier','MultiplierBackground']){
-            const child=growth.getChildByName(name),saved=this.growthLayout.get(name);
-            if(child&&saved)child.setPosition(saved.position.x,saved.position.y+delta,saved.position.z);
-        }
-        const both=this.status.addend!==0&&this.status.multiplier!==1;
-        const red=this.growthLayout.get('BonusBackground')!,blue=this.growthLayout.get('MultiplierBackground')!;
-        const left=red.position.x-red.width/2,right=blue.position.x+blue.width/2;
-        for(const name of ['Bonus','BonusBackground','Multiplier','MultiplierBackground']){
-            const child=growth.getChildByName(name)!,saved=this.growthLayout.get(name)!;
-            child.setPosition(both?saved.position.x:(left+right)/2,child.position.y);
-            child.getComponent(UITransform)!.width=both?saved.width:right-left;
-            const line=child.getChildByName('BottomBorder');
-            if(line)line.getComponent(UITransform)!.width=child.getComponent(UITransform)!.width;
-        }
-        const buffs=growth.getChildByName('Buffs')!,buffSaved=this.growthLayout.get('Buffs')!;
-        buffs.setPosition(buffSaved.position.x,buffSaved.position.y+delta+(hasBonus?0:layout.bonusHeight));
-        const foodSaved=this.growthLayout.get('Foods')!;
-        root.setPosition(foodSaved.position.x,foodSaved.position.y+delta+(hasBonus?0:layout.bonusHeight)+(hasBuffs?0:layout.buffsHeight));
-        const progress=this.statusRoot.getChildByName('Progress')!;
-        progress.setPosition(progress.position.x,this.panelTop-height*this.panelScale-layout.progressGap-progress.getComponent(UITransform)!.height*this.panelScale/2);
+    private renderCurrencies():void {
+        const canvas=this.node.parent!.parent!.getComponent(UITransform)!;
+        const width=(canvas.width-32)/4,root=this.node.getChildByName('Currencies')!;
+        root.setPosition(0,98);
+        const values=[this.wallet.nutrients,this.wallet.larvae,this.wallet.greyMatter,this.status.dna];
+        const repaint=this.currencyLayoutKey!==String(width);this.currencyLayoutKey=String(width);
+        values.forEach((value,i)=>{
+            const cell=root.getChildByName('Resource'+i)!;cell.active=true;
+            const label=cell.getChildByName('Value')!.getComponent(Label)!;label.string=formatOriginal(value);
+            if(!repaint)return;
+            cell.setPosition((i-1.5)*width,0);cell.getComponent(UITransform)!.setContentSize(width-6,90);
+            paperSurface(cell,width-6,90);
+            this.caption(cell,'ResourceName',['食物','幼虫','脑灰质','基因'][i],width-18,30,0,25,23);
+            const icon=cell.getChildByName('Icon')!;icon.setPosition(-width/2+33,-17);icon.getComponent(UITransform)!.setContentSize(30,30);
+            label.node.setPosition(20,-17);label.node.getComponent(UITransform)!.setContentSize(width-66,40);
+            label.fontSize=30;label.lineHeight=36;label.enableOutline=false;label.color=PORTRAIT.ink;
+        });
     }
-    private renderStatus(): void {
-        const s=this.status; this.renderCurrencies();
-        this.label('Growth/FeedingRate').string=formatOriginal(s.feedingRate);
-        this.label('Growth/Bonus').string=`+ ${Math.trunc(s.addend)}`;
-        for(const name of ['Bonus','BonusBackground'])this.hudNode(`Growth/${name}`)!.active=s.addend!==0;
-        for(const name of ['Multiplier','MultiplierBackground']){const n=this.hudNode(`Growth/${name}`);if(n)n.active=s.multiplier!==1;}
-        const multiplier=this.hudNode('Growth/Multiplier')?.getComponent(Label);if(multiplier)multiplier.string=`x ${s.multiplier.toFixed(1)}`;
-        this.label('Progress/QueenLabel').string=''; this.label('Progress/QueenValue').string='';
-        // The original milestone box shows icons and fill only; thresholds live
-        // in its hover text, not as a stray numeric label inside the box.
-        this.hudNode('Progress/DnaValue')!.active=false;
-        this.progress('Progress/QueenProgress',milestoneProgress(s.feedingRate,s.queenLevel>0?s.previousQueenRate*UI_RULES.milestonePreviousFactor:0,s.nextQueenRate,true));
-        this.progress('Progress/DnaProgress',milestoneProgress(s.feedingRate,s.dna>0?s.previousDnaRate*UI_RULES.milestonePreviousFactor:0,s.nextDnaRate,false));
-        // Scene icons are heat, cold, frostburn, sour, umami, ecstasy, shine.
-        const active=(['heat','cold','frostburn','sour','umami','ecstasy','shine'] as const).map(key=>this.buffActive(key));
-        active.forEach((v,i)=>{if(v)this.buffSeen.add(i);});
-        const buffs=this.hudNode('Growth/Buffs');
-        if(buffs){let slot=0;
-            // Preserve the order in the Godot scene, while keeping seen effects visible but gray.
-            for(const i of [0,3,1,2,5,6,4]){const n=buffs.children[i];n.active=this.buffSeen.has(i);if(n.active){if(this.rateLayout.autoLayout)n.setPosition((slot++-(this.buffSeen.size-1)/2)*(n.getComponent(UITransform)!.width+3),n.position.y);n.getComponent(Sprite)!.grayscale=!active[i];}}
-        }
-        this.hudNode('Growth/Tastes')!.active=false;
-        this.hudNode('Growth/TasteTitle')!.active=false;
-        this.renderFoods();
-        if(this.tooltip?.active&&this.tooltipDescribe)this.renderTooltipContent(this.tooltipPath,this.tooltipDescribe());
+    private renderStatus():void {
+        this.renderCurrencies();if(!this.summary)return;
+        const s=this.status;
+        this.summary.getChildByName('RateValue')!.getComponent(Label)!.string=formatOriginal(s.feedingRate);
+        this.summary.getChildByName('QueenValue')!.getComponent(Label)!.string=`蚁后 Lv.${s.queenLevel+1}  ${formatOriginal(s.feedingRate)} / ${formatOriginal(s.nextQueenRate)}`;
+        this.summary.getChildByName('DnaValue')!.getComponent(Label)!.string=`基因 ${formatOriginal(s.dna)}  ${formatOriginal(s.feedingRate)} / ${formatOriginal(s.nextDnaRate)}`;
+        const bars=[milestoneProgress(s.feedingRate,s.queenLevel>0?s.previousQueenRate*UI_RULES.milestonePreviousFactor:0,s.nextQueenRate,true),milestoneProgress(s.feedingRate,s.dna>0?s.previousDnaRate*UI_RULES.milestonePreviousFactor:0,s.nextDnaRate,false)];
+        ['QueenTrack','DnaTrack'].forEach((name,i)=>{
+            const g=this.summary.getChildByName(name)!.getComponent(Graphics)!;
+            g.clear();g.fillColor=new Color(205,182,151);g.roundRect(-208,-6,416,12,5);g.fill();
+            const width=Math.min(1,Math.max(0,bars[i]))*416;
+            if(width>0){g.fillColor=i===0?new Color(117,147,69):new Color(148,105,174);g.rect(-208,-6,width,12);g.fill();}
+        });
+        if(this.tooltip?.active)this.renderDetails();
     }
-    private hudNode(path:string):Node|null {
-        return /^(Growth|Progress)(\/|$)/.test(path)?this.statusRoot.getChildByPath(path):this.node.getChildByPath(path);
+    private milestoneDescription():string {
+        const s=this.status;
+        return `<b>进食速度：${formatOriginal(s.feedingRate)} 食物 / 分钟</b><br/>${feedingRateDescription()}<br/><br/><b>蚁后 Lv.${s.queenLevel+1} · 下一阶段 ${formatOriginal(s.nextQueenRate)}</b><br/>${queenMilestoneDescription(formatOriginal(s.nextQueenRate))}<br/><br/><b>基因：${formatOriginal(s.dna)} · 下一阶段 ${formatOriginal(s.nextDnaRate)}</b><br/>${dnaMilestoneDescription(formatOriginal(s.nextDnaRate))}`;
     }
-    private progress(path:string,value:number):void {
-        const bar=this.hudNode(path)?.getComponent(ProgressBar);
-        if(!bar)return;
-        const progress=Number.isFinite(value)?Math.max(0,Math.min(1,value)):0;
-        const fill=bar.barSprite;
-        if(fill){fill.enabled=true;fill.node.active=progress>0;}
-        bar.progress=progress;
-        this.drawFillOutline(bar);
+    private statusDescription():string {
+        const s=this.status;
+        let text=this.milestoneDescription()+`<br/><br/><b>加成</b><br/>基础加值 +${formatOriginal(s.addend)} · 倍率 ×${s.multiplier.toFixed(1)}<br/>`+this.bonusDescription(false)+'<br/>'+this.bonusDescription(true);
+        text+='<br/><br/><b>最近 60 秒的食物来源</b>';
+        const foods=FOOD_ITEMS.filter(food=>(this.foodRates[food.id]||0)>0||(this.foodAmounts[food.id]||0)>0);
+        if(!foods.length)text+='<br/>尚未进食，工蚁送来食物后会显示明细。';
+        for(const food of foods)text+=`<br/>${tooltipIcon('source'+food.id)} <b>${FOOD_NAMES[food.id-1]}</b>：${formatOriginal(this.foodAmounts[food.id]||0)} 个 → ${formatOriginal(this.foodRates[food.id]||0)} 食物<br/>`+foodDetails(food.id,food.baseNutrition,this.tasteModel,this.goldenApples);
+        text+='<br/><br/><b>当前状态</b>';
+        for(const buff of RATE_BUFFS)text+=`<br/>${buff.name}：${formatOriginal(s[buff.key])} · ${this.buffActive(buff.key)?'生效中':'未激活'}`;
+        return text;
     }
-    private drawFillOutline(bar:ProgressBar):void {
-        const fill=bar.barSprite?.node,size=fill?.getComponent(UITransform);if(!fill||!size)return;
-        bar.node.getChildByName('BarOutline')?.destroy();
-        let outline=fill.getChildByName('FillOutline');
-        if(!outline){outline=new Node('FillOutline');outline.layer=fill.layer;fill.addChild(outline);outline.addComponent(UITransform);outline.addComponent(Graphics);}
-        const g=outline.getComponent(Graphics)!;g.clear();
-        outline.active=bar.progress>0;
-        if(!outline.active)return;
-        const width=size.width,height=size.height;
-        g.lineWidth=Math.min(2,width,height);g.strokeColor=Color.BLACK;
-        const inset=g.lineWidth/2;
-        g.rect(-width*size.anchorX+inset,-height*size.anchorY+inset,Math.max(0,width-g.lineWidth),Math.max(0,height-g.lineWidth));g.stroke();
-    }
-    private alignMilestoneProgressWithFoodRows():void {
-        const food=this.statusRoot.getChildByPath('Growth/Foods/Food1');
-        const progress=this.statusRoot.getChildByName('Progress');
-        const icon=food?.getChildByName('Icon');
-        const foodBar=food?.getChildByName('Bar');
-        const iconPosition=icon?.position;
-        const barPosition=foodBar?.position;
-        const barTransform=foodBar?.getComponent(UITransform);
-        if(!progress||!iconPosition||!barPosition||!barTransform)return;
-
-        for(const name of ['QueenIcon','DnaIcon']){
-            const node=progress.getChildByName(name);
-            if(node)node.setPosition(iconPosition.x,node.position.y,node.position.z);
-        }
-        for(const name of ['QueenProgress','DnaProgress']){
-            const node=progress.getChildByName(name);
-            const transform=node?.getComponent(UITransform);
-            const bar=node?.getComponent(ProgressBar);
-            if(!node||!transform||!bar)continue;
-            transform.width=barTransform.width;
-            node.setPosition(barPosition.x,node.position.y,node.position.z);
-            bar.totalLength=barTransform.width;
-            const fill=bar.barSprite?.node;
-            const fillTransform=fill?.getComponent(UITransform);
-            if(fill&&fillTransform){
-                fillTransform.width=barTransform.width;
-                fill.setPosition(-barTransform.width/2,fill.position.y,fill.position.z);
-            }
-        }
-    }
-    private label(path:string):Label { return this.hudNode(path)!.getComponent(Label)!; }
-
-    private statusHiddenOffset(canvas:UITransform):number {
-        const growth=this.statusRoot.getChildByName('Growth');
-        const progress=this.statusRoot.getChildByName('Progress');
-        const halfWidth=Math.max(growth?.getComponent(UITransform)?.width||0,progress?.getComponent(UITransform)?.width||0)*this.panelScale/2;
-        return -(this.statusBaseX+halfWidth+canvas.width/2+12);
-    }
-
-    private toggleStatusPanel():void { this.setStatusCollapsed(!this.statusCollapsed,true); }
-
-    private setStatusCollapsed(collapsed:boolean,animate:boolean):void {
-        this.statusCollapsed=collapsed;
-        if(collapsed)this.hideTooltip();
-        const canvas=this.node.parent?.parent?.getComponent(UITransform);
-        if(!canvas)return;
-        const targetX=this.statusBaseX+(collapsed?this.statusHiddenOffset(canvas):0);
-        for(const name of ['Growth','Progress']){
-            const panel=this.statusRoot.getChildByName(name);if(!panel)continue;
-            const position=new Vec3(targetX,panel.position.y,panel.position.z);
-            Tween.stopAllByTarget(panel);
-            if(animate)tween(panel).to(UI_RULES.panelSlideSeconds,{position},{easing:'quadOut'}).start();
-            else panel.setPosition(position);
-        }
-        this.layoutStatusToggle(canvas,animate);
-    }
-
-    private layoutStatusToggle(canvas:UITransform,animate:boolean):void {
-        const button=this.statusToggle;if(!button)return;
-        const size=button.getComponent(UITransform);if(!size)return;
-        const safe=sys.getSafeAreaRect();
-        const safeLeft=Math.max(-canvas.width/2,safe.x-canvas.width/2);
-        const safeRight=Math.min(canvas.width/2,safe.x+safe.width-canvas.width/2);
-        const halfWidth=size.width*Math.abs(this.toggleScale.x)/2;
-        const growth=this.statusRoot.getChildByName('Growth');
-        const growthWidth=(growth?.getComponent(UITransform)?.width||238)*this.panelScale;
-        const openX=this.statusBaseX+growthWidth/2+this.toggleOffset.x;
-        const x=this.statusCollapsed
-            ?Math.min(safeRight-halfWidth-8,safeLeft+halfWidth+8)
-            :Math.min(safeRight-halfWidth-8,Math.max(safeLeft+halfWidth+8,openX));
-        const y=this.panelTop+this.toggleOffset.y;
-        button.active=true;
-        button.angle = 0;
-        button.setScale(Math.abs(this.toggleScale.x)*(this.statusCollapsed?-1:1),Math.abs(this.toggleScale.y),this.toggleScale.z);
-        const position=new Vec3(x,y,button.position.z);
-        Tween.stopAllByTarget(button);
-        if(animate)tween(button).to(UI_RULES.panelSlideSeconds,{position},{easing:'quadOut'}).start();
-        else button.setPosition(position);
-    }
-
-    private initTooltips():void {
-        const bind=(path:string,describe:()=>string):void=>{
-            const target=this.hudNode(path);if(!target)return;
-            target.on(Node.EventType.MOUSE_ENTER,(event:EventMouse)=>{if(!this.pinnedTooltip)this.showTooltip(target,describe,path,event);},this);
-            target.on(Node.EventType.MOUSE_MOVE,(event:EventMouse)=>{
-                if(!this.pinnedTooltip&&this.tooltip?.active&&this.tooltipPath===path)this.positionTooltip(event.getUILocation());
-            },this);
-            target.on(Node.EventType.MOUSE_LEAVE,()=>{if(!this.pinnedTooltip)this.hideTooltip();},this);
-            target.on(Node.EventType.TOUCH_START,(event:EventTouch)=>{
-                event.propagationStopped=true;
-                if(this.pinnedTooltip&&this.tooltip?.active&&this.tooltipPath===path){this.hideTooltip();return;}
-                this.pinnedTooltip=true;this.showTooltip(target,describe,path,event);
-            },this);
-        };
-        bind('Growth/FeedingRate',feedingRateDescription);
-        bind('Growth/RateApple',feedingRateDescription);
-        bind('Growth/RateUnit',feedingRateDescription);
-        bind('Growth/Header',feedingRateDescription);
-        bind('Growth/Bonus',()=>this.bonusDescription(false));
-        bind('Growth/Multiplier',()=>this.bonusDescription(true));
-        ['FOOD','LARVAE','BRAIN_MATTER','DNA'].forEach((key,i)=>bind(`Currencies/Resource${i}`,()=>originalText('DESCRIPTION_'+key)));
-        bind('Progress/QueenProgress',()=>queenMilestoneDescription(formatOriginal(this.status.nextQueenRate)));
-        bind('Progress/DnaProgress',()=>dnaMilestoneDescription(formatOriginal(this.status.nextDnaRate)));
-        bind('Progress/QueenIcon',()=>queenMilestoneDescription(formatOriginal(this.status.nextQueenRate)));
-        bind('Progress/DnaIcon',()=>dnaMilestoneDescription(formatOriginal(this.status.nextDnaRate)));
-        for(const food of FOOD_ITEMS)bind(`Growth/Foods/Food${food.id}`,()=>'');
-        // Node order follows the Cocos scene; presentation order is adjusted in renderStatus.
-        const keys=['heat','cold','frostburn','sour','umami','ecstasy','shine'] as const;
-        keys.forEach((key,i)=>bind(`Growth/Buffs/Buff${i}`,()=>{
-            const index=RATE_BUFFS.findIndex(buff=>buff.key===key);
-            const buff=RATE_BUFFS[index];
-            const s=this.tasteModel?.state,genes=this.tasteModel?.options.specialisations||{};
-            const stacks=s?key==='cold'?s.cold+s.coldPre:s[key]:this.status[key];
-            const values=s?{heat:s.heatBonus,cold:this.tasteModel!.coldStrength,frostburn:s.frostburnBonus,sour:genes.sour_addend?s.sourAddend:s.sourBonus,umami:0,ecstasy:s.ecstasyBonus,shine:s.shineBonus}:this.status;
-            return buffDescription(key,{active:this.buffActive(key),stacks,value:values[key],contribution:this.foodRates[buff.contributionId]||0,coldStrength:this.tasteModel?.coldStrength||.5,harmony:!!genes.harmony,acid:!!genes.acid,sourAddend:!!genes.sour_addend},formatOriginal);
-        }));
-    }
-
     private buffActive(key:'heat'|'cold'|'frostburn'|'sour'|'umami'|'ecstasy'|'shine'):boolean {
         const s=this.status;
         switch(key){
@@ -361,7 +183,7 @@ export class GameHUD extends Component {
     }
 
     private bonusDescription(multiplier:boolean):string {
-        let text=originalText(multiplier?'DESCRIPTION_MULTIPLIER':'DESCRIPTION_BONUS',{value:multiplier?this.status.multiplier.toFixed(1):formatOriginal(this.status.addend)});
+        let text=multiplier?`每份食物的价值按当前倍率 ×${this.status.multiplier.toFixed(1)} 计算。`:`每份食物的基础价值额外增加 ${formatOriginal(this.status.addend)}。`;
         const model=this.tasteModel;if(!model)return text;
         const s=model.state,o=model.options,genes=o.specialisations;
         const diet=Object.keys(this.foodRates).map(Number).filter(id=>id<=19&&this.foodRates[id]>0);
@@ -382,72 +204,56 @@ export class GameHUD extends Component {
         return text;
     }
 
-    private showTooltip(target:Node,describe:()=>string,path='',event?:EventMouse|EventTouch):void {
+
+    private showDetails(title:string,describe:()=>string):void {
         if(!this.tooltip){
-            const tip=new Node('RateTip');tip.layer=this.node.layer;
-            tip.addComponent(UITransform).setContentSize(410,142);
-            const graphics=tip.addComponent(Graphics);
-            const textNode=new Node('Text');textNode.layer=this.node.layer;tip.addChild(textNode);
-            const textTransform=textNode.addComponent(UITransform);textTransform.setContentSize(390,120);textTransform.setAnchorPoint(0,1);
-            const label=textNode.addComponent(RichText);useDefaultSystemFont(label);
-            label.fontSize=18;label.lineHeight=24;label.maxWidth=390;label.fontColor=Color.BLACK;
+            const tip=new Node('HudDetails');tip.layer=this.node.layer;this.node.parent!.addChild(tip);this.tooltip=tip;
+            tip.addComponent(UITransform);tip.addComponent(Graphics);tip.addComponent(BlockInputEvents);
+            tip.on(Node.EventType.TOUCH_END,(event:EventTouch)=>{if(event.target===tip)this.hideDetails();});
+            const card=this.child(tip,'Card',700,600);card.addComponent(BlockInputEvents);
+            this.caption(card,'Title','',480,62,-60,240,32).isBold=true;
+            const close=this.child(card,'Close',120,76,270,240);paperSurface(close,120,76,PORTRAIT.brown);
+            const closeText=this.caption(close,'Label','关闭',110,60,0,0,28);closeText.color=new Color(255,245,223);
+            close.addComponent(Button).transition=Button.Transition.NONE;
+            close.on(Button.EventType.CLICK,()=>this.hideDetails());
+            const view=this.child(card,'Viewport',652,448,0,-16);view.addComponent(Mask);
+            const content=this.child(view,'Content',652,448);content.getComponent(UITransform)!.setAnchorPoint(.5,1);
+            const scroll=view.addComponent(ScrollView);scroll.content=content;scroll.horizontal=false;scroll.vertical=true;
+            const textNode=this.child(content,'Text',652,448);textNode.getComponent(UITransform)!.setAnchorPoint(.5,1);
+            const text=textNode.addComponent(RichText);useDefaultSystemFont(text);text.fontSize=26;text.lineHeight=38;text.fontColor=PORTRAIT.ink;
             const atlas=new SpriteAtlas('HudTooltipIcons');
-            atlas.spriteFrames.food=this.hudNode('Currencies/Resource0/Icon')!.getComponent(Sprite)!.spriteFrame!;
-            atlas.spriteFrames.dna=this.hudNode('Progress/DnaIcon')!.getComponent(Sprite)!.spriteFrame!;
-            for(const food of FOOD_ITEMS)atlas.spriteFrames['source'+food.id]=this.hudNode(`Growth/Foods/Food${food.id}/Icon`)!.getComponent(Sprite)!.spriteFrame!;
-            ['heat','cold','frostburn','sour','umami','ecstasy','shine'].forEach((key,i)=>{atlas.spriteFrames[key]=this.hudNode('Growth/Buffs/Buff'+i)!.getComponent(Sprite)!.spriteFrame!;});
-            label.imageAtlas=atlas;this.tooltipAtlas=atlas;
-            tip.on(Node.EventType.TOUCH_START,(e:EventTouch)=>{e.propagationStopped=true;this.hideTooltip();},this);
-            this.node.addChild(tip);this.tooltip=tip;
+            atlas.spriteFrames.food=this.node.getChildByPath('Currencies/Resource0/Icon')!.getComponent(Sprite)!.spriteFrame!;
+            atlas.spriteFrames.dna=this.statusRoot.getChildByPath('Progress/DnaIcon')!.getComponent(Sprite)!.spriteFrame!;
+            for(const food of FOOD_ITEMS)atlas.spriteFrames['source'+food.id]=this.statusRoot.getChildByPath(`Growth/Foods/Food${food.id}/Icon`)!.getComponent(Sprite)!.spriteFrame!;
+            text.imageAtlas=atlas;this.tooltipAtlas=atlas;
+            this.caption(card,'Hint','上下滑动查看详细信息',620,30,0,-270,22).color=PORTRAIT.muted;
         }
-        this.tooltipPath=path;
-        this.tooltipDescribe=describe;
-        this.tooltip.setScale(this.tooltipScale,this.tooltipScale,1);
-        this.renderTooltipContent(path,describe());
-        this.node.setSiblingIndex(this.node.parent!.children.length-1);
-        this.tooltip.active=true;this.tooltip.setSiblingIndex(this.node.children.length-1);
-        this.positionTooltip(event?.getUILocation(),target);
+        this.tooltipTitle=title;this.tooltipDescribe=describe;this.tooltipText='';
+        this.tooltip.active=true;this.tooltip.setSiblingIndex(this.tooltip.parent!.children.length-1);
+        this.renderDetails(true);
+        this.tooltip.getChildByPath('Card/Viewport')!.getComponent(ScrollView)!.scrollToTop(0);
     }
-    private renderTooltipContent(path:string,description:string):void {
-        if(!this.tooltip)return;
-        const foodId=Number(path.match(/^Growth\/Foods\/Food(\d+)$/)?.[1]||0);
-        const food=FOOD_ITEMS.find(item=>item.id===foodId);
-        const textComponent=this.tooltip.getChildByName('Text')!.getComponent(RichText)!;
-        textComponent.maxWidth=390;
-        if(food){
-            const source=`<color=#${food.color}><b>${FOOD_NAMES[foodId-1]}</b></color> ${tooltipIcon('source'+foodId)}`;
-            const amount=`<b>${formatOriginal(this.foodAmounts[foodId]||0)}</b>`,value=`<b>${formatOriginal(this.foodRates[foodId]||0)}</b>`;
-            textComponent.string=originalText('DESCRIPTION_FOOD_CONTRIBUTION',{source,amount,value})+'<br/><br/>'+foodDetails(foodId,food.baseNutrition,this.tasteModel,this.goldenApples);
-        }else textComponent.string=description;
-        const h=Math.max(52,textComponent.node.getComponent(UITransform)!.height+24);
-        const width=410;
-        this.tooltip.getComponent(UITransform)!.setContentSize(width,h);
-        const graphics=this.tooltip.getComponent(Graphics)!;
-        graphics.clear();graphics.fillColor=new Color(252,230,195);
-        graphics.strokeColor=new Color(67,21,17);graphics.lineWidth=4;
-        graphics.roundRect(-width/2,-h/2,width,h,10);graphics.fill();graphics.stroke();
-        const textNode=this.tooltip.getChildByName('Text')!;
-        textNode.setPosition(-width/2+10,h/2-12);
-        const text=textNode.getComponent(RichText)!;
-        text.maxWidth=390;
-    }
-    private positionTooltip(point?:{x:number;y:number},target?:Node):void {
-        if(!this.tooltip)return;
-        const targetPosition=point
-            ?this.node.getComponent(UITransform)!.convertToNodeSpaceAR(new Vec3(point.x,point.y,0))
-            :this.node.getComponent(UITransform)!.convertToNodeSpaceAR(target!.worldPosition);
+    private renderDetails(force=false):void {
+        if(!this.tooltip||!this.tooltipDescribe)return;
+        const text=this.tooltipDescribe();if(!force&&text===this.tooltipText)return;this.tooltipText=text;
         const canvas=this.node.parent!.parent!.getComponent(UITransform)!;
-        const size=this.tooltip.getComponent(UITransform)!.contentSize;
-        const width=size.width*this.tooltipScale,height=size.height*this.tooltipScale;
-        const left=-canvas.width/2-this.node.position.x,right=canvas.width/2-this.node.position.x;
-        const bottom=-canvas.height/2-this.node.position.y,top=canvas.height/2-this.node.position.y;
-        let x=targetPosition.x+20+width/2;
-        let y=this.pinnedTooltip?targetPosition.y+20+height/2:targetPosition.y-20-height/2;
-        if(x+width/2>right)x=targetPosition.x-20-width/2;
-        if(y+height/2>top)y=targetPosition.y-20-height/2;
-        if(y-height/2<bottom)y=targetPosition.y+20+height/2;
-        this.tooltip.setPosition(Math.max(left+width/2,Math.min(right-width/2,x)),
-            Math.max(bottom+height/2,Math.min(top-height/2,y)));
+        const tip=this.tooltip,card=tip.getChildByName('Card')!,view=card.getChildByName('Viewport')!;
+        tip.getComponent(UITransform)!.setContentSize(canvas.width,canvas.height);
+        const shade=tip.getComponent(Graphics)!;shade.clear();shade.fillColor=new Color(30,22,13,165);
+        shade.rect(-canvas.width/2,-canvas.height/2,canvas.width,canvas.height);shade.fill();
+        const width=Math.min(716,canvas.width-32),bodyWidth=width-48;
+        const content=view.getChildByName('Content')!,textNode=content.getChildByName('Text')!;
+        const rich=textNode.getComponent(RichText)!;rich.maxWidth=bodyWidth;rich.string=text;
+        const textHeight=textNode.getComponent(UITransform)!.height;
+        const height=Math.min(canvas.height-120,Math.max(300,textHeight+152)),bodyHeight=height-144;
+        card.getComponent(UITransform)!.setContentSize(width,height);paperSurface(card,width,height);
+        this.caption(card,'Title',this.tooltipTitle,width-200,62,-60,height/2-46,32).isBold=true;
+        card.getChildByName('Close')!.setPosition(width/2-78,height/2-46);
+        view.getComponent(UITransform)!.setContentSize(bodyWidth,bodyHeight);view.setPosition(0,-16);
+        content.getComponent(UITransform)!.setContentSize(bodyWidth,Math.max(bodyHeight,textHeight));
+        if(force)content.setPosition(0,bodyHeight/2);
+        card.getChildByName('Hint')!.setPosition(0,-height/2+28);
+        card.getChildByName('Hint')!.getComponent(Label)!.string=textHeight>bodyHeight?'上下滑动查看详细信息':'点击空白处或关闭返回';
     }
-    private hideTooltip():void {if(this.tooltip)this.tooltip.active=false;this.pinnedTooltip=false;this.tooltipDescribe=null;this.tooltipPath='';}
+    private hideDetails():void {if(this.tooltip)this.tooltip.active=false;this.tooltipDescribe=null;this.tooltipText='';}
 }

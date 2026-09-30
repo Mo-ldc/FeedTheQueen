@@ -126,8 +126,8 @@ export class GameScene extends Component {
         const overlay=this.entryFade!;
         overlay.setSiblingIndex(this.node.children.length-1);
         // Original Global.__HzFy reveals the returning colony's rate panels over 10 seconds.
-        for(const name of ['Growth','Progress']){
-            const panel=this.node.getChildByPath('UI/GameHUD/RateStatusPanel/'+name);
+        for(const name of ['PortraitSummary']){
+            const panel=this.node.getChildByPath('UI/GameHUD/'+name);
             if(panel){const opacity=panel.getComponent(UIOpacity)||panel.addComponent(UIOpacity);opacity.opacity=0;tween(opacity).to(10,{opacity:255}).start();}
         }
         tween(overlay.getComponent(UIOpacity)!).to(1.5,{opacity:0}).call(()=>{

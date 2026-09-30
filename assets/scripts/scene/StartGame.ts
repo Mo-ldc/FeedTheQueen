@@ -14,6 +14,7 @@ import {
 import { consumeMainMenuRequest, loadGameThroughLoading } from './SceneTransition';
 import { useDefaultSystemFont } from '../ui/DefaultSystemFont';
 import { loadGameScene } from '../managers/GameBundles';
+import { paperSurface, PORTRAIT } from '../ui/PortraitUI';
 
 const { ccclass } = _decorator;
 
@@ -98,11 +99,26 @@ export class StartGame extends Component {
         background.setPosition(0, 0);
         background.getComponent(UITransform)!.setContentSize(750 * cover, 1800 * cover);
         if (this.node.scene?.name === 'Main') {
-            const scale = Math.min(size.width / 750, size.height / 1800);
+            const scale = Math.min(1, size.width / 750);
             this.mainControls.forEach((authored, control) => {
                 control.setPosition(authored.position.x * size.width / 750, authored.position.y * size.height / 1800, authored.position.z);
                 control.setScale(authored.scale.x * scale, authored.scale.y * scale, authored.scale.z);
             });
+            const logo = this.node.getChildByName('OriginalTitleLogo');
+            if (logo) { logo.setPosition(0, size.height * .32); logo.setScale(scale, scale, 1); }
+            const start = this.node.getChildByName('Button');
+            if (start) {
+                start.setPosition(0, -size.height * .26);
+                start.getComponent(UITransform)!.setContentSize(500, 110);
+                paperSurface(start, 500, 110, PORTRAIT.brown);
+                const label = start.getChildByName('StartCaption')?.getComponent(Label);
+                if (label) { label.fontSize = 42; label.enableOutline = false; }
+            }
+            ['EntryRewardButton', 'ShareButton', 'DesktopButton'].forEach((name, index) => {
+                const button = this.node.getChildByName(name);
+                if (button) { button.setPosition((index - 1) * 190 * scale, -size.height * .4); button.setScale(.82 * scale, .82 * scale, 1); }
+            });
+            this.node.getChildByName('SettingsButton')?.setPosition(-size.width / 2 + 64, size.height / 2 - 72);
             return;
         }
         const control = this.node.getChildByName('LoadingStatus') || this.node.getChildByName('Button');
